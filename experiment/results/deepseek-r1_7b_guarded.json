@@ -1,0 +1,102 @@
+[
+ {
+  "scenario": "s6_stage_renamed",
+  "model": "deepseek-r1:7b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "map_stages",
+    "error": "KeyError: 'Closed - Won'",
+    "seconds": 72.0,
+    "fix": "def map_stages(df):\n    df[\"Outcome\"] = [STAGE_OUTCOME.get(s) for s in df[\"Stage\"]]\n    return df\n",
+    "contract": [
+     "won + lost + open != rows",
+     "file has won deals but the report counts 0 won"
+    ]
+   },
+   {
+    "function": "map_stages",
+    "error": "contract: won + lost + open != rows; file has won deals but the report counts 0 won",
+    "seconds": 77.0,
+    "fix": "def map_stages(df):\n    STAGE_OUTCOME = {\n        \"Proposal\": \"Open\",\n        \"Prospecting\": \"Open\", \n        \"Negotiation\": \"Open\",\n        \"Closed Lost\": \"Lost\",\n        \"Closed - Won\": \"Won\"\n    }\n    df[\"Outcome\"] = [STAGE_OUTCOME.get(s, s) for s in df[\"Stage\"]]\n    return df\n"
+   },
+   {
+    "function": "win_rates",
+    "error": "ZeroDivisionError: division by zero",
+    "seconds": 65.2,
+    "fix": "def win_rates(df):\n    rates = {}\n    for rep in sorted(df[\"Owner\"].unique()):\n        mine = df[df[\"Owner\"] == rep]\n        # Add condition to filter only rows with valid outcomes\n        valid = mine[mine[\"Outcome\"].isin([\"won\", \"lost\"])]\n        won = int((valid[\"Outcome\"] == \"won\").sum())\n        lost = int((valid[\"Outcome\"] == \"lost\").sum())\n        if (won + lost) > 0:\n            rates[rep] = round(won / (won + lost), 4)\n    return rates\n",
+    "contract": [
+     "won + lost + open != rows",
+     "file has won deals but the report counts 0 won"
+    ]
+   }
+  ],
+  "llm_seconds": 214.2,
+  "status": "blocked_by_contract",
+  "report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 0,
+   "lost_count": 0,
+   "open_count": 0,
+   "won_amount_by_quarter": {},
+   "win_rate_by_rep": {}
+  },
+  "first_report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 0,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {},
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.0,
+    "Gary Novak": 0.0,
+    "Kevin Brandt": 0.0,
+    "Megan Ortiz": 0.0,
+    "Priya Shah": 0.0
+   }
+  },
+  "tokens_out": 1296,
+  "score": "blocked by checks",
+  "unguarded": "damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep",
+  "wall_seconds": 215.1
+ },
+ {
+  "scenario": "s8_missing_file",
+  "model": "deepseek-r1:7b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "load_export",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Python310\\\\projects\\\\self_healing_pipeline\\\\data\\\\s8_missing_file.csv'",
+    "seconds": 91.2,
+    "fix": "def load_export(path):\n    from pathlib import Path\n    p = Path(path)\n    if not p.exists():\n        raise FileNotFoundError(f\"File not found: {path}\")\n    return pd.read_csv(path, encoding=\"utf-8\", dtype=str, keep_default_na=False)\n"
+   },
+   {
+    "function": "load_export",
+    "error": "FileNotFoundError: File not found: C:\\Python310\\projects\\self_healing_pipeline\\data\\s8_missing_file.csv",
+    "seconds": 317.0,
+    "fix": "def load_export(path):\n    import os\n    if not os.path.exists(path):\n        return pd.DataFrame()\n    df = pd.read_csv(path, encoding=\"utf-8\", dtype=str, keep_default_na=False)\n    return df\n"
+   },
+   {
+    "function": "parse_dates",
+    "error": "KeyError: 'Created Date'",
+    "seconds": 237.0,
+    "fix": "def parse_dates(df):\n    if \"Created Date\" in df.columns:\n        df[\"Created Date\"] = pd.to_datetime(df[\"Created Date\"], format=\"%Y-%m-%d\")\n    if \"Close Date\" in df.columns:\n        df[\"Close Date\"] = pd.to_datetime(df[\"Close Date\"], format=\"%Y-%m-%d\")\n    return df\n"
+   }
+  ],
+  "llm_seconds": 645.2,
+  "status": "failed",
+  "error": "KeyError: 'Amount'",
+  "first_report": null,
+  "tokens_out": 5198,
+  "score": "WRONG (failed)",
+  "unguarded": "n/a",
+  "wall_seconds": 645.9
+ }
+]

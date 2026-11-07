@@ -1,0 +1,13 @@
+## qwen2.5-coder:7b guard+triage, full battery
+qwen2.5-coder:7b     s1_renamed_column    failed                         llm  172.5s  unguarded: no report
+qwen2.5-coder:7b     s2_date_format       correct                        llm   48.5s  unguarded: correct
+qwen2.5-coder:7b     s3_na_amounts        correct                        llm   39.8s  unguarded: correct
+qwen2.5-coder:7b     s4_currency_text     correct                        llm   35.3s  unguarded: correct
+qwen2.5-coder:7b     s5_new_rep           correct                        llm   40.9s  unguarded: correct
+qwen2.5-coder:7b     s6_stage_renamed     blocked by checks              llm   56.3s  unguarded: damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep
+qwen2.5-coder:7b     s7_encoding          correct                        llm   28.9s  unguarded: correct
+qwen2.5-coder:7b     s8_missing_file      correct (gave up)              llm    9.1s  unguarded: n/a
+## deepseek-r1:7b guard+triage, hard cases
+deepseek-r1:7b       s6_stage_renamed     blocked by checks              llm  704.1s  unguarded: damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep
+deepseek-r1:7b       s8_missing_file      correct (gave up)              llm   52.8s  unguarded: n/a
+DONE

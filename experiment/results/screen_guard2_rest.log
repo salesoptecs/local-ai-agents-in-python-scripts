@@ -1,0 +1,7 @@
+deepseek-r1:7b       s1_renamed_column    timeout                        llm      0s  unguarded: no report
+deepseek-r1:7b       s2_date_format       correct                        llm  377.1s  unguarded: correct
+deepseek-r1:7b       s3_na_amounts        gave_up                        llm   49.1s  unguarded: no report
+deepseek-r1:7b       s4_currency_text     gave_up                        llm   61.6s  unguarded: no report
+deepseek-r1:7b       s5_new_rep           SILENT DAMAGE (passed checks)  llm  155.2s  unguarded: damaged: win_rate_by_rep
+deepseek-r1:7b       s7_encoding          gave_up                        llm   72.7s  unguarded: no report
+deepseek-r1:7b       s8_missing_file      correct (gave up)              llm   52.8s  unguarded: n/a

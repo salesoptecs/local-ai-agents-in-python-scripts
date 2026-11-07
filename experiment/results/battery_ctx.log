@@ -1,0 +1,19 @@
+## 7b ctx s6 t0
+qwen2.5-coder:7b     s6_stage_renamed     blocked by checks              llm   70.7s  unguarded: damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep
+## 7b ctx s6 t0.7 seed 1
+qwen2.5-coder:7b     s6_stage_renamed     blocked by checks              llm   62.7s  unguarded: damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep
+## 7b ctx s6 t0.7 seed 2
+qwen2.5-coder:7b     s6_stage_renamed     failed                         llm   87.5s  unguarded: damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep
+## 7b ctx s6 t0.7 seed 3
+qwen2.5-coder:7b     s6_stage_renamed     blocked by checks              llm   57.4s  unguarded: damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep
+## 3b ctx s6 t0
+qwen2.5-coder:3b     s6_stage_renamed     blocked by checks              llm   26.3s  unguarded: damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep
+## 7b ctx full t0
+qwen2.5-coder:7b     s1_renamed_column    failed                         llm  112.9s  unguarded: no report
+qwen2.5-coder:7b     s2_date_format       correct                        llm   31.2s  unguarded: correct
+qwen2.5-coder:7b     s3_na_amounts        correct                        llm   24.4s  unguarded: correct
+qwen2.5-coder:7b     s4_currency_text     correct                        llm   24.9s  unguarded: correct
+qwen2.5-coder:7b     s5_new_rep           correct                        llm   31.2s  unguarded: correct
+qwen2.5-coder:7b     s6_stage_renamed     blocked by checks              llm   57.8s  unguarded: damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep
+qwen2.5-coder:7b     s7_encoding          correct                        llm   20.3s  unguarded: correct
+qwen2.5-coder:7b     s8_missing_file      WRONG (failed)                 llm   49.6s  unguarded: n/a

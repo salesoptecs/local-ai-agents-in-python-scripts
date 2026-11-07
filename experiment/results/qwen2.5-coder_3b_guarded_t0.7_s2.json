@@ -1,0 +1,399 @@
+[
+ {
+  "scenario": "s1_renamed_column",
+  "model": "qwen2.5-coder:3b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "parse_amounts",
+    "error": "KeyError: 'Amount'",
+    "seconds": 15.9,
+    "fix": "def parse_amounts(df):\n    try:\n        df[\"Amount\"] = [float(a) if a != \"\" else None for a in df[\"Amount\"]]\n        df[\"Amount\"] = df[\"Amount\"].astype(float)\n    except KeyError as e:\n        print(f\"KeyError: {e}. Column 'Amount' not found.\")\n    return df\n"
+   },
+   {
+    "function": "summarize",
+    "error": "KeyError: 'Column not found: Amount'",
+    "seconds": 23.0,
+    "fix": "import pandas as pd\n\ndef summarize(df):\n    if \"Amount\" not in df.columns:\n        raise KeyError(\"Column not found: Amount\")\n    \n    won = df[df[\"Outcome\"] == \"won\"]\n    q = won[\"Close Date\"].dt.year.astype(str) + \"-Q\" + won[\"Close Date\"].dt.quarter.astype(str)\n    by_q = {k: round(float(v), 2) for k, v in won.groupby(q)[\"Amount\"].sum().sort_index().items()}\n    \n    return {\n        \"rows\": len(df),\n        \"total_amount\": round(df[\"Amount\"].sum(skipna=True), 2),\n        \"avg_amount\": round(df[\"Amount\"].mean(skipna=True), 2),\n        \"missing_amount_rows\": df[\"Amount\"].isna().sum(),\n        \"won_count\": (df[\"Outcome\"] == \"won\").sum(),\n        \"lost_count\": (df[\"Outcome\"] == \"lost\").sum(),\n        \"open_count\": (df[\"Outcome\"] == \"open\").sum(),\n        \"won_amount_by_quarter\": by_q,\n        \"win_rate_by_rep\": win_rates(df)\n    }\n"
+   },
+   {
+    "function": "summarize",
+    "error": "KeyError: 'Column not found: Amount'",
+    "seconds": 22.5,
+    "fix": "import pandas as pd\n\ndef summarize(df):\n    if \"Amount\" not in df.columns:\n        raise KeyError(\"Column not found: Amount\")\n    \n    won = df[df[\"Outcome\"] == \"won\"]\n    q = won[\"Close Date\"].dt.year.astype(str) + \"-Q\" + won[\"Close Date\"].dt.quarter.astype(str)\n    by_q = {k: round(float(v), 2) for k, v in won.groupby(q)[\"Amount\"].sum().sort_index().items()}\n    \n    return {\n        \"rows\": len(df),\n        \"total_amount\": round(df[\"Amount\"].sum(skipna=True), 2),\n        \"avg_amount\": round(df[\"Amount\"].mean(skipna=True), 2),\n        \"missing_amount_rows\": df[\"Amount\"].isna().sum(),\n        \"won_count\": (df[\"Outcome\"] == \"won\").sum(),\n        \"lost_count\": (df[\"Outcome\"] == \"lost\").sum(),\n        \"open_count\": (df[\"Outcome\"] == \"open\").sum(),\n        \"won_amount_by_quarter\": by_q,\n        \"win_rate_by_rep\": win_rates(df)\n    }\n"
+   }
+  ],
+  "llm_seconds": 61.4,
+  "status": "failed",
+  "error": "KeyError: 'Column not found: Amount'",
+  "first_report": null,
+  "score": "failed",
+  "unguarded": "no report",
+  "wall_seconds": 62.1
+ },
+ {
+  "scenario": "s2_date_format",
+  "model": "qwen2.5-coder:3b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "parse_dates",
+    "error": "ValueError: time data \"08/27/2025\" doesn't match format \"%Y-%m-%d\", at position 0. You might want to try:\n    - passing `format` if your strings have a consistent format;\n    - passing `format='ISO860",
+    "seconds": 17.1,
+    "fix": "import pandas as pd\n\ndef parse_dates(df):\n    # Attempt to parse dates using the default format\n    try:\n        df[\"Created Date\"] = pd.to_datetime(df[\"Created Date\"])\n        df[\"Close Date\"] = pd.to_datetime(df[\"Close Date\"])\n    except ValueError:\n        # If parsing fails, attempt to handle each date individually with a more flexible format\n        df[\"Created Date\"] = pd.to_datetime(df[\"Created Date\"], errors='coerce')\n        df[\"Close Date\"] = pd.to_datetime(df[\"Close Date\"], errors='coerce')\n    \n    return df\n",
+    "contract": "passed"
+   }
+  ],
+  "llm_seconds": 17.1,
+  "status": "healed",
+  "report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "first_report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "score": "correct",
+  "unguarded": "correct",
+  "wall_seconds": 17.8
+ },
+ {
+  "scenario": "s3_na_amounts",
+  "model": "qwen2.5-coder:3b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "parse_amounts",
+    "error": "ValueError: could not convert string to float: 'N/A'",
+    "seconds": 12.5,
+    "fix": "import pandas as pd\n\ndef parse_amounts(df):\n    try:\n        df[\"Amount\"] = [float(a) if a != \"\" else None for a in df[\"Amount\"]]\n        df[\"Amount\"] = df[\"Amount\"].astype(float)\n    except ValueError as e:\n        print(f\"Error parsing amounts: {e}\")\n    return df\n"
+   },
+   {
+    "function": "summarize",
+    "error": "ValueError: could not convert string to float: '19000.0026300.0090000.0012600.009800.0031500.009600.00N/A42800.008100.00N/A26600.006800.0061900.005200.0014200.0015600.00N/A16100.0039500.007000.007700.",
+    "seconds": 32.6,
+    "fix": "import pandas as pd\n\ndef summarize(df):\n    won = df[df[\"Outcome\"] == \"won\"]\n    \n    # Handle cases where 'Amount' contains non-numeric values\n    won['Amount'] = won['Amount'].apply(lambda x: float(x.replace('N/A', '0')) if isinstance(x, str) else x)\n    \n    q = won[\"Close Date\"].dt.year.astype(str) + \"-Q\" + won[\"Close Date\"].dt.quarter.astype(str)\n    by_q = {k: round(float(v), 2) for k, v in won.groupby(q)[\"Amount\"].sum().sort_index().items()}\n    \n    return {\n        \"rows\": int(len(df)),\n        \"total_amount\": round(float(df[\"Amount\"].sum(skipna=True)), 2),\n        \"avg_amount\": round(float(df[\"Amount\"].mean(skipna=True)), 2),\n        \"missing_amount_rows\": int(df[\"Amount\"].isna().sum()),\n        \"won_count\": int((df[\"Outcome\"] == \"won\").sum()),\n        \"lost_count\": int((df[\"Outcome\"] == \"lost\").sum()),\n        \"open_count\": int((df[\"Outcome\"] == \"open\").sum()),\n        \"won_amount_by_quarter\": by_q,\n        \"win_rate_by_rep\": win_rates(df)\n    }\n"
+   },
+   {
+    "function": "summarize",
+    "error": "ValueError: could not convert string to float: '53000.0011100.0038700.00N/A39900.0028500.0016900.0047400.0032200.0040600.0021900.0026500.009300.0019900.0050700.0057000.0011300.0021700.008400.0024000.0",
+    "seconds": 79.9,
+    "fix": "import pandas as pd\n\ndef summarize(df):\n    won = df[df[\"Outcome\"] == \"won\"]\n    \n    # Handle cases where 'Amount' contains non-numeric values\n    won['Amount'] = won['Amount'].apply(lambda x: float(x.replace('N/A', '0')) if isinstance(x, str) else x)\n    \n    q = won[\"Close Date\"].dt.year.astype(str) + \"-Q\" + won[\"Close Date\"].dt.quarter.astype(str)\n    by_q = {k: round(float(v), 2) for k, v in won.groupby(q)[\"Amount\"].sum().sort_index().items()}\n    \n    return {\n        \"rows\": int(len(df)),\n        \"total_amount\": round(float(df[\"Amount\"].sum(skipna=True)), 2),\n        \"avg_amount\": round(float(df[\"Amount\"].mean(skipna=True)), 2),\n        \"missing_amount_rows\": int(df[\"Amount\"].isna().sum()),\n        \"won_count\": int((df[\"Outcome\"] == \"won\").sum()),\n        \"lost_count\": int((df[\"Outcome\"] == \"lost\").sum()),\n        \"open_count\": int((df[\"Outcome\"] == \"open\").sum()),\n        \"won_amount_by_quarter\": by_q,\n        \"win_rate_by_rep\": win_rates(df)\n    }\n"
+   }
+  ],
+  "llm_seconds": 125.0,
+  "status": "failed",
+  "error": "ValueError: could not convert string to float: '53000.0011100.0038700.00N/A39900.0028500.0016900.0047400.0032200.0040600.0021900.0026500.009300.0019900.0050700.0057000.0011300.0021700.008400.0024000.0030600.0024500.008500.0020900.0019000.0011200.0032800.0018700.0041200.0027100.0036400.0029000.001740",
+  "first_report": null,
+  "score": "failed",
+  "unguarded": "no report",
+  "wall_seconds": 125.7
+ },
+ {
+  "scenario": "s4_currency_text",
+  "model": "qwen2.5-coder:3b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "parse_amounts",
+    "error": "ValueError: could not convert string to float: '$53,000.00'",
+    "seconds": 14.5,
+    "fix": "import pandas as pd\n\ndef parse_amounts(df):\n    df[\"Amount\"] = [float(a.replace('$', '').replace(',', '')) if a != \"\" else None for a in df[\"Amount\"]]\n    df[\"Amount\"] = df[\"Amount\"].astype(float)\n    return df\n",
+    "contract": "passed"
+   }
+  ],
+  "llm_seconds": 14.5,
+  "status": "healed",
+  "report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "first_report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "score": "correct",
+  "unguarded": "correct",
+  "wall_seconds": 15.2
+ },
+ {
+  "scenario": "s5_new_rep",
+  "model": "qwen2.5-coder:3b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "win_rates",
+    "error": "ZeroDivisionError: division by zero",
+    "seconds": 15.9,
+    "fix": "def win_rates(df):\n    rates = {}\n    for rep in sorted(df[\"Owner\"].unique()):\n        mine = df[df[\"Owner\"] == rep]\n        won = int((mine[\"Outcome\"] == \"won\").sum())\n        lost = int((mine[\"Outcome\"] == \"lost\").sum())\n        \n        # Check if both won and lost are zero to avoid division by zero\n        if won + lost != 0:\n            rates[rep] = round(won / (won + lost), 4)\n        else:\n            rates[rep] = None  # or raise an error, depending on your preference\n    return rates\n",
+    "contract": "passed"
+   }
+  ],
+  "llm_seconds": 15.9,
+  "status": "healed",
+  "report": {
+   "rows": 1206,
+   "total_amount": 34536200.0,
+   "avg_amount": 28636.98,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 520,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074,
+    "Tasha Reed": null
+   }
+  },
+  "first_report": {
+   "rows": 1206,
+   "total_amount": 34536200.0,
+   "avg_amount": 28636.98,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 520,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074,
+    "Tasha Reed": null
+   }
+  },
+  "score": "correct",
+  "unguarded": "correct",
+  "wall_seconds": 16.6
+ },
+ {
+  "scenario": "s6_stage_renamed",
+  "model": "qwen2.5-coder:3b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "map_stages",
+    "error": "KeyError: 'Closed - Won'",
+    "seconds": 19.2,
+    "fix": "import pandas as pd\n\n# Define the mapping dictionary for stages to outcomes\nSTAGE_OUTCOME = {\n    'Proposal': 'Prospect',\n    'Negotiation': 'Negotiate',\n    'Closed Lost': 'Lost'\n}\n\ndef map_stages(df):\n    # Use a try-except block to handle potential KeyError\n    try:\n        df[\"Outcome\"] = [STAGE_OUTCOME[s] for s in df[\"Stage\"]]\n    except KeyError as e:\n        print(f\"KeyError: {e}. Skipping row(s) with stage '{e}'\")\n        df.loc[df['Stage'] == str(e), 'Outcome'] = pd.NA  # Mark missing values\n    return df\n"
+   },
+   {
+    "function": "win_rates",
+    "error": "ZeroDivisionError: division by zero",
+    "seconds": 15.8,
+    "fix": "def win_rates(df):\n    rates = {}\n    for rep in sorted(df[\"Owner\"].unique()):\n        mine = df[df[\"Owner\"] == rep]\n        won = int((mine[\"Outcome\"] == \"won\").sum())\n        lost = int((mine[\"Outcome\"] == \"lost\").sum())\n        \n        # Check if both won and lost are zero to avoid division by zero\n        if won + lost > 0:\n            rates[rep] = round(won / (won + lost), 4)\n        else:\n            rates[rep] = None  # or raise an error, depending on your preference\n    return rates\n",
+    "contract": [
+     "won + lost + open != rows",
+     "file has won deals but the report counts 0 won"
+    ]
+   },
+   {
+    "function": "win_rates",
+    "error": "contract: won + lost + open != rows; file has won deals but the report counts 0 won",
+    "seconds": 15.3,
+    "fix": "import pandas as pd\n\ndef win_rates(df):\n    rates = {}\n    for rep in sorted(df[\"Owner\"].unique()):\n        mine = df[df[\"Owner\"] == rep]\n        won = int((mine[\"Outcome\"] == \"won\").sum())\n        lost = int((mine[\"Outcome\"] == \"lost\").sum())\n        \n        # Check if both won and lost are zero to avoid division by zero\n        if won + lost > 0:\n            rates[rep] = round(won / (won + lost), 4)\n        else:\n            rates[rep] = None  # or raise an error, depending on your preference\n    return rates\n",
+    "contract": [
+     "won + lost + open != rows",
+     "file has won deals but the report counts 0 won"
+    ]
+   }
+  ],
+  "llm_seconds": 50.3,
+  "status": "blocked_by_contract",
+  "report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 0,
+   "lost_count": 0,
+   "open_count": 0,
+   "won_amount_by_quarter": {},
+   "win_rate_by_rep": {
+    "Derek Lowe": null,
+    "Gary Novak": null,
+    "Kevin Brandt": null,
+    "Megan Ortiz": null,
+    "Priya Shah": null
+   }
+  },
+  "first_report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 0,
+   "lost_count": 0,
+   "open_count": 0,
+   "won_amount_by_quarter": {},
+   "win_rate_by_rep": {
+    "Derek Lowe": null,
+    "Gary Novak": null,
+    "Kevin Brandt": null,
+    "Megan Ortiz": null,
+    "Priya Shah": null
+   }
+  },
+  "score": "blocked by checks",
+  "unguarded": "damaged: won_count: 0 vs 367; lost_count: 0 vs 319; open_count: 0 vs 514; won_amount_by_quarter; win_rate_by_rep",
+  "wall_seconds": 51.1
+ },
+ {
+  "scenario": "s7_encoding",
+  "model": "qwen2.5-coder:3b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "load_export",
+    "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfc in position 1: invalid start byte",
+    "seconds": 28.4,
+    "fix": "import pandas as pd\n\ndef load_export(path):\n    return pd.read_csv(path, encoding=\"utf-8\", dtype=str, keep_default_na=False)\n"
+   },
+   {
+    "function": "load_export",
+    "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfc in position 1: invalid start byte",
+    "seconds": 17.6,
+    "fix": "import pandas as pd\n\ndef load_export(path):\n    return pd.read_csv(path, encoding=\"utf-8\", dtype=str, keep_default_na=False)\n"
+   },
+   {
+    "function": "load_export",
+    "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfc in position 1: invalid start byte",
+    "seconds": 8.8,
+    "fix": "import pandas as pd\n\ndef load_export(path):\n    return pd.read_csv(path, encoding=\"utf-8\", dtype=str, keep_default_na=False)\n"
+   }
+  ],
+  "llm_seconds": 54.8,
+  "status": "failed",
+  "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfc in position 1: invalid start byte",
+  "first_report": null,
+  "score": "failed",
+  "unguarded": "no report",
+  "wall_seconds": 55.5
+ },
+ {
+  "scenario": "s8_missing_file",
+  "model": "qwen2.5-coder:3b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "load_export",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Python310\\\\projects\\\\self_healing_pipeline\\\\data\\\\s8_missing_file.csv'",
+    "seconds": 8.0,
+    "fix": "import os\nimport pandas as pd\n\ndef load_export(path):\n    if not os.path.exists(path):\n        raise FileNotFoundError(f\"File not found: {path}\")\n    \n    return pd.read_csv(path, encoding=\"utf-8\", dtype=str, keep_default_na=False)\n"
+   },
+   {
+    "function": "load_export",
+    "error": "FileNotFoundError: File not found: C:\\Python310\\projects\\self_healing_pipeline\\data\\s8_missing_file.csv",
+    "seconds": 8.8,
+    "fix": "import os\nimport pandas as pd\n\ndef load_export(path):\n    if not os.path.exists(path):\n        raise FileNotFoundError(f\"File not found: {path}\")\n    \n    try:\n        return pd.read_csv(path, encoding=\"utf-8\", dtype=str, keep_default_na=False)\n    except Exception as e:\n        print(f\"An error occurred while reading the file: {e}\")\n        # Return an empty DataFrame or handle the error as needed\n        return pd.DataFrame()\n"
+   },
+   {
+    "function": "load_export",
+    "error": "FileNotFoundError: File not found: C:\\Python310\\projects\\self_healing_pipeline\\data\\s8_missing_file.csv",
+    "seconds": 7.6,
+    "fix": "import os\nimport pandas as pd\n\ndef load_export(path):\n    if not os.path.exists(path):\n        raise FileNotFoundError(f\"File not found: {path}\")\n    \n    try:\n        return pd.read_csv(path, encoding=\"utf-8\", dtype=str, keep_default_na=False)\n    except Exception as e:\n        print(f\"An error occurred while reading the file: {e}\")\n        # Return an empty DataFrame or handle the error as needed\n        return pd.DataFrame()\n"
+   }
+  ],
+  "llm_seconds": 24.4,
+  "status": "failed",
+  "error": "FileNotFoundError: File not found: C:\\Python310\\projects\\self_healing_pipeline\\data\\s8_missing_file.csv",
+  "first_report": null,
+  "score": "WRONG (failed)",
+  "unguarded": "n/a",
+  "wall_seconds": 25.0
+ }
+]

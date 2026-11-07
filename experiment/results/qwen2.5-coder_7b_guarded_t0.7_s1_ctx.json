@@ -1,0 +1,76 @@
+[
+ {
+  "scenario": "s6_stage_renamed",
+  "model": "qwen2.5-coder:7b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "map_stages",
+    "error": "KeyError: 'Closed - Won'",
+    "seconds": 21.8,
+    "fix": "def map_stages(df):\n    df[\"Outcome\"] = df[\"Stage\"].map(STAGE_OUTCOME)\n    return df\n",
+    "contract": [
+     "won + lost + open != rows",
+     "file has won deals but the report counts 0 won"
+    ]
+   },
+   {
+    "function": "map_stages",
+    "error": "contract: won + lost + open != rows; file has won deals but the report counts 0 won",
+    "seconds": 19.7,
+    "fix": "def map_stages(df):\n    df[\"Outcome\"] = df[\"Stage\"].map(STAGE_OUTCOME).fillna('open')\n    return df\n",
+    "contract": [
+     "file has won deals but the report counts 0 won"
+    ]
+   },
+   {
+    "function": "map_stages",
+    "error": "contract: file has won deals but the report counts 0 won",
+    "seconds": 21.2,
+    "fix": "def map_stages(df):\n    df[\"Outcome\"] = df[\"Stage\"].map(STAGE_OUTCOME).fillna('open')\n    df.loc[df['Stage'] == 'Closed Won', 'Outcome'] = 'won'\n    return df\n",
+    "contract": [
+     "file has won deals but the report counts 0 won"
+    ]
+   }
+  ],
+  "llm_seconds": 62.7,
+  "status": "blocked_by_contract",
+  "report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 0,
+   "lost_count": 319,
+   "open_count": 881,
+   "won_amount_by_quarter": {},
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.0,
+    "Gary Novak": 0.0,
+    "Kevin Brandt": 0.0,
+    "Megan Ortiz": 0.0,
+    "Priya Shah": 0.0
+   }
+  },
+  "first_report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 0,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {},
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.0,
+    "Gary Novak": 0.0,
+    "Kevin Brandt": 0.0,
+    "Megan Ortiz": 0.0,
+    "Priya Shah": 0.0
+   }
+  },
+  "score": "blocked by checks",
+  "unguarded": "damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep",
+  "wall_seconds": 63.4
+ }
+]

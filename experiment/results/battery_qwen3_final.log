@@ -1,0 +1,46 @@
+## run 1: temp 0
+qwen3:8b             s1_renamed_column    correct                        llm  196.8s  unguarded: correct
+qwen3:8b             s2_date_format       correct                        llm   34.6s  unguarded: correct
+qwen3:8b             s3_na_amounts        correct                        llm   29.1s  unguarded: correct
+qwen3:8b             s4_currency_text     correct                        llm   27.9s  unguarded: correct
+qwen3:8b             s5_new_rep           SILENT DAMAGE (passed checks)  llm   36.5s  unguarded: damaged: win_rate_by_rep
+qwen3:8b             s6_stage_renamed     correct                        llm  288.6s  unguarded: damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep
+qwen3:8b             s7_encoding          correct                        llm  116.5s  unguarded: correct
+qwen3:8b             s8_missing_file      correct (gave up)              llm    0.0s  unguarded: n/a
+## run 2: temp 0.7 seed 1
+qwen3:8b             s1_renamed_column    correct                        llm  225.7s  unguarded: correct
+qwen3:8b             s2_date_format       correct                        llm   34.8s  unguarded: correct
+qwen3:8b             s3_na_amounts        correct                        llm   28.3s  unguarded: correct
+qwen3:8b             s4_currency_text     correct                        llm   28.0s  unguarded: correct
+qwen3:8b             s5_new_rep           SILENT DAMAGE (passed checks)  llm   36.9s  unguarded: damaged: win_rate_by_rep
+qwen3:8b             s6_stage_renamed     blocked by checks              llm  249.3s  unguarded: damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep
+qwen3:8b             s7_encoding          failed                         llm  714.7s  unguarded: no report
+qwen3:8b             s8_missing_file      correct (gave up)              llm    0.0s  unguarded: n/a
+## run 3: temp 0.7 seed 2
+qwen3:8b             s1_renamed_column    correct                        llm  216.6s  unguarded: correct
+qwen3:8b             s2_date_format       correct                        llm   35.1s  unguarded: correct
+qwen3:8b             s3_na_amounts        correct                        llm   28.5s  unguarded: correct
+qwen3:8b             s4_currency_text     correct                        llm   28.2s  unguarded: correct
+qwen3:8b             s5_new_rep           SILENT DAMAGE (passed checks)  llm   36.9s  unguarded: damaged: win_rate_by_rep
+qwen3:8b             s6_stage_renamed     correct                        llm  235.4s  unguarded: damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep
+qwen3:8b             s7_encoding          gave_up                        llm  348.2s  unguarded: no report
+qwen3:8b             s8_missing_file      correct (gave up)              llm    0.0s  unguarded: n/a
+## run 4: temp 0.7 seed 3
+qwen3:8b             s1_renamed_column    correct                        llm  191.3s  unguarded: correct
+qwen3:8b             s2_date_format       correct                        llm   35.1s  unguarded: correct
+qwen3:8b             s3_na_amounts        correct                        llm   28.6s  unguarded: correct
+qwen3:8b             s4_currency_text     correct                        llm   28.1s  unguarded: correct
+qwen3:8b             s5_new_rep           SILENT DAMAGE (passed checks)  llm   36.8s  unguarded: damaged: win_rate_by_rep
+qwen3:8b             s6_stage_renamed     blocked by checks              llm 1262.2s  unguarded: damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep
+qwen3:8b             s7_encoding          harness_error                  llm      0s  unguarded: no report
+qwen3:8b             s8_missing_file      WRONG (harness_error)          llm      0s  unguarded: n/a
+## run 5: temp 0.7 seed 4
+qwen3:8b             s1_renamed_column    correct                        llm  190.6s  unguarded: correct
+qwen3:8b             s2_date_format       correct                        llm   34.9s  unguarded: correct
+qwen3:8b             s3_na_amounts        correct                        llm   28.9s  unguarded: correct
+qwen3:8b             s4_currency_text     correct                        llm   28.6s  unguarded: correct
+qwen3:8b             s5_new_rep           SILENT DAMAGE (passed checks)  llm   37.6s  unguarded: damaged: win_rate_by_rep
+qwen3:8b             s6_stage_renamed     blocked by checks              llm  197.6s  unguarded: damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep
+qwen3:8b             s7_encoding          correct                        llm  118.1s  unguarded: correct
+qwen3:8b             s8_missing_file      correct (gave up)              llm    0.0s  unguarded: n/a
+DONE

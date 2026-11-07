@@ -1,0 +1,11 @@
+## qwen3:8b plain
+subprocess.TimeoutExpired: Command '['C:\\Python310\\python.exe', 'C:\\Python310\\projects\\self_healing_pipeline\\healer.py', 's6_stage_renamed', 'qwen3:8b', 'guarded']' timed out after 1800 seconds
+## qwen3:8b +profile
+subprocess.TimeoutExpired: Command '['C:\\Python310\\python.exe', 'C:\\Python310\\projects\\self_healing_pipeline\\healer.py', 's6_stage_renamed', 'qwen3:8b', 'guarded']' timed out after 1800 seconds
+## deepseek-r1:7b plain
+deepseek-r1:7b       s6_stage_renamed     blocked by checks              llm  214.2s  unguarded: damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep
+deepseek-r1:7b       s8_missing_file      WRONG (failed)                 llm  645.2s  unguarded: n/a
+## deepseek-r1:7b +profile
+deepseek-r1:7b       s6_stage_renamed     failed                         llm  298.7s  unguarded: no report
+deepseek-r1:7b       s8_missing_file      WRONG (failed)                 llm  549.5s  unguarded: n/a
+DONE

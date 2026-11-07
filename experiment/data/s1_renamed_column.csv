@@ -1,0 +1,1201 @@
+Opportunity ID,Account Name,Owner,Region,Stage,Opportunity Amount,Created Date,Close Date
+OPP-10000,Blue Harbor Foods,Derek Lowe,West,Proposal,53000.00,2025-08-27,2025-09-09
+OPP-10001,Pinecrest Health,Megan Ortiz,East,Prospecting,11100.00,2026-04-06,2026-04-27
+OPP-10002,Müller GmbH,Kevin Brandt,South,Proposal,38700.00,2025-07-14,2025-10-03
+OPP-10003,Kestrel Analytics,Priya Shah,South,Negotiation,17700.00,2025-07-04,2025-10-19
+OPP-10004,Orion Fitness,Derek Lowe,Central,Closed Lost,39900.00,2025-08-19,2025-10-13
+OPP-10005,Café Olé Holdings,Derek Lowe,Central,Closed Won,28500.00,2026-01-10,2026-01-30
+OPP-10006,Northwind Traders,Gary Novak,West,Closed Lost,16900.00,2025-10-25,2026-02-10
+OPP-10007,Globex,Derek Lowe,West,Closed Won,47400.00,2026-01-03,2026-02-02
+OPP-10008,Summit Dental Group,Priya Shah,West,Qualification,32200.00,2025-08-06,2025-11-01
+OPP-10009,Kestrel Analytics,Gary Novak,West,Closed Lost,40600.00,2025-12-14,2026-04-10
+OPP-10010,Redwood Supply Co,Kevin Brandt,Central,Qualification,21900.00,2025-08-03,2025-09-09
+OPP-10011,Northwind Traders,Priya Shah,West,Closed Lost,26500.00,2026-02-20,2026-03-20
+OPP-10012,Initech,Derek Lowe,West,Closed Lost,9300.00,2026-02-05,2026-04-30
+OPP-10013,Brightline Logistics,Priya Shah,West,Closed Lost,19900.00,2025-07-25,2025-11-22
+OPP-10014,Halvorsen Freight,Kevin Brandt,Central,Closed Lost,50700.00,2026-01-12,2026-04-08
+OPP-10015,Northwind Traders,Derek Lowe,East,Proposal,57000.00,2026-04-01,2026-07-16
+OPP-10016,Société Générale Services,Kevin Brandt,East,Closed Lost,11300.00,2026-03-14,2026-06-29
+OPP-10017,Globex,Priya Shah,East,Closed Won,21700.00,2025-10-10,2025-11-08
+OPP-10018,Kestrel Analytics,Derek Lowe,West,Prospecting,8400.00,2026-01-02,2026-04-28
+OPP-10019,Café Olé Holdings,Priya Shah,West,Closed Won,24000.00,2025-08-05,2025-11-20
+OPP-10020,Kestrel Analytics,Priya Shah,Central,Negotiation,30600.00,2025-10-17,2026-01-04
+OPP-10021,Brightline Logistics,Priya Shah,West,Prospecting,24500.00,2026-03-22,2026-05-28
+OPP-10022,Brightline Logistics,Gary Novak,Central,Prospecting,8500.00,2025-07-31,2025-09-08
+OPP-10023,Société Générale Services,Kevin Brandt,South,Proposal,20900.00,2025-10-18,2026-01-05
+OPP-10024,Summit Dental Group,Megan Ortiz,Central,Closed Won,19000.00,2025-08-18,2025-09-09
+OPP-10025,Initech,Derek Lowe,East,Proposal,11200.00,2025-08-20,2025-09-06
+OPP-10026,Northwind Traders,Megan Ortiz,West,Closed Lost,32800.00,2026-02-02,2026-03-07
+OPP-10027,Redwood Supply Co,Priya Shah,West,Negotiation,18700.00,2025-07-08,2025-07-29
+OPP-10028,Initech,Gary Novak,South,Proposal,41200.00,2025-07-31,2025-08-31
+OPP-10029,Blue Harbor Foods,Kevin Brandt,South,Qualification,27100.00,2026-02-02,2026-05-12
+OPP-10030,Acme Corp,Kevin Brandt,South,Closed Won,36400.00,2025-12-08,2025-12-25
+OPP-10031,Orion Fitness,Priya Shah,East,Closed Won,29000.00,2026-03-18,2026-04-07
+OPP-10032,Müller GmbH,Kevin Brandt,East,Closed Won,17400.00,2025-08-31,2025-11-21
+OPP-10033,Redwood Supply Co,Derek Lowe,West,Closed Won,16300.00,2026-03-25,2026-05-14
+OPP-10034,Summit Dental Group,Derek Lowe,South,Proposal,30500.00,2025-09-06,2025-12-10
+OPP-10035,Pinecrest Health,Gary Novak,East,Closed Won,22200.00,2026-02-20,2026-05-20
+OPP-10036,Redwood Supply Co,Priya Shah,Central,Proposal,18700.00,2025-12-26,2026-01-13
+OPP-10037,Kestrel Analytics,Kevin Brandt,East,Closed Won,57600.00,2025-12-02,2026-02-28
+OPP-10038,Northwind Traders,Gary Novak,East,Closed Lost,12400.00,2025-08-23,2025-09-19
+OPP-10039,Globex,Priya Shah,Central,Closed Won,17500.00,2025-10-16,2026-01-25
+OPP-10040,Blue Harbor Foods,Megan Ortiz,South,Closed Won,28800.00,2025-11-12,2025-12-12
+OPP-10041,Globex,Kevin Brandt,West,Closed Won,9300.00,2025-07-19,2025-11-12
+OPP-10042,Müller GmbH,Priya Shah,East,Negotiation,39100.00,2025-07-21,2025-09-14
+OPP-10043,Orion Fitness,Priya Shah,West,Closed Lost,36600.00,2025-09-18,2025-10-28
+OPP-10044,Orion Fitness,Gary Novak,South,Proposal,44600.00,2025-08-25,2025-10-22
+OPP-10045,Kestrel Analytics,Priya Shah,West,Prospecting,12700.00,2025-12-04,2026-03-29
+OPP-10046,Northwind Traders,Derek Lowe,South,Closed Won,40800.00,2025-08-05,2025-11-21
+OPP-10047,Redwood Supply Co,Derek Lowe,West,Closed Won,26300.00,2025-07-15,2025-08-08
+OPP-10048,Pinecrest Health,Kevin Brandt,East,Negotiation,24900.00,2025-12-08,2026-02-11
+OPP-10049,Café Olé Holdings,Kevin Brandt,West,Negotiation,16400.00,2026-02-09,2026-02-19
+OPP-10050,Redwood Supply Co,Derek Lowe,Central,Closed Won,11100.00,2025-09-02,2025-12-13
+OPP-10051,Müller GmbH,Megan Ortiz,South,Closed Won,77500.00,2026-04-10,2026-05-06
+OPP-10052,Café Olé Holdings,Gary Novak,Central,Proposal,18000.00,2025-12-02,2026-02-01
+OPP-10053,Halvorsen Freight,Megan Ortiz,West,Closed Won,50500.00,2025-12-12,2026-02-19
+OPP-10054,Summit Dental Group,Kevin Brandt,Central,Prospecting,44800.00,2025-11-23,2026-02-06
+OPP-10055,Kestrel Analytics,Priya Shah,West,Prospecting,12300.00,2025-12-06,2026-01-13
+OPP-10056,Initech,Kevin Brandt,West,Closed Won,17500.00,2025-08-07,2025-10-14
+OPP-10057,Blue Harbor Foods,Gary Novak,East,Closed Lost,3900.00,2025-09-14,2025-12-16
+OPP-10058,Acme Corp,Kevin Brandt,West,Closed Lost,13000.00,2026-03-23,2026-05-31
+OPP-10059,Café Olé Holdings,Kevin Brandt,Central,Closed Lost,74100.00,2026-02-23,2026-05-29
+OPP-10060,Orion Fitness,Kevin Brandt,South,Closed Lost,38400.00,2026-03-16,2026-05-19
+OPP-10061,Müller GmbH,Derek Lowe,South,Closed Won,16400.00,2025-11-10,2026-02-24
+OPP-10062,Northwind Traders,Derek Lowe,Central,Closed Lost,18700.00,2025-11-24,2026-01-03
+OPP-10063,Initech,Megan Ortiz,Central,Closed Won,19400.00,2025-10-18,2025-11-05
+OPP-10064,Redwood Supply Co,Kevin Brandt,East,Closed Lost,36900.00,2026-02-01,2026-04-01
+OPP-10065,Northwind Traders,Megan Ortiz,South,Closed Won,90000.00,2025-07-04,2025-08-28
+OPP-10066,Müller GmbH,Derek Lowe,South,Closed Won,14700.00,2025-10-21,2026-01-01
+OPP-10067,Société Générale Services,Megan Ortiz,West,Closed Lost,34200.00,2026-01-24,2026-05-06
+OPP-10068,Acme Corp,Gary Novak,South,Qualification,21000.00,2026-04-15,2026-07-18
+OPP-10069,Müller GmbH,Megan Ortiz,Central,Proposal,41400.00,2026-01-11,2026-03-03
+OPP-10070,Orion Fitness,Gary Novak,South,Prospecting,13200.00,2026-02-01,2026-03-15
+OPP-10071,Acme Corp,Priya Shah,West,Closed Lost,26700.00,2025-07-21,2025-11-04
+OPP-10072,Brightline Logistics,Kevin Brandt,West,Closed Won,13900.00,2026-02-28,2026-06-03
+OPP-10073,Orion Fitness,Priya Shah,Central,Qualification,9600.00,2025-08-28,2025-12-15
+OPP-10074,Blue Harbor Foods,Priya Shah,East,Closed Won,37200.00,2026-01-09,2026-03-10
+OPP-10075,Summit Dental Group,Kevin Brandt,East,Closed Lost,23900.00,2025-12-02,2026-03-30
+OPP-10076,Summit Dental Group,Derek Lowe,East,Closed Won,6200.00,2026-03-30,2026-06-02
+OPP-10077,Initech,Derek Lowe,South,Closed Won,16500.00,2026-03-08,2026-03-31
+OPP-10078,Kestrel Analytics,Kevin Brandt,South,Closed Won,57500.00,2025-11-16,2026-02-12
+OPP-10079,Müller GmbH,Gary Novak,Central,Closed Lost,12400.00,2025-12-13,2026-04-11
+OPP-10080,Acme Corp,Megan Ortiz,Central,Qualification,4000.00,2026-01-11,2026-03-05
+OPP-10081,Redwood Supply Co,Kevin Brandt,Central,Closed Won,22600.00,2025-12-22,2026-02-05
+OPP-10082,Initech,Megan Ortiz,West,Closed Won,31100.00,2025-11-01,2026-02-11
+OPP-10083,Northwind Traders,Priya Shah,South,Closed Won,12600.00,2025-07-09,2025-07-30
+OPP-10084,Café Olé Holdings,Derek Lowe,South,Closed Lost,24200.00,2026-02-28,2026-05-19
+OPP-10085,Northwind Traders,Derek Lowe,West,Qualification,14500.00,2026-02-18,2026-04-03
+OPP-10086,Blue Harbor Foods,Priya Shah,West,Qualification,20600.00,2026-04-01,2026-07-17
+OPP-10087,Northwind Traders,Gary Novak,West,Proposal,17300.00,2026-03-26,2026-06-20
+OPP-10088,Northwind Traders,Gary Novak,East,Closed Won,28900.00,2026-03-31,2026-04-26
+OPP-10089,Orion Fitness,Gary Novak,Central,Closed Won,20200.00,2026-03-09,2026-04-01
+OPP-10090,Orion Fitness,Megan Ortiz,East,Closed Lost,19400.00,2025-07-27,2025-09-07
+OPP-10091,Société Générale Services,Kevin Brandt,Central,Prospecting,11100.00,2025-07-28,2025-08-26
+OPP-10092,Pinecrest Health,Kevin Brandt,West,Closed Lost,4600.00,2026-01-30,2026-04-27
+OPP-10093,Pinecrest Health,Megan Ortiz,Central,Closed Won,27000.00,2025-11-30,2026-03-30
+OPP-10094,Müller GmbH,Priya Shah,East,Qualification,15500.00,2025-08-11,2025-09-10
+OPP-10095,Acme Corp,Priya Shah,Central,Closed Won,34400.00,2026-02-26,2026-04-14
+OPP-10096,Kestrel Analytics,Kevin Brandt,West,Closed Won,25600.00,2025-10-28,2025-12-10
+OPP-10097,Société Générale Services,Gary Novak,East,Qualification,8800.00,2025-11-14,2026-03-09
+OPP-10098,Halvorsen Freight,Gary Novak,South,Closed Won,22100.00,2026-04-18,2026-06-03
+OPP-10099,Acme Corp,Megan Ortiz,Central,Closed Won,98800.00,2025-08-11,2025-11-05
+OPP-10100,Kestrel Analytics,Derek Lowe,East,Closed Lost,9800.00,2026-04-27,2026-05-09
+OPP-10101,Société Générale Services,Kevin Brandt,South,Closed Won,21800.00,2026-02-12,2026-03-29
+OPP-10102,Globex,Derek Lowe,East,Closed Lost,11300.00,2025-12-26,2026-02-26
+OPP-10103,Initech,Kevin Brandt,East,Closed Won,15800.00,2025-11-25,2026-02-27
+OPP-10104,Café Olé Holdings,Gary Novak,South,Negotiation,12200.00,2026-01-23,2026-05-23
+OPP-10105,Halvorsen Freight,Gary Novak,West,Proposal,11800.00,2026-03-13,2026-06-11
+OPP-10106,Acme Corp,Kevin Brandt,West,Closed Won,19100.00,2026-03-06,2026-03-31
+OPP-10107,Brightline Logistics,Priya Shah,South,Closed Lost,9400.00,2025-08-28,2025-11-05
+OPP-10108,Halvorsen Freight,Megan Ortiz,West,Closed Won,13000.00,2026-01-29,2026-05-25
+OPP-10109,Redwood Supply Co,Priya Shah,East,Proposal,39900.00,2026-03-18,2026-07-01
+OPP-10110,Orion Fitness,Gary Novak,Central,Closed Lost,57800.00,2026-03-17,2026-04-30
+OPP-10111,Société Générale Services,Megan Ortiz,South,Negotiation,25200.00,2026-03-08,2026-07-06
+OPP-10112,Orion Fitness,Priya Shah,West,Closed Won,5300.00,2026-02-19,2026-04-11
+OPP-10113,Blue Harbor Foods,Megan Ortiz,South,Negotiation,65900.00,2025-07-23,2025-09-11
+OPP-10114,Acme Corp,Priya Shah,Central,Closed Lost,49200.00,2025-09-16,2025-11-28
+OPP-10115,Acme Corp,Priya Shah,South,Closed Lost,34900.00,2026-03-27,2026-06-03
+OPP-10116,Brightline Logistics,Derek Lowe,South,Closed Lost,85200.00,2026-01-20,2026-04-23
+OPP-10117,Acme Corp,Kevin Brandt,East,Proposal,30100.00,2026-03-07,2026-05-25
+OPP-10118,Brightline Logistics,Megan Ortiz,East,Closed Lost,28900.00,2025-10-25,2026-02-07
+OPP-10119,Northwind Traders,Gary Novak,East,Proposal,9600.00,2025-09-24,2025-12-31
+OPP-10120,Müller GmbH,Kevin Brandt,South,Closed Won,33600.00,2026-02-06,2026-03-06
+OPP-10121,Orion Fitness,Megan Ortiz,West,Closed Won,25100.00,2025-08-10,2025-11-06
+OPP-10122,Northwind Traders,Gary Novak,South,Closed Lost,28400.00,2025-11-08,2026-01-15
+OPP-10123,Pinecrest Health,Derek Lowe,South,Closed Won,20400.00,2026-02-12,2026-04-07
+OPP-10124,Halvorsen Freight,Gary Novak,West,Negotiation,17300.00,2026-01-13,2026-05-12
+OPP-10125,Orion Fitness,Megan Ortiz,Central,Prospecting,128200.00,2025-11-29,2025-12-11
+OPP-10126,Kestrel Analytics,Priya Shah,Central,Qualification,13400.00,2025-11-24,2026-03-13
+OPP-10127,Brightline Logistics,Gary Novak,Central,Closed Lost,9100.00,2025-09-09,2025-12-08
+OPP-10128,Redwood Supply Co,Derek Lowe,Central,Closed Lost,14100.00,2025-09-06,2025-09-27
+OPP-10129,Café Olé Holdings,Kevin Brandt,Central,Closed Lost,4200.00,2026-04-03,2026-05-29
+OPP-10130,Northwind Traders,Derek Lowe,East,Closed Won,8000.00,2026-03-04,2026-06-25
+OPP-10131,Kestrel Analytics,Kevin Brandt,Central,Prospecting,18500.00,2026-01-20,2026-05-18
+OPP-10132,Globex,Derek Lowe,South,Closed Lost,63100.00,2025-09-02,2025-11-09
+OPP-10133,Brightline Logistics,Megan Ortiz,Central,Closed Won,12100.00,2025-10-22,2026-01-22
+OPP-10134,Initech,Megan Ortiz,Central,Closed Won,15100.00,2026-04-02,2026-04-29
+OPP-10135,Summit Dental Group,Gary Novak,South,Closed Won,45800.00,2025-09-18,2025-11-20
+OPP-10136,Halvorsen Freight,Megan Ortiz,West,Closed Lost,245200.00,2026-01-06,2026-02-12
+OPP-10137,Initech,Derek Lowe,West,Closed Lost,11800.00,2025-12-31,2026-01-17
+OPP-10138,Kestrel Analytics,Derek Lowe,West,Closed Lost,34000.00,2025-07-11,2025-07-27
+OPP-10139,Pinecrest Health,Priya Shah,West,Proposal,13500.00,2026-04-10,2026-05-16
+OPP-10140,Société Générale Services,Gary Novak,East,Qualification,9900.00,2025-11-06,2026-02-26
+OPP-10141,Société Générale Services,Derek Lowe,East,Qualification,19800.00,2025-12-13,2025-12-25
+OPP-10142,Halvorsen Freight,Derek Lowe,East,Closed Won,9200.00,2025-08-02,2025-10-11
+OPP-10143,Halvorsen Freight,Gary Novak,East,Closed Lost,45600.00,2026-03-24,2026-05-11
+OPP-10144,Blue Harbor Foods,Megan Ortiz,East,Closed Lost,17100.00,2025-08-25,2025-11-05
+OPP-10145,Pinecrest Health,Kevin Brandt,Central,Negotiation,26000.00,2025-09-03,2025-10-18
+OPP-10146,Initech,Gary Novak,East,Closed Lost,48300.00,2026-03-16,2026-06-11
+OPP-10147,Halvorsen Freight,Priya Shah,South,Proposal,20000.00,2025-10-19,2025-12-23
+OPP-10148,Initech,Derek Lowe,Central,Negotiation,101100.00,2025-08-18,2025-10-07
+OPP-10149,Pinecrest Health,Kevin Brandt,Central,Closed Won,9400.00,2026-04-11,2026-04-28
+OPP-10150,Acme Corp,Derek Lowe,Central,Negotiation,24800.00,2026-02-02,2026-05-15
+OPP-10151,Orion Fitness,Gary Novak,Central,Closed Lost,11300.00,2026-03-04,2026-04-11
+OPP-10152,Kestrel Analytics,Megan Ortiz,East,Closed Won,40900.00,2026-04-20,2026-05-28
+OPP-10153,Northwind Traders,Derek Lowe,Central,Negotiation,14100.00,2025-07-15,2025-08-17
+OPP-10154,Société Générale Services,Gary Novak,East,Closed Lost,12200.00,2026-01-22,2026-02-09
+OPP-10155,Globex,Derek Lowe,Central,Closed Lost,24100.00,2025-12-22,2026-01-21
+OPP-10156,Société Générale Services,Kevin Brandt,East,Closed Won,9800.00,2025-07-27,2025-08-25
+OPP-10157,Halvorsen Freight,Megan Ortiz,Central,Qualification,22500.00,2026-03-06,2026-06-01
+OPP-10158,Summit Dental Group,Kevin Brandt,South,Closed Won,16400.00,2025-08-26,2025-10-11
+OPP-10159,Müller GmbH,Derek Lowe,West,Closed Lost,34400.00,2025-07-29,2025-08-08
+OPP-10160,Halvorsen Freight,Megan Ortiz,West,Qualification,23200.00,2025-08-31,2025-09-10
+OPP-10161,Summit Dental Group,Derek Lowe,East,Negotiation,36900.00,2026-04-13,2026-08-07
+OPP-10162,Orion Fitness,Derek Lowe,South,Closed Won,33900.00,2026-02-21,2026-03-12
+OPP-10163,Acme Corp,Derek Lowe,West,Closed Lost,51300.00,2025-08-28,2025-10-28
+OPP-10164,Initech,Gary Novak,West,Closed Won,19300.00,2026-01-02,2026-01-23
+OPP-10165,Globex,Priya Shah,Central,Closed Lost,5500.00,2025-12-06,2026-03-21
+OPP-10166,Müller GmbH,Derek Lowe,Central,Closed Lost,15200.00,2026-03-29,2026-06-12
+OPP-10167,Pinecrest Health,Priya Shah,East,Qualification,42100.00,2025-10-10,2025-11-11
+OPP-10168,Pinecrest Health,Megan Ortiz,Central,Closed Lost,26400.00,2026-04-15,2026-07-31
+OPP-10169,Halvorsen Freight,Derek Lowe,Central,Closed Won,18200.00,2025-08-04,2025-10-13
+OPP-10170,Acme Corp,Gary Novak,Central,Closed Lost,66700.00,2026-02-22,2026-04-30
+OPP-10171,Halvorsen Freight,Kevin Brandt,East,Closed Won,64100.00,2026-03-17,2026-05-15
+OPP-10172,Halvorsen Freight,Kevin Brandt,West,Closed Lost,16100.00,2025-12-12,2026-03-09
+OPP-10173,Brightline Logistics,Kevin Brandt,West,Prospecting,23700.00,2025-12-23,2026-04-03
+OPP-10174,Redwood Supply Co,Derek Lowe,South,Negotiation,13600.00,2026-01-03,2026-03-01
+OPP-10175,Globex,Gary Novak,South,Proposal,48200.00,2025-12-19,2026-01-06
+OPP-10176,Brightline Logistics,Kevin Brandt,West,Closed Lost,11400.00,2025-09-15,2025-11-06
+OPP-10177,Pinecrest Health,Gary Novak,Central,Closed Won,28500.00,2026-01-17,2026-02-12
+OPP-10178,Blue Harbor Foods,Kevin Brandt,East,Closed Won,19100.00,2025-09-04,2025-12-08
+OPP-10179,Société Générale Services,Priya Shah,Central,Closed Lost,21600.00,2026-01-02,2026-02-20
+OPP-10180,Brightline Logistics,Derek Lowe,East,Closed Won,26400.00,2025-09-09,2025-10-08
+OPP-10181,Summit Dental Group,Derek Lowe,West,Closed Won,13300.00,2026-03-27,2026-04-10
+OPP-10182,Halvorsen Freight,Gary Novak,South,Negotiation,37700.00,2025-09-23,2026-01-03
+OPP-10183,Café Olé Holdings,Priya Shah,Central,Closed Lost,7000.00,2026-02-15,2026-03-26
+OPP-10184,Halvorsen Freight,Derek Lowe,South,Closed Won,19600.00,2026-04-19,2026-06-24
+OPP-10185,Pinecrest Health,Priya Shah,Central,Prospecting,21200.00,2025-10-11,2026-01-31
+OPP-10186,Orion Fitness,Kevin Brandt,East,Proposal,34000.00,2025-08-22,2025-12-01
+OPP-10187,Orion Fitness,Megan Ortiz,East,Closed Lost,12000.00,2026-03-20,2026-04-17
+OPP-10188,Initech,Gary Novak,South,Closed Won,18900.00,2025-12-26,2026-01-08
+OPP-10189,Blue Harbor Foods,Derek Lowe,West,Qualification,4900.00,2025-08-20,2025-12-15
+OPP-10190,Blue Harbor Foods,Megan Ortiz,South,Closed Won,14700.00,2025-09-10,2025-12-26
+OPP-10191,Brightline Logistics,Derek Lowe,West,Proposal,8600.00,2026-03-28,2026-05-31
+OPP-10192,Brightline Logistics,Megan Ortiz,East,Closed Won,30300.00,2026-02-20,2026-03-10
+OPP-10193,Acme Corp,Kevin Brandt,Central,Proposal,16300.00,2025-11-27,2026-01-30
+OPP-10194,Globex,Gary Novak,East,Negotiation,20000.00,2025-08-13,2025-10-29
+OPP-10195,Blue Harbor Foods,Gary Novak,Central,Closed Lost,11000.00,2026-01-08,2026-02-19
+OPP-10196,Pinecrest Health,Derek Lowe,West,Prospecting,29600.00,2025-08-23,2025-12-09
+OPP-10197,Kestrel Analytics,Megan Ortiz,South,Closed Won,40600.00,2025-09-28,2026-01-22
+OPP-10198,Acme Corp,Priya Shah,East,Proposal,15100.00,2025-11-28,2026-01-02
+OPP-10199,Northwind Traders,Gary Novak,West,Proposal,28500.00,2026-04-05,2026-06-14
+OPP-10200,Redwood Supply Co,Megan Ortiz,South,Closed Lost,21800.00,2026-01-05,2026-03-11
+OPP-10201,Kestrel Analytics,Gary Novak,South,Prospecting,44000.00,2026-03-23,2026-05-06
+OPP-10202,Globex,Gary Novak,East,Proposal,14100.00,2026-04-06,2026-05-23
+OPP-10203,Blue Harbor Foods,Megan Ortiz,Central,Closed Won,28100.00,2026-02-04,2026-03-07
+OPP-10204,Summit Dental Group,Megan Ortiz,Central,Closed Won,31500.00,2025-07-30,2025-08-18
+OPP-10205,Orion Fitness,Kevin Brandt,South,Prospecting,17000.00,2025-07-16,2025-08-13
+OPP-10206,Pinecrest Health,Priya Shah,South,Closed Lost,11500.00,2026-04-17,2026-05-01
+OPP-10207,Café Olé Holdings,Derek Lowe,South,Proposal,28200.00,2026-04-20,2026-05-17
+OPP-10208,Kestrel Analytics,Derek Lowe,South,Qualification,34200.00,2025-08-30,2025-10-12
+OPP-10209,Brightline Logistics,Priya Shah,East,Closed Won,52200.00,2026-03-09,2026-04-13
+OPP-10210,Summit Dental Group,Derek Lowe,Central,Closed Won,24000.00,2025-08-14,2025-12-05
+OPP-10211,Société Générale Services,Priya Shah,Central,Closed Won,12500.00,2025-12-01,2026-03-29
+OPP-10212,Kestrel Analytics,Megan Ortiz,East,Negotiation,25900.00,2025-09-10,2025-10-20
+OPP-10213,Pinecrest Health,Gary Novak,East,Proposal,25200.00,2026-04-09,2026-05-05
+OPP-10214,Société Générale Services,Derek Lowe,East,Closed Won,30600.00,2026-04-21,2026-05-10
+OPP-10215,Pinecrest Health,Priya Shah,West,Closed Won,12900.00,2026-04-09,2026-07-09
+OPP-10216,Globex,Priya Shah,Central,Closed Lost,22700.00,2025-09-23,2025-10-23
+OPP-10217,Müller GmbH,Kevin Brandt,Central,Qualification,13300.00,2025-08-10,2025-09-21
+OPP-10218,Société Générale Services,Kevin Brandt,West,Qualification,101300.00,2026-03-15,2026-06-15
+OPP-10219,Redwood Supply Co,Kevin Brandt,East,Closed Lost,32900.00,2025-12-20,2026-04-16
+OPP-10220,Pinecrest Health,Megan Ortiz,East,Closed Won,27300.00,2025-10-16,2026-02-01
+OPP-10221,Müller GmbH,Megan Ortiz,Central,Closed Won,28800.00,2025-12-02,2026-02-11
+OPP-10222,Halvorsen Freight,Priya Shah,Central,Closed Won,9900.00,2026-01-29,2026-04-10
+OPP-10223,Société Générale Services,Derek Lowe,East,Proposal,20800.00,2025-12-24,2026-02-23
+OPP-10224,Brightline Logistics,Gary Novak,Central,Closed Lost,46700.00,2025-11-04,2025-12-02
+OPP-10225,Globex,Kevin Brandt,Central,Qualification,15800.00,2025-09-20,2026-01-12
+OPP-10226,Brightline Logistics,Megan Ortiz,South,Closed Lost,13000.00,2026-03-12,2026-03-24
+OPP-10227,Halvorsen Freight,Kevin Brandt,South,Proposal,12100.00,2025-07-26,2025-09-10
+OPP-10228,Initech,Derek Lowe,East,Negotiation,24500.00,2026-01-04,2026-04-21
+OPP-10229,Brightline Logistics,Megan Ortiz,South,Closed Lost,28200.00,2026-04-10,2026-05-26
+OPP-10230,Globex,Derek Lowe,Central,Closed Lost,10500.00,2025-08-19,2025-10-18
+OPP-10231,Acme Corp,Gary Novak,West,Closed Won,47100.00,2026-03-14,2026-03-29
+OPP-10232,Redwood Supply Co,Kevin Brandt,West,Proposal,25900.00,2025-09-15,2025-12-11
+OPP-10233,Globex,Kevin Brandt,South,Closed Won,6000.00,2025-12-01,2026-02-24
+OPP-10234,Summit Dental Group,Gary Novak,South,Closed Won,80600.00,2026-01-05,2026-02-26
+OPP-10235,Halvorsen Freight,Derek Lowe,West,Closed Lost,24900.00,2025-07-14,2025-10-08
+OPP-10236,Orion Fitness,Priya Shah,East,Closed Won,29700.00,2026-01-11,2026-02-08
+OPP-10237,Initech,Priya Shah,South,Closed Won,13700.00,2026-02-11,2026-04-02
+OPP-10238,Blue Harbor Foods,Gary Novak,West,Closed Won,21100.00,2026-02-27,2026-06-25
+OPP-10239,Redwood Supply Co,Kevin Brandt,Central,Closed Won,108600.00,2025-09-27,2025-12-04
+OPP-10240,Halvorsen Freight,Priya Shah,West,Proposal,48700.00,2025-11-13,2026-02-09
+OPP-10241,Halvorsen Freight,Derek Lowe,Central,Proposal,26700.00,2026-03-08,2026-04-27
+OPP-10242,Globex,Priya Shah,Central,Prospecting,32100.00,2026-01-19,2026-05-13
+OPP-10243,Redwood Supply Co,Kevin Brandt,Central,Qualification,30800.00,2026-04-02,2026-05-16
+OPP-10244,Summit Dental Group,Kevin Brandt,West,Closed Won,8800.00,2025-11-02,2025-11-18
+OPP-10245,Summit Dental Group,Priya Shah,East,Closed Lost,102600.00,2026-02-27,2026-03-21
+OPP-10246,Summit Dental Group,Priya Shah,Central,Proposal,147700.00,2026-03-01,2026-05-11
+OPP-10247,Pinecrest Health,Priya Shah,East,Closed Lost,59300.00,2025-08-15,2025-11-16
+OPP-10248,Redwood Supply Co,Derek Lowe,East,Prospecting,24100.00,2026-03-11,2026-04-13
+OPP-10249,Halvorsen Freight,Kevin Brandt,South,Closed Lost,9100.00,2025-12-19,2026-02-03
+OPP-10250,Kestrel Analytics,Gary Novak,Central,Qualification,20600.00,2025-11-17,2025-12-21
+OPP-10251,Blue Harbor Foods,Derek Lowe,Central,Closed Won,32000.00,2025-10-04,2025-10-15
+OPP-10252,Initech,Kevin Brandt,Central,Prospecting,28300.00,2026-01-24,2026-05-19
+OPP-10253,Globex,Priya Shah,East,Proposal,6100.00,2025-09-10,2025-11-20
+OPP-10254,Pinecrest Health,Kevin Brandt,East,Proposal,17700.00,2025-12-16,2026-02-02
+OPP-10255,Northwind Traders,Priya Shah,South,Closed Won,62700.00,2025-08-30,2025-11-07
+OPP-10256,Pinecrest Health,Priya Shah,West,Closed Lost,21000.00,2025-11-29,2026-01-25
+OPP-10257,Blue Harbor Foods,Kevin Brandt,South,Closed Lost,58900.00,2026-01-08,2026-03-12
+OPP-10258,Halvorsen Freight,Kevin Brandt,Central,Prospecting,23900.00,2025-08-11,2025-10-27
+OPP-10259,Müller GmbH,Kevin Brandt,West,Qualification,47200.00,2026-04-07,2026-06-20
+OPP-10260,Pinecrest Health,Megan Ortiz,East,Closed Lost,20600.00,2025-10-14,2026-01-23
+OPP-10261,Initech,Megan Ortiz,East,Closed Won,29700.00,2025-09-06,2025-11-20
+OPP-10262,Northwind Traders,Gary Novak,West,Closed Won,9600.00,2025-07-12,2025-09-10
+OPP-10263,Acme Corp,Gary Novak,South,Prospecting,13700.00,2025-08-02,2025-10-20
+OPP-10264,Redwood Supply Co,Megan Ortiz,South,Closed Lost,48200.00,2026-02-01,2026-03-30
+OPP-10265,Summit Dental Group,Derek Lowe,East,Qualification,24200.00,2026-04-03,2026-04-30
+OPP-10266,Acme Corp,Gary Novak,Central,Closed Won,34800.00,2025-10-23,2026-02-16
+OPP-10267,Müller GmbH,Priya Shah,South,Negotiation,29900.00,2026-01-11,2026-05-06
+OPP-10268,Kestrel Analytics,Gary Novak,West,Qualification,32700.00,2026-01-31,2026-04-29
+OPP-10269,Blue Harbor Foods,Gary Novak,South,Closed Won,26800.00,2025-07-25,2025-09-04
+OPP-10270,Café Olé Holdings,Derek Lowe,West,Closed Lost,33100.00,2025-07-29,2025-08-25
+OPP-10271,Northwind Traders,Priya Shah,West,Negotiation,12000.00,2025-12-12,2026-01-21
+OPP-10272,Summit Dental Group,Megan Ortiz,South,Prospecting,13000.00,2025-09-28,2025-12-27
+OPP-10273,Café Olé Holdings,Derek Lowe,South,Negotiation,16400.00,2026-01-12,2026-05-02
+OPP-10274,Müller GmbH,Priya Shah,Central,Closed Lost,9900.00,2026-04-02,2026-06-11
+OPP-10275,Initech,Megan Ortiz,West,Negotiation,14200.00,2025-07-30,2025-10-19
+OPP-10276,Orion Fitness,Derek Lowe,East,Closed Won,15200.00,2025-08-10,2025-10-16
+OPP-10277,Müller GmbH,Kevin Brandt,West,Closed Won,42800.00,2025-07-21,2025-08-09
+OPP-10278,Redwood Supply Co,Priya Shah,East,Closed Lost,48700.00,2025-07-08,2025-08-14
+OPP-10279,Café Olé Holdings,Derek Lowe,Central,Negotiation,23500.00,2026-01-20,2026-03-01
+OPP-10280,Café Olé Holdings,Megan Ortiz,South,Prospecting,65500.00,2025-11-11,2026-01-06
+OPP-10281,Globex,Derek Lowe,South,Prospecting,31600.00,2025-12-11,2026-01-16
+OPP-10282,Müller GmbH,Derek Lowe,West,Negotiation,49000.00,2025-11-29,2025-12-28
+OPP-10283,Kestrel Analytics,Megan Ortiz,South,Closed Won,33900.00,2025-12-20,2026-01-31
+OPP-10284,Café Olé Holdings,Megan Ortiz,West,Closed Lost,25400.00,2025-09-10,2025-12-21
+OPP-10285,Acme Corp,Gary Novak,East,Closed Lost,11300.00,2025-07-31,2025-10-16
+OPP-10286,Blue Harbor Foods,Priya Shah,East,Qualification,20800.00,2025-10-27,2025-11-14
+OPP-10287,Halvorsen Freight,Gary Novak,East,Closed Won,19800.00,2026-03-05,2026-06-07
+OPP-10288,Northwind Traders,Gary Novak,South,Closed Lost,10100.00,2025-11-18,2026-02-04
+OPP-10289,Kestrel Analytics,Megan Ortiz,East,Negotiation,17000.00,2025-12-29,2026-02-11
+OPP-10290,Summit Dental Group,Gary Novak,East,Prospecting,15900.00,2025-10-24,2025-12-11
+OPP-10291,Acme Corp,Priya Shah,East,Closed Won,15200.00,2025-07-29,2025-10-28
+OPP-10292,Brightline Logistics,Kevin Brandt,East,Proposal,24600.00,2026-04-16,2026-08-13
+OPP-10293,Redwood Supply Co,Derek Lowe,East,Qualification,14600.00,2025-08-08,2025-11-13
+OPP-10294,Northwind Traders,Priya Shah,West,Closed Won,80800.00,2026-01-20,2026-02-08
+OPP-10295,Initech,Priya Shah,East,Closed Won,13800.00,2026-04-03,2026-05-25
+OPP-10296,Kestrel Analytics,Kevin Brandt,South,Closed Lost,12500.00,2025-12-22,2026-03-19
+OPP-10297,Müller GmbH,Derek Lowe,South,Closed Won,41600.00,2026-02-16,2026-04-29
+OPP-10298,Pinecrest Health,Derek Lowe,West,Closed Won,44100.00,2025-08-13,2025-11-29
+OPP-10299,Globex,Gary Novak,East,Prospecting,15400.00,2026-01-16,2026-03-07
+OPP-10300,Société Générale Services,Gary Novak,West,Closed Won,25300.00,2025-11-16,2025-12-09
+OPP-10301,Brightline Logistics,Derek Lowe,East,Closed Won,8100.00,2025-08-22,2025-09-04
+OPP-10302,Redwood Supply Co,Kevin Brandt,West,Closed Won,11600.00,2025-08-13,2025-11-23
+OPP-10303,Northwind Traders,Derek Lowe,South,Qualification,12700.00,2025-09-10,2025-10-24
+OPP-10304,Kestrel Analytics,Gary Novak,Central,Proposal,9800.00,2025-12-01,2026-02-10
+OPP-10305,Brightline Logistics,Priya Shah,Central,Prospecting,10000.00,2025-10-09,2025-12-16
+OPP-10306,Orion Fitness,Derek Lowe,South,Proposal,13000.00,2026-01-11,2026-05-03
+OPP-10307,Northwind Traders,Megan Ortiz,West,Proposal,6400.00,2026-01-20,2026-03-11
+OPP-10308,Redwood Supply Co,Kevin Brandt,West,Closed Won,26200.00,2026-01-03,2026-01-27
+OPP-10309,Blue Harbor Foods,Megan Ortiz,West,Closed Won,9700.00,2026-04-08,2026-04-21
+OPP-10310,Halvorsen Freight,Priya Shah,Central,Proposal,43000.00,2026-01-26,2026-05-02
+OPP-10311,Halvorsen Freight,Kevin Brandt,South,Closed Won,37800.00,2026-01-10,2026-01-29
+OPP-10312,Acme Corp,Derek Lowe,East,Qualification,8900.00,2026-01-31,2026-04-20
+OPP-10313,Pinecrest Health,Gary Novak,South,Closed Lost,8200.00,2025-09-24,2025-12-25
+OPP-10314,Brightline Logistics,Derek Lowe,West,Closed Won,23200.00,2025-08-24,2025-09-04
+OPP-10315,Halvorsen Freight,Derek Lowe,South,Closed Won,44200.00,2026-04-21,2026-05-29
+OPP-10316,Acme Corp,Megan Ortiz,East,Proposal,96200.00,2025-09-16,2025-11-09
+OPP-10317,Globex,Megan Ortiz,West,Closed Won,18000.00,2025-12-26,2026-02-13
+OPP-10318,Brightline Logistics,Derek Lowe,East,Closed Lost,38200.00,2026-02-17,2026-04-08
+OPP-10319,Müller GmbH,Kevin Brandt,West,Closed Won,15500.00,2025-09-23,2026-01-05
+OPP-10320,Kestrel Analytics,Megan Ortiz,West,Qualification,30100.00,2026-02-22,2026-04-02
+OPP-10321,Pinecrest Health,Megan Ortiz,South,Prospecting,13700.00,2025-10-10,2025-12-16
+OPP-10322,Brightline Logistics,Kevin Brandt,West,Negotiation,14600.00,2025-08-02,2025-10-24
+OPP-10323,Summit Dental Group,Derek Lowe,South,Closed Won,25900.00,2026-03-08,2026-05-24
+OPP-10324,Société Générale Services,Derek Lowe,East,Closed Won,16400.00,2026-02-20,2026-05-20
+OPP-10325,Globex,Priya Shah,South,Negotiation,10900.00,2025-08-29,2025-10-01
+OPP-10326,Summit Dental Group,Kevin Brandt,West,Closed Won,21700.00,2025-10-04,2025-12-15
+OPP-10327,Halvorsen Freight,Kevin Brandt,East,Closed Lost,63100.00,2025-12-09,2026-04-05
+OPP-10328,Initech,Kevin Brandt,South,Negotiation,21300.00,2025-10-08,2026-01-30
+OPP-10329,Société Générale Services,Gary Novak,East,Closed Lost,13800.00,2026-02-13,2026-04-26
+OPP-10330,Blue Harbor Foods,Megan Ortiz,East,Closed Won,12000.00,2026-02-20,2026-05-13
+OPP-10331,Orion Fitness,Gary Novak,South,Closed Won,108500.00,2026-01-04,2026-03-24
+OPP-10332,Halvorsen Freight,Derek Lowe,Central,Closed Lost,5800.00,2025-11-30,2025-12-14
+OPP-10333,Blue Harbor Foods,Kevin Brandt,South,Qualification,12800.00,2025-12-27,2026-04-26
+OPP-10334,Acme Corp,Kevin Brandt,Central,Closed Won,25300.00,2025-10-14,2026-02-04
+OPP-10335,Pinecrest Health,Derek Lowe,East,Qualification,36700.00,2025-11-27,2026-01-13
+OPP-10336,Orion Fitness,Priya Shah,West,Proposal,96800.00,2025-07-31,2025-09-14
+OPP-10337,Société Générale Services,Kevin Brandt,Central,Closed Won,18700.00,2026-01-18,2026-03-31
+OPP-10338,Café Olé Holdings,Derek Lowe,Central,Closed Won,21300.00,2025-08-17,2025-10-17
+OPP-10339,Halvorsen Freight,Derek Lowe,East,Closed Lost,47700.00,2025-08-17,2025-11-28
+OPP-10340,Northwind Traders,Derek Lowe,West,Closed Won,21400.00,2025-12-13,2026-04-08
+OPP-10341,Brightline Logistics,Megan Ortiz,East,Qualification,47500.00,2025-07-25,2025-08-09
+OPP-10342,Müller GmbH,Priya Shah,Central,Qualification,45100.00,2025-07-01,2025-09-03
+OPP-10343,Brightline Logistics,Derek Lowe,West,Prospecting,38200.00,2026-01-01,2026-02-12
+OPP-10344,Summit Dental Group,Gary Novak,East,Prospecting,21300.00,2025-10-28,2025-12-31
+OPP-10345,Summit Dental Group,Megan Ortiz,East,Prospecting,17800.00,2025-10-24,2026-01-08
+OPP-10346,Société Générale Services,Megan Ortiz,East,Proposal,10400.00,2026-02-02,2026-05-11
+OPP-10347,Initech,Priya Shah,West,Prospecting,26800.00,2025-12-01,2025-12-28
+OPP-10348,Globex,Priya Shah,West,Closed Lost,28300.00,2025-09-23,2025-11-28
+OPP-10349,Redwood Supply Co,Gary Novak,West,Closed Lost,26200.00,2025-10-20,2025-11-10
+OPP-10350,Kestrel Analytics,Priya Shah,West,Proposal,7200.00,2026-02-05,2026-03-27
+OPP-10351,Blue Harbor Foods,Gary Novak,Central,Qualification,25800.00,2025-11-23,2026-03-12
+OPP-10352,Summit Dental Group,Gary Novak,West,Closed Won,8700.00,2026-01-17,2026-03-05
+OPP-10353,Redwood Supply Co,Gary Novak,Central,Closed Lost,25100.00,2025-08-06,2025-10-22
+OPP-10354,Halvorsen Freight,Gary Novak,East,Closed Won,18600.00,2025-09-27,2026-01-12
+OPP-10355,Initech,Megan Ortiz,South,Prospecting,24700.00,2026-03-14,2026-06-30
+OPP-10356,Northwind Traders,Gary Novak,West,Closed Lost,11900.00,2025-11-20,2025-12-10
+OPP-10357,Kestrel Analytics,Gary Novak,Central,Closed Won,133100.00,2026-04-27,2026-07-27
+OPP-10358,Brightline Logistics,Megan Ortiz,East,Closed Won,26600.00,2025-07-30,2025-09-09
+OPP-10359,Acme Corp,Priya Shah,East,Qualification,68900.00,2025-09-28,2025-10-23
+OPP-10360,Globex,Priya Shah,Central,Closed Lost,15600.00,2025-11-10,2025-12-11
+OPP-10361,Northwind Traders,Kevin Brandt,East,Closed Won,22300.00,2026-03-26,2026-04-13
+OPP-10362,Globex,Priya Shah,Central,Closed Lost,94200.00,2026-04-17,2026-05-18
+OPP-10363,Blue Harbor Foods,Kevin Brandt,East,Prospecting,39200.00,2025-08-29,2025-10-07
+OPP-10364,Initech,Priya Shah,West,Closed Lost,57500.00,2026-02-27,2026-04-24
+OPP-10365,Globex,Priya Shah,South,Closed Lost,6400.00,2026-01-31,2026-03-10
+OPP-10366,Brightline Logistics,Kevin Brandt,East,Qualification,20800.00,2026-04-19,2026-06-15
+OPP-10367,Brightline Logistics,Kevin Brandt,South,Prospecting,9700.00,2025-12-07,2026-01-27
+OPP-10368,Pinecrest Health,Priya Shah,South,Negotiation,76000.00,2025-12-03,2026-03-17
+OPP-10369,Kestrel Analytics,Priya Shah,West,Prospecting,19100.00,2026-04-06,2026-07-22
+OPP-10370,Orion Fitness,Gary Novak,Central,Prospecting,77000.00,2025-12-25,2026-03-26
+OPP-10371,Müller GmbH,Kevin Brandt,West,Negotiation,12100.00,2025-12-05,2025-12-28
+OPP-10372,Redwood Supply Co,Kevin Brandt,South,Closed Won,6800.00,2025-07-23,2025-08-31
+OPP-10373,Société Générale Services,Priya Shah,Central,Proposal,7200.00,2026-02-08,2026-05-13
+OPP-10374,Halvorsen Freight,Derek Lowe,West,Prospecting,4300.00,2025-12-15,2026-02-03
+OPP-10375,Société Générale Services,Gary Novak,West,Closed Won,17100.00,2026-04-26,2026-05-19
+OPP-10376,Müller GmbH,Megan Ortiz,Central,Closed Won,37500.00,2025-12-31,2026-04-18
+OPP-10377,Orion Fitness,Derek Lowe,West,Prospecting,13800.00,2025-07-21,2025-08-27
+OPP-10378,Summit Dental Group,Derek Lowe,Central,Closed Lost,57500.00,2026-03-20,2026-04-05
+OPP-10379,Brightline Logistics,Megan Ortiz,East,Closed Lost,14500.00,2026-04-08,2026-05-19
+OPP-10380,Pinecrest Health,Derek Lowe,East,Prospecting,20400.00,2025-08-13,2025-11-05
+OPP-10381,Acme Corp,Megan Ortiz,East,Qualification,36200.00,2025-12-17,2026-01-11
+OPP-10382,Acme Corp,Megan Ortiz,South,Qualification,14500.00,2026-01-19,2026-04-02
+OPP-10383,Redwood Supply Co,Priya Shah,East,Closed Won,32800.00,2025-11-21,2026-01-27
+OPP-10384,Redwood Supply Co,Kevin Brandt,South,Prospecting,16200.00,2026-03-13,2026-05-14
+OPP-10385,Redwood Supply Co,Kevin Brandt,West,Closed Won,15200.00,2025-10-11,2026-01-11
+OPP-10386,Redwood Supply Co,Kevin Brandt,Central,Negotiation,12500.00,2026-03-06,2026-04-29
+OPP-10387,Redwood Supply Co,Derek Lowe,East,Closed Lost,20900.00,2025-10-21,2025-11-03
+OPP-10388,Société Générale Services,Gary Novak,West,Closed Won,4800.00,2026-04-26,2026-06-04
+OPP-10389,Müller GmbH,Kevin Brandt,South,Negotiation,8500.00,2025-07-29,2025-11-13
+OPP-10390,Acme Corp,Derek Lowe,West,Closed Won,54300.00,2025-12-31,2026-03-26
+OPP-10391,Halvorsen Freight,Gary Novak,East,Prospecting,24900.00,2025-12-06,2026-01-07
+OPP-10392,Globex,Kevin Brandt,West,Closed Lost,17500.00,2026-03-02,2026-03-12
+OPP-10393,Acme Corp,Priya Shah,West,Closed Lost,53300.00,2025-12-13,2025-12-30
+OPP-10394,Brightline Logistics,Derek Lowe,Central,Proposal,17900.00,2026-01-19,2026-04-14
+OPP-10395,Globex,Priya Shah,Central,Proposal,25100.00,2026-03-07,2026-06-08
+OPP-10396,Blue Harbor Foods,Derek Lowe,West,Qualification,39600.00,2025-12-05,2026-03-18
+OPP-10397,Société Générale Services,Kevin Brandt,Central,Closed Lost,76400.00,2026-04-17,2026-05-01
+OPP-10398,Blue Harbor Foods,Gary Novak,West,Negotiation,12100.00,2025-09-11,2025-11-02
+OPP-10399,Blue Harbor Foods,Derek Lowe,South,Prospecting,7100.00,2025-08-15,2025-12-08
+OPP-10400,Kestrel Analytics,Gary Novak,East,Prospecting,19400.00,2025-12-27,2026-02-07
+OPP-10401,Halvorsen Freight,Megan Ortiz,Central,Closed Won,8800.00,2025-09-24,2025-11-25
+OPP-10402,Kestrel Analytics,Priya Shah,West,Closed Won,10700.00,2026-04-22,2026-07-24
+OPP-10403,Blue Harbor Foods,Gary Novak,East,Proposal,33900.00,2026-01-09,2026-02-08
+OPP-10404,Redwood Supply Co,Megan Ortiz,West,Prospecting,17300.00,2025-09-23,2025-12-19
+OPP-10405,Summit Dental Group,Derek Lowe,Central,Proposal,6200.00,2026-04-03,2026-05-16
+OPP-10406,Acme Corp,Derek Lowe,East,Closed Won,10600.00,2026-03-09,2026-04-07
+OPP-10407,Brightline Logistics,Gary Novak,West,Qualification,16800.00,2026-03-03,2026-04-07
+OPP-10408,Kestrel Analytics,Megan Ortiz,South,Closed Won,27200.00,2025-08-29,2025-10-17
+OPP-10409,Société Générale Services,Derek Lowe,South,Negotiation,20200.00,2026-04-05,2026-06-03
+OPP-10410,Müller GmbH,Derek Lowe,East,Qualification,28600.00,2026-02-24,2026-04-08
+OPP-10411,Café Olé Holdings,Megan Ortiz,West,Closed Won,17800.00,2025-12-24,2026-04-16
+OPP-10412,Redwood Supply Co,Priya Shah,South,Proposal,9300.00,2026-03-01,2026-05-23
+OPP-10413,Pinecrest Health,Kevin Brandt,West,Qualification,32000.00,2025-07-18,2025-09-30
+OPP-10414,Kestrel Analytics,Priya Shah,West,Prospecting,7800.00,2025-09-24,2025-10-31
+OPP-10415,Redwood Supply Co,Gary Novak,East,Negotiation,18300.00,2025-12-11,2026-03-24
+OPP-10416,Halvorsen Freight,Gary Novak,South,Qualification,8300.00,2025-11-19,2026-02-03
+OPP-10417,Brightline Logistics,Gary Novak,East,Closed Lost,40800.00,2026-04-25,2026-08-10
+OPP-10418,Pinecrest Health,Megan Ortiz,East,Qualification,16200.00,2026-03-06,2026-05-28
+OPP-10419,Initech,Derek Lowe,West,Prospecting,21100.00,2026-01-22,2026-02-05
+OPP-10420,Globex,Derek Lowe,Central,Proposal,21300.00,2026-01-07,2026-01-19
+OPP-10421,Société Générale Services,Derek Lowe,South,Closed Lost,10000.00,2025-08-20,2025-09-28
+OPP-10422,Halvorsen Freight,Priya Shah,South,Closed Lost,48800.00,2025-08-15,2025-09-18
+OPP-10423,Northwind Traders,Kevin Brandt,South,Qualification,12700.00,2025-09-20,2025-10-08
+OPP-10424,Müller GmbH,Derek Lowe,Central,Closed Lost,22400.00,2026-01-01,2026-04-11
+OPP-10425,Acme Corp,Priya Shah,Central,Closed Won,4300.00,2025-09-02,2025-12-08
+OPP-10426,Café Olé Holdings,Derek Lowe,Central,Qualification,30200.00,2026-02-28,2026-05-24
+OPP-10427,Société Générale Services,Kevin Brandt,West,Closed Lost,38100.00,2026-01-14,2026-01-30
+OPP-10428,Initech,Kevin Brandt,East,Closed Lost,21300.00,2025-11-15,2026-02-16
+OPP-10429,Kestrel Analytics,Gary Novak,West,Proposal,37300.00,2025-09-27,2025-12-22
+OPP-10430,Redwood Supply Co,Megan Ortiz,Central,Closed Won,13600.00,2025-11-18,2026-01-21
+OPP-10431,Pinecrest Health,Megan Ortiz,East,Prospecting,55800.00,2026-03-24,2026-07-17
+OPP-10432,Summit Dental Group,Gary Novak,South,Prospecting,39600.00,2025-11-22,2026-01-09
+OPP-10433,Société Générale Services,Kevin Brandt,West,Closed Lost,31400.00,2025-11-30,2026-01-03
+OPP-10434,Acme Corp,Megan Ortiz,Central,Proposal,18800.00,2025-09-10,2025-12-21
+OPP-10435,Blue Harbor Foods,Kevin Brandt,West,Negotiation,49900.00,2025-07-19,2025-10-11
+OPP-10436,Globex,Kevin Brandt,Central,Closed Lost,14400.00,2026-03-01,2026-06-04
+OPP-10437,Northwind Traders,Kevin Brandt,West,Closed Lost,88300.00,2025-09-04,2025-12-17
+OPP-10438,Müller GmbH,Derek Lowe,South,Closed Lost,16700.00,2025-10-22,2025-12-16
+OPP-10439,Orion Fitness,Gary Novak,South,Prospecting,32400.00,2025-11-28,2026-02-05
+OPP-10440,Redwood Supply Co,Priya Shah,East,Closed Lost,18000.00,2025-08-06,2025-10-15
+OPP-10441,Société Générale Services,Priya Shah,West,Negotiation,37500.00,2025-07-28,2025-11-24
+OPP-10442,Globex,Priya Shah,Central,Closed Won,32100.00,2025-08-11,2025-10-22
+OPP-10443,Kestrel Analytics,Gary Novak,West,Closed Won,28800.00,2025-09-20,2025-12-01
+OPP-10444,Acme Corp,Gary Novak,West,Closed Lost,42500.00,2026-03-02,2026-04-30
+OPP-10445,Acme Corp,Priya Shah,West,Closed Won,17800.00,2025-07-10,2025-10-14
+OPP-10446,Pinecrest Health,Derek Lowe,West,Prospecting,19700.00,2026-01-13,2026-03-28
+OPP-10447,Initech,Priya Shah,Central,Closed Lost,21000.00,2026-03-26,2026-05-18
+OPP-10448,Initech,Gary Novak,West,Proposal,6900.00,2025-09-23,2026-01-14
+OPP-10449,Blue Harbor Foods,Gary Novak,South,Closed Lost,11700.00,2025-09-02,2025-10-28
+OPP-10450,Acme Corp,Gary Novak,East,Prospecting,9600.00,2025-07-25,2025-10-19
+OPP-10451,Northwind Traders,Megan Ortiz,West,Qualification,19800.00,2025-09-02,2025-11-21
+OPP-10452,Pinecrest Health,Kevin Brandt,West,Negotiation,58700.00,2026-03-24,2026-05-07
+OPP-10453,Brightline Logistics,Gary Novak,South,Qualification,13500.00,2025-08-30,2025-10-15
+OPP-10454,Globex,Megan Ortiz,Central,Qualification,42000.00,2026-03-25,2026-04-29
+OPP-10455,Müller GmbH,Gary Novak,East,Closed Won,28000.00,2026-03-04,2026-04-25
+OPP-10456,Café Olé Holdings,Gary Novak,East,Closed Lost,30300.00,2025-08-16,2025-12-03
+OPP-10457,Halvorsen Freight,Gary Novak,East,Closed Lost,13100.00,2025-11-29,2026-01-11
+OPP-10458,Brightline Logistics,Gary Novak,East,Prospecting,6400.00,2026-02-04,2026-05-19
+OPP-10459,Redwood Supply Co,Megan Ortiz,Central,Closed Lost,11700.00,2025-12-16,2026-02-09
+OPP-10460,Orion Fitness,Megan Ortiz,South,Closed Lost,53100.00,2026-02-19,2026-04-04
+OPP-10461,Blue Harbor Foods,Gary Novak,West,Qualification,57200.00,2025-08-27,2025-09-22
+OPP-10462,Halvorsen Freight,Priya Shah,South,Closed Lost,58300.00,2026-04-18,2026-07-23
+OPP-10463,Redwood Supply Co,Megan Ortiz,East,Closed Lost,20400.00,2025-09-05,2025-11-15
+OPP-10464,Blue Harbor Foods,Kevin Brandt,West,Closed Lost,30000.00,2025-12-08,2025-12-19
+OPP-10465,Blue Harbor Foods,Kevin Brandt,East,Closed Won,37200.00,2026-03-25,2026-07-01
+OPP-10466,Orion Fitness,Kevin Brandt,East,Prospecting,63300.00,2026-01-14,2026-02-12
+OPP-10467,Halvorsen Freight,Priya Shah,East,Closed Lost,16000.00,2026-02-26,2026-06-25
+OPP-10468,Café Olé Holdings,Priya Shah,South,Negotiation,12200.00,2025-11-20,2025-12-06
+OPP-10469,Brightline Logistics,Megan Ortiz,South,Proposal,8300.00,2026-04-20,2026-06-26
+OPP-10470,Café Olé Holdings,Gary Novak,East,Closed Lost,64200.00,2025-07-19,2025-10-08
+OPP-10471,Globex,Gary Novak,West,Closed Lost,9300.00,2026-02-19,2026-04-13
+OPP-10472,Summit Dental Group,Derek Lowe,South,Qualification,32900.00,2026-02-28,2026-06-09
+OPP-10473,Orion Fitness,Derek Lowe,Central,Closed Won,4800.00,2025-12-22,2026-02-15
+OPP-10474,Northwind Traders,Kevin Brandt,West,Qualification,51600.00,2026-01-26,2026-02-18
+OPP-10475,Kestrel Analytics,Priya Shah,Central,Qualification,5400.00,2026-02-20,2026-06-15
+OPP-10476,Redwood Supply Co,Megan Ortiz,South,Closed Won,22000.00,2025-09-02,2025-12-19
+OPP-10477,Redwood Supply Co,Megan Ortiz,South,Closed Lost,29100.00,2025-07-25,2025-10-13
+OPP-10478,Initech,Kevin Brandt,Central,Closed Won,61900.00,2025-09-04,2025-09-27
+OPP-10479,Initech,Kevin Brandt,Central,Closed Lost,23900.00,2025-09-07,2025-10-04
+OPP-10480,Müller GmbH,Priya Shah,West,Closed Won,15000.00,2026-04-10,2026-07-09
+OPP-10481,Summit Dental Group,Priya Shah,Central,Closed Won,45000.00,2025-09-06,2025-12-15
+OPP-10482,Summit Dental Group,Megan Ortiz,Central,Closed Lost,20000.00,2026-04-25,2026-07-17
+OPP-10483,Initech,Priya Shah,East,Closed Won,5200.00,2025-08-24,2025-09-06
+OPP-10484,Summit Dental Group,Derek Lowe,West,Closed Lost,30500.00,2025-09-21,2025-11-06
+OPP-10485,Globex,Megan Ortiz,East,Closed Won,35600.00,2026-04-04,2026-04-18
+OPP-10486,Summit Dental Group,Kevin Brandt,South,Proposal,120200.00,2025-10-23,2026-02-05
+OPP-10487,Summit Dental Group,Gary Novak,South,Negotiation,13300.00,2025-11-25,2026-03-03
+OPP-10488,Northwind Traders,Priya Shah,South,Closed Lost,45400.00,2025-07-07,2025-10-20
+OPP-10489,Pinecrest Health,Priya Shah,West,Proposal,6500.00,2026-04-06,2026-07-19
+OPP-10490,Blue Harbor Foods,Kevin Brandt,East,Negotiation,18100.00,2025-10-04,2025-11-05
+OPP-10491,Pinecrest Health,Derek Lowe,East,Proposal,29700.00,2025-09-05,2025-10-05
+OPP-10492,Pinecrest Health,Gary Novak,Central,Closed Won,25200.00,2025-09-17,2025-11-07
+OPP-10493,Müller GmbH,Priya Shah,East,Closed Lost,9000.00,2025-12-10,2026-02-25
+OPP-10494,Globex,Priya Shah,West,Closed Won,16500.00,2026-01-23,2026-02-13
+OPP-10495,Café Olé Holdings,Gary Novak,East,Closed Won,11100.00,2026-03-29,2026-06-07
+OPP-10496,Summit Dental Group,Derek Lowe,South,Closed Lost,52600.00,2025-11-02,2025-11-17
+OPP-10497,Northwind Traders,Gary Novak,Central,Closed Won,22500.00,2026-04-03,2026-07-14
+OPP-10498,Müller GmbH,Derek Lowe,East,Closed Lost,23100.00,2025-11-29,2026-03-02
+OPP-10499,Summit Dental Group,Priya Shah,South,Closed Lost,14400.00,2025-08-03,2025-09-08
+OPP-10500,Summit Dental Group,Priya Shah,East,Closed Won,17700.00,2025-08-06,2025-11-19
+OPP-10501,Kestrel Analytics,Derek Lowe,East,Closed Won,14200.00,2025-07-28,2025-08-29
+OPP-10502,Summit Dental Group,Megan Ortiz,South,Proposal,18900.00,2026-01-15,2026-03-23
+OPP-10503,Blue Harbor Foods,Kevin Brandt,East,Closed Lost,31100.00,2025-07-04,2025-10-04
+OPP-10504,Redwood Supply Co,Kevin Brandt,East,Proposal,38800.00,2025-08-07,2025-10-01
+OPP-10505,Redwood Supply Co,Megan Ortiz,South,Negotiation,31800.00,2025-11-22,2026-03-09
+OPP-10506,Société Générale Services,Megan Ortiz,Central,Closed Lost,5900.00,2026-03-31,2026-05-08
+OPP-10507,Café Olé Holdings,Kevin Brandt,West,Qualification,51100.00,2026-01-08,2026-01-19
+OPP-10508,Blue Harbor Foods,Derek Lowe,West,Negotiation,31600.00,2025-12-04,2026-01-09
+OPP-10509,Müller GmbH,Kevin Brandt,Central,Qualification,19900.00,2025-09-21,2025-10-24
+OPP-10510,Brightline Logistics,Derek Lowe,East,Qualification,162300.00,2025-11-26,2026-03-01
+OPP-10511,Summit Dental Group,Priya Shah,East,Proposal,11600.00,2025-12-30,2026-01-25
+OPP-10512,Globex,Kevin Brandt,Central,Closed Won,8400.00,2026-03-06,2026-05-12
+OPP-10513,Société Générale Services,Gary Novak,Central,Proposal,6100.00,2025-12-09,2026-02-11
+OPP-10514,Orion Fitness,Derek Lowe,West,Closed Won,14900.00,2026-02-09,2026-03-26
+OPP-10515,Kestrel Analytics,Derek Lowe,South,Closed Won,8200.00,2026-02-14,2026-04-10
+OPP-10516,Orion Fitness,Priya Shah,West,Proposal,22200.00,2025-11-21,2026-03-20
+OPP-10517,Initech,Kevin Brandt,West,Closed Lost,25200.00,2026-04-24,2026-07-17
+OPP-10518,Summit Dental Group,Priya Shah,Central,Negotiation,69200.00,2026-04-03,2026-06-12
+OPP-10519,Halvorsen Freight,Kevin Brandt,East,Negotiation,22200.00,2025-11-26,2025-12-23
+OPP-10520,Café Olé Holdings,Priya Shah,South,Qualification,26500.00,2025-09-23,2026-01-07
+OPP-10521,Blue Harbor Foods,Megan Ortiz,Central,Prospecting,33100.00,2025-09-13,2025-12-26
+OPP-10522,Müller GmbH,Gary Novak,West,Closed Won,39000.00,2025-11-13,2026-01-09
+OPP-10523,Acme Corp,Derek Lowe,East,Closed Won,25600.00,2026-02-18,2026-03-05
+OPP-10524,Café Olé Holdings,Kevin Brandt,West,Negotiation,15500.00,2025-11-12,2026-02-04
+OPP-10525,Northwind Traders,Megan Ortiz,West,Closed Won,5800.00,2025-08-09,2025-10-24
+OPP-10526,Halvorsen Freight,Kevin Brandt,East,Closed Won,13100.00,2026-03-07,2026-06-26
+OPP-10527,Summit Dental Group,Derek Lowe,West,Qualification,7800.00,2025-08-09,2025-10-23
+OPP-10528,Müller GmbH,Megan Ortiz,Central,Closed Lost,21100.00,2025-08-30,2025-12-02
+OPP-10529,Société Générale Services,Megan Ortiz,East,Proposal,7400.00,2025-10-16,2026-01-09
+OPP-10530,Café Olé Holdings,Gary Novak,West,Prospecting,15500.00,2025-09-07,2025-12-06
+OPP-10531,Pinecrest Health,Gary Novak,Central,Closed Lost,9300.00,2026-01-24,2026-04-20
+OPP-10532,Société Générale Services,Priya Shah,South,Closed Won,7200.00,2026-02-27,2026-05-09
+OPP-10533,Blue Harbor Foods,Derek Lowe,South,Closed Won,9600.00,2025-11-13,2025-12-14
+OPP-10534,Acme Corp,Priya Shah,South,Closed Lost,25700.00,2025-09-06,2025-09-29
+OPP-10535,Café Olé Holdings,Kevin Brandt,East,Prospecting,155300.00,2025-07-20,2025-11-07
+OPP-10536,Acme Corp,Megan Ortiz,South,Negotiation,6900.00,2026-04-03,2026-07-27
+OPP-10537,Halvorsen Freight,Megan Ortiz,Central,Closed Won,74300.00,2025-10-26,2026-02-15
+OPP-10538,Initech,Priya Shah,Central,Closed Won,19200.00,2026-04-21,2026-05-13
+OPP-10539,Café Olé Holdings,Gary Novak,East,Negotiation,19500.00,2025-07-04,2025-09-25
+OPP-10540,Pinecrest Health,Derek Lowe,Central,Closed Lost,19100.00,2026-02-04,2026-05-08
+OPP-10541,Initech,Priya Shah,South,Closed Won,24000.00,2025-11-19,2026-02-24
+OPP-10542,Halvorsen Freight,Derek Lowe,Central,Closed Won,38100.00,2026-04-13,2026-07-03
+OPP-10543,Orion Fitness,Gary Novak,West,Closed Won,29300.00,2025-09-09,2026-01-06
+OPP-10544,Initech,Derek Lowe,East,Qualification,54500.00,2025-10-18,2026-01-01
+OPP-10545,Müller GmbH,Derek Lowe,East,Closed Won,15600.00,2025-08-02,2025-09-14
+OPP-10546,Pinecrest Health,Gary Novak,West,Closed Won,20100.00,2025-11-24,2026-03-05
+OPP-10547,Müller GmbH,Gary Novak,West,Closed Won,30500.00,2026-03-23,2026-05-08
+OPP-10548,Brightline Logistics,Derek Lowe,South,Negotiation,16200.00,2025-07-01,2025-07-31
+OPP-10549,Blue Harbor Foods,Gary Novak,East,Closed Won,40800.00,2026-03-23,2026-04-03
+OPP-10550,Globex,Derek Lowe,West,Closed Won,24900.00,2026-04-25,2026-06-18
+OPP-10551,Brightline Logistics,Kevin Brandt,East,Closed Won,17700.00,2026-01-25,2026-04-09
+OPP-10552,Redwood Supply Co,Kevin Brandt,Central,Closed Won,83800.00,2026-03-20,2026-05-01
+OPP-10553,Halvorsen Freight,Kevin Brandt,East,Closed Won,13800.00,2026-02-20,2026-05-28
+OPP-10554,Blue Harbor Foods,Priya Shah,Central,Negotiation,15100.00,2025-10-21,2026-01-25
+OPP-10555,Northwind Traders,Gary Novak,South,Closed Won,59300.00,2025-11-12,2025-12-23
+OPP-10556,Redwood Supply Co,Kevin Brandt,Central,Qualification,5300.00,2025-12-29,2026-02-04
+OPP-10557,Müller GmbH,Derek Lowe,West,Proposal,10100.00,2025-10-29,2026-02-10
+OPP-10558,Summit Dental Group,Megan Ortiz,East,Closed Lost,23200.00,2025-08-31,2025-09-20
+OPP-10559,Pinecrest Health,Derek Lowe,South,Closed Lost,64600.00,2026-03-04,2026-04-30
+OPP-10560,Société Générale Services,Kevin Brandt,Central,Negotiation,31100.00,2025-11-18,2026-01-29
+OPP-10561,Initech,Megan Ortiz,East,Closed Won,14700.00,2026-03-27,2026-07-17
+OPP-10562,Brightline Logistics,Kevin Brandt,South,Proposal,18800.00,2025-09-28,2025-12-05
+OPP-10563,Orion Fitness,Derek Lowe,West,Closed Won,12100.00,2026-01-02,2026-03-31
+OPP-10564,Société Générale Services,Megan Ortiz,South,Qualification,32300.00,2025-12-23,2026-02-17
+OPP-10565,Halvorsen Freight,Priya Shah,West,Closed Lost,73300.00,2026-01-22,2026-03-08
+OPP-10566,Müller GmbH,Kevin Brandt,South,Closed Lost,37900.00,2025-11-16,2026-03-08
+OPP-10567,Initech,Megan Ortiz,West,Closed Lost,52500.00,2025-07-05,2025-08-06
+OPP-10568,Halvorsen Freight,Derek Lowe,Central,Closed Won,25200.00,2025-12-09,2026-03-29
+OPP-10569,Müller GmbH,Derek Lowe,South,Closed Lost,14000.00,2025-09-22,2025-10-09
+OPP-10570,Northwind Traders,Derek Lowe,East,Negotiation,12600.00,2026-04-12,2026-08-03
+OPP-10571,Pinecrest Health,Kevin Brandt,West,Closed Lost,15000.00,2025-10-10,2026-01-01
+OPP-10572,Kestrel Analytics,Megan Ortiz,East,Negotiation,11000.00,2026-03-19,2026-05-30
+OPP-10573,Summit Dental Group,Derek Lowe,South,Closed Won,38900.00,2025-09-13,2025-10-14
+OPP-10574,Société Générale Services,Derek Lowe,West,Proposal,41500.00,2025-08-06,2025-08-26
+OPP-10575,Redwood Supply Co,Megan Ortiz,Central,Closed Lost,23100.00,2026-01-19,2026-03-04
+OPP-10576,Orion Fitness,Gary Novak,West,Closed Lost,28600.00,2025-09-24,2025-10-27
+OPP-10577,Brightline Logistics,Gary Novak,East,Closed Lost,21300.00,2025-09-24,2025-11-23
+OPP-10578,Kestrel Analytics,Gary Novak,East,Proposal,6600.00,2026-01-20,2026-04-07
+OPP-10579,Müller GmbH,Priya Shah,Central,Closed Won,8500.00,2026-01-16,2026-03-06
+OPP-10580,Acme Corp,Derek Lowe,Central,Closed Lost,16200.00,2025-09-26,2025-10-09
+OPP-10581,Halvorsen Freight,Priya Shah,West,Closed Won,17900.00,2025-11-17,2026-02-05
+OPP-10582,Café Olé Holdings,Kevin Brandt,Central,Closed Lost,21400.00,2026-04-15,2026-06-19
+OPP-10583,Northwind Traders,Derek Lowe,South,Proposal,15500.00,2025-08-15,2025-10-20
+OPP-10584,Redwood Supply Co,Megan Ortiz,South,Proposal,107000.00,2025-07-05,2025-10-11
+OPP-10585,Acme Corp,Kevin Brandt,Central,Qualification,49800.00,2025-10-27,2026-02-15
+OPP-10586,Blue Harbor Foods,Megan Ortiz,South,Proposal,5700.00,2025-11-05,2025-12-05
+OPP-10587,Kestrel Analytics,Kevin Brandt,Central,Proposal,101300.00,2026-03-22,2026-07-07
+OPP-10588,Orion Fitness,Gary Novak,West,Qualification,9300.00,2026-01-28,2026-03-03
+OPP-10589,Blue Harbor Foods,Kevin Brandt,South,Qualification,23200.00,2026-02-17,2026-04-02
+OPP-10590,Northwind Traders,Priya Shah,South,Closed Lost,15100.00,2025-08-22,2025-10-07
+OPP-10591,Globex,Megan Ortiz,Central,Closed Lost,22000.00,2026-03-10,2026-04-16
+OPP-10592,Brightline Logistics,Priya Shah,East,Proposal,16600.00,2025-07-17,2025-09-07
+OPP-10593,Redwood Supply Co,Derek Lowe,South,Closed Lost,5900.00,2025-10-01,2025-11-04
+OPP-10594,Blue Harbor Foods,Gary Novak,West,Closed Won,43500.00,2026-02-12,2026-03-25
+OPP-10595,Initech,Derek Lowe,Central,Qualification,64500.00,2025-10-15,2025-12-24
+OPP-10596,Brightline Logistics,Derek Lowe,South,Closed Won,38500.00,2026-04-08,2026-06-23
+OPP-10597,Summit Dental Group,Megan Ortiz,Central,Prospecting,51600.00,2025-08-27,2025-10-06
+OPP-10598,Müller GmbH,Gary Novak,East,Closed Won,45900.00,2026-01-19,2026-05-10
+OPP-10599,Kestrel Analytics,Gary Novak,West,Qualification,6100.00,2025-09-18,2025-11-14
+OPP-10600,Globex,Priya Shah,East,Qualification,91500.00,2025-07-31,2025-08-17
+OPP-10601,Müller GmbH,Gary Novak,South,Negotiation,21300.00,2026-02-10,2026-05-24
+OPP-10602,Blue Harbor Foods,Megan Ortiz,West,Closed Won,23800.00,2025-11-28,2026-02-15
+OPP-10603,Orion Fitness,Kevin Brandt,West,Prospecting,12200.00,2026-02-25,2026-04-11
+OPP-10604,Globex,Megan Ortiz,East,Closed Lost,22600.00,2025-11-12,2026-01-30
+OPP-10605,Orion Fitness,Derek Lowe,West,Proposal,35300.00,2025-07-10,2025-10-07
+OPP-10606,Café Olé Holdings,Priya Shah,Central,Proposal,26600.00,2026-03-12,2026-06-28
+OPP-10607,Brightline Logistics,Gary Novak,West,Qualification,29100.00,2026-03-25,2026-06-27
+OPP-10608,Pinecrest Health,Kevin Brandt,Central,Prospecting,6700.00,2026-03-08,2026-05-24
+OPP-10609,Summit Dental Group,Megan Ortiz,East,Closed Won,28600.00,2025-07-07,2025-08-12
+OPP-10610,Globex,Gary Novak,Central,Closed Won,120500.00,2026-01-29,2026-05-24
+OPP-10611,Café Olé Holdings,Gary Novak,East,Closed Lost,23100.00,2025-08-09,2025-09-15
+OPP-10612,Müller GmbH,Kevin Brandt,West,Closed Won,29000.00,2026-03-27,2026-06-29
+OPP-10613,Summit Dental Group,Megan Ortiz,South,Closed Lost,13500.00,2026-04-22,2026-06-16
+OPP-10614,Globex,Priya Shah,South,Closed Lost,64500.00,2026-01-22,2026-04-06
+OPP-10615,Globex,Megan Ortiz,South,Closed Lost,16700.00,2025-12-14,2026-04-11
+OPP-10616,Initech,Kevin Brandt,Central,Negotiation,5300.00,2026-04-06,2026-05-13
+OPP-10617,Acme Corp,Derek Lowe,East,Closed Won,16200.00,2025-07-01,2025-10-11
+OPP-10618,Kestrel Analytics,Derek Lowe,West,Prospecting,20800.00,2025-12-09,2025-12-21
+OPP-10619,Redwood Supply Co,Kevin Brandt,West,Proposal,33200.00,2025-11-13,2026-01-08
+OPP-10620,Redwood Supply Co,Priya Shah,East,Closed Lost,33700.00,2026-01-21,2026-04-13
+OPP-10621,Redwood Supply Co,Gary Novak,Central,Prospecting,40100.00,2026-04-22,2026-08-14
+OPP-10622,Globex,Derek Lowe,South,Negotiation,8600.00,2025-07-29,2025-11-14
+OPP-10623,Kestrel Analytics,Megan Ortiz,East,Proposal,6700.00,2025-07-06,2025-10-05
+OPP-10624,Café Olé Holdings,Priya Shah,West,Prospecting,34800.00,2025-09-15,2025-11-05
+OPP-10625,Pinecrest Health,Kevin Brandt,East,Proposal,14500.00,2026-02-14,2026-05-31
+OPP-10626,Brightline Logistics,Megan Ortiz,East,Closed Won,13700.00,2025-09-06,2025-10-29
+OPP-10627,Blue Harbor Foods,Priya Shah,West,Closed Won,12100.00,2026-02-08,2026-05-28
+OPP-10628,Café Olé Holdings,Kevin Brandt,West,Proposal,13500.00,2026-04-19,2026-05-24
+OPP-10629,Brightline Logistics,Megan Ortiz,South,Negotiation,12500.00,2026-04-21,2026-05-12
+OPP-10630,Northwind Traders,Priya Shah,Central,Closed Won,63300.00,2025-07-13,2025-10-29
+OPP-10631,Acme Corp,Priya Shah,West,Closed Won,4800.00,2025-09-13,2025-11-18
+OPP-10632,Blue Harbor Foods,Gary Novak,West,Closed Lost,28600.00,2025-08-13,2025-09-06
+OPP-10633,Acme Corp,Derek Lowe,West,Closed Lost,10300.00,2026-02-16,2026-04-27
+OPP-10634,Halvorsen Freight,Kevin Brandt,West,Closed Won,30500.00,2025-11-10,2026-01-29
+OPP-10635,Northwind Traders,Priya Shah,East,Proposal,54700.00,2026-03-27,2026-04-11
+OPP-10636,Summit Dental Group,Gary Novak,East,Negotiation,3400.00,2025-07-28,2025-10-05
+OPP-10637,Brightline Logistics,Gary Novak,Central,Closed Lost,27800.00,2026-01-01,2026-05-01
+OPP-10638,Blue Harbor Foods,Gary Novak,Central,Closed Won,25000.00,2026-01-11,2026-03-27
+OPP-10639,Halvorsen Freight,Kevin Brandt,East,Prospecting,45700.00,2025-10-10,2025-12-23
+OPP-10640,Blue Harbor Foods,Priya Shah,East,Negotiation,13700.00,2026-03-08,2026-05-07
+OPP-10641,Northwind Traders,Gary Novak,Central,Closed Lost,16100.00,2025-10-29,2026-01-11
+OPP-10642,Société Générale Services,Gary Novak,South,Closed Won,118100.00,2026-01-18,2026-04-22
+OPP-10643,Müller GmbH,Kevin Brandt,West,Closed Won,12400.00,2025-10-25,2025-12-27
+OPP-10644,Société Générale Services,Priya Shah,West,Closed Won,29100.00,2026-02-15,2026-05-05
+OPP-10645,Blue Harbor Foods,Kevin Brandt,West,Closed Won,33900.00,2025-09-09,2025-10-28
+OPP-10646,Brightline Logistics,Kevin Brandt,East,Qualification,35500.00,2025-09-19,2025-11-08
+OPP-10647,Globex,Megan Ortiz,South,Proposal,115200.00,2025-07-16,2025-10-31
+OPP-10648,Kestrel Analytics,Priya Shah,East,Qualification,31400.00,2025-11-18,2025-12-17
+OPP-10649,Müller GmbH,Priya Shah,East,Negotiation,33900.00,2025-10-27,2026-01-21
+OPP-10650,Pinecrest Health,Megan Ortiz,Central,Qualification,17000.00,2026-03-15,2026-07-11
+OPP-10651,Müller GmbH,Gary Novak,South,Closed Lost,14700.00,2025-09-22,2025-10-26
+OPP-10652,Müller GmbH,Gary Novak,West,Closed Lost,21600.00,2025-10-12,2026-01-26
+OPP-10653,Initech,Megan Ortiz,East,Closed Won,88600.00,2026-02-20,2026-04-02
+OPP-10654,Blue Harbor Foods,Kevin Brandt,East,Closed Won,15700.00,2026-01-18,2026-04-16
+OPP-10655,Café Olé Holdings,Kevin Brandt,South,Closed Lost,8900.00,2025-07-22,2025-09-01
+OPP-10656,Northwind Traders,Megan Ortiz,South,Closed Lost,34900.00,2025-07-26,2025-08-29
+OPP-10657,Northwind Traders,Kevin Brandt,East,Closed Won,54400.00,2025-09-24,2025-11-27
+OPP-10658,Blue Harbor Foods,Kevin Brandt,East,Qualification,58200.00,2026-02-17,2026-03-10
+OPP-10659,Initech,Megan Ortiz,Central,Closed Won,8600.00,2026-04-06,2026-05-03
+OPP-10660,Brightline Logistics,Derek Lowe,Central,Closed Won,29700.00,2025-10-12,2025-12-19
+OPP-10661,Halvorsen Freight,Derek Lowe,East,Closed Won,11300.00,2025-08-28,2025-12-06
+OPP-10662,Société Générale Services,Megan Ortiz,South,Prospecting,12200.00,2026-03-19,2026-06-15
+OPP-10663,Orion Fitness,Priya Shah,West,Closed Lost,10100.00,2025-09-15,2025-10-15
+OPP-10664,Summit Dental Group,Priya Shah,East,Closed Lost,21900.00,2026-02-14,2026-04-01
+OPP-10665,Redwood Supply Co,Megan Ortiz,West,Qualification,31300.00,2025-07-03,2025-09-28
+OPP-10666,Pinecrest Health,Kevin Brandt,East,Proposal,25600.00,2026-02-12,2026-03-04
+OPP-10667,Orion Fitness,Priya Shah,East,Qualification,9700.00,2026-04-12,2026-08-04
+OPP-10668,Acme Corp,Kevin Brandt,Central,Proposal,10300.00,2025-09-13,2026-01-10
+OPP-10669,Café Olé Holdings,Priya Shah,South,Closed Lost,18500.00,2026-04-20,2026-08-08
+OPP-10670,Globex,Megan Ortiz,East,Closed Lost,21200.00,2025-12-01,2026-01-21
+OPP-10671,Café Olé Holdings,Megan Ortiz,West,Closed Won,25600.00,2025-11-18,2026-01-09
+OPP-10672,Halvorsen Freight,Kevin Brandt,Central,Closed Won,38700.00,2026-03-28,2026-04-18
+OPP-10673,Globex,Priya Shah,South,Closed Won,30100.00,2026-04-21,2026-07-19
+OPP-10674,Müller GmbH,Derek Lowe,West,Prospecting,18900.00,2025-10-01,2025-12-28
+OPP-10675,Summit Dental Group,Priya Shah,East,Closed Won,29900.00,2026-04-13,2026-08-04
+OPP-10676,Northwind Traders,Kevin Brandt,Central,Closed Lost,11000.00,2025-08-04,2025-09-22
+OPP-10677,Pinecrest Health,Kevin Brandt,East,Closed Lost,58300.00,2026-01-19,2026-05-01
+OPP-10678,Acme Corp,Priya Shah,South,Qualification,15500.00,2026-02-28,2026-06-20
+OPP-10679,Kestrel Analytics,Megan Ortiz,East,Closed Lost,9200.00,2025-12-19,2026-02-26
+OPP-10680,Café Olé Holdings,Gary Novak,West,Closed Won,16200.00,2025-12-09,2026-02-28
+OPP-10681,Société Générale Services,Kevin Brandt,South,Qualification,4400.00,2026-03-31,2026-07-26
+OPP-10682,Initech,Gary Novak,South,Closed Lost,8900.00,2025-07-17,2025-08-30
+OPP-10683,Café Olé Holdings,Derek Lowe,West,Qualification,102700.00,2025-12-02,2026-01-08
+OPP-10684,Café Olé Holdings,Gary Novak,South,Closed Lost,11700.00,2025-08-17,2025-10-22
+OPP-10685,Orion Fitness,Kevin Brandt,Central,Closed Lost,28100.00,2026-03-05,2026-06-16
+OPP-10686,Initech,Kevin Brandt,East,Prospecting,24900.00,2025-07-19,2025-09-25
+OPP-10687,Brightline Logistics,Kevin Brandt,Central,Prospecting,52000.00,2026-02-25,2026-03-12
+OPP-10688,Müller GmbH,Priya Shah,Central,Proposal,14900.00,2025-10-16,2025-12-06
+OPP-10689,Société Générale Services,Priya Shah,Central,Qualification,76900.00,2025-08-30,2025-10-13
+OPP-10690,Café Olé Holdings,Derek Lowe,Central,Proposal,24500.00,2025-08-22,2025-09-27
+OPP-10691,Redwood Supply Co,Derek Lowe,South,Prospecting,9200.00,2025-12-07,2026-03-05
+OPP-10692,Initech,Priya Shah,South,Closed Won,6400.00,2025-08-14,2025-10-17
+OPP-10693,Redwood Supply Co,Megan Ortiz,West,Prospecting,73500.00,2026-03-31,2026-04-20
+OPP-10694,Northwind Traders,Megan Ortiz,South,Proposal,110400.00,2025-08-19,2025-10-26
+OPP-10695,Blue Harbor Foods,Derek Lowe,Central,Closed Won,7500.00,2026-01-17,2026-02-19
+OPP-10696,Halvorsen Freight,Priya Shah,Central,Closed Lost,25400.00,2025-12-27,2026-03-08
+OPP-10697,Orion Fitness,Gary Novak,Central,Closed Won,10500.00,2025-08-22,2025-10-22
+OPP-10698,Pinecrest Health,Megan Ortiz,West,Closed Won,199900.00,2026-02-22,2026-04-24
+OPP-10699,Globex,Priya Shah,South,Closed Lost,15300.00,2026-01-13,2026-01-31
+OPP-10700,Müller GmbH,Priya Shah,East,Closed Lost,104700.00,2026-04-05,2026-07-12
+OPP-10701,Pinecrest Health,Megan Ortiz,Central,Closed Won,35200.00,2025-08-28,2025-11-21
+OPP-10702,Pinecrest Health,Gary Novak,South,Proposal,26500.00,2026-01-24,2026-02-11
+OPP-10703,Société Générale Services,Kevin Brandt,East,Closed Lost,31400.00,2025-10-20,2026-02-11
+OPP-10704,Pinecrest Health,Kevin Brandt,South,Qualification,30300.00,2025-11-27,2026-01-25
+OPP-10705,Redwood Supply Co,Derek Lowe,South,Closed Won,28400.00,2026-04-18,2026-08-07
+OPP-10706,Orion Fitness,Priya Shah,Central,Prospecting,18000.00,2026-03-19,2026-05-19
+OPP-10707,Initech,Megan Ortiz,South,Closed Won,14500.00,2025-12-10,2026-03-21
+OPP-10708,Café Olé Holdings,Megan Ortiz,Central,Closed Lost,27900.00,2025-09-10,2025-10-14
+OPP-10709,Acme Corp,Priya Shah,South,Closed Won,28900.00,2025-08-06,2025-11-06
+OPP-10710,Orion Fitness,Megan Ortiz,South,Negotiation,8500.00,2026-02-03,2026-04-24
+OPP-10711,Orion Fitness,Priya Shah,Central,Negotiation,24000.00,2026-04-22,2026-07-04
+OPP-10712,Halvorsen Freight,Derek Lowe,East,Closed Won,39500.00,2025-07-20,2025-10-10
+OPP-10713,Café Olé Holdings,Gary Novak,East,Proposal,35100.00,2025-11-21,2026-01-29
+OPP-10714,Summit Dental Group,Kevin Brandt,Central,Closed Won,62500.00,2025-08-09,2025-11-14
+OPP-10715,Halvorsen Freight,Kevin Brandt,South,Closed Won,16100.00,2025-07-06,2025-09-14
+OPP-10716,Société Générale Services,Gary Novak,Central,Closed Lost,23900.00,2025-11-28,2026-01-14
+OPP-10717,Société Générale Services,Kevin Brandt,East,Closed Won,8500.00,2026-02-28,2026-05-23
+OPP-10718,Halvorsen Freight,Gary Novak,West,Closed Won,39500.00,2025-07-14,2025-08-29
+OPP-10719,Northwind Traders,Derek Lowe,Central,Prospecting,12500.00,2025-09-06,2025-12-03
+OPP-10720,Halvorsen Freight,Derek Lowe,West,Proposal,35200.00,2025-09-16,2025-12-19
+OPP-10721,Acme Corp,Derek Lowe,East,Closed Lost,41900.00,2026-03-28,2026-07-26
+OPP-10722,Initech,Megan Ortiz,West,Closed Won,30500.00,2026-03-11,2026-06-25
+OPP-10723,Orion Fitness,Derek Lowe,East,Closed Won,31200.00,2026-04-22,2026-08-03
+OPP-10724,Initech,Megan Ortiz,Central,Closed Won,8000.00,2025-09-24,2025-12-02
+OPP-10725,Northwind Traders,Priya Shah,South,Prospecting,55900.00,2026-01-16,2026-03-27
+OPP-10726,Summit Dental Group,Gary Novak,East,Closed Lost,8100.00,2025-12-09,2026-02-24
+OPP-10727,Northwind Traders,Derek Lowe,East,Proposal,26600.00,2025-11-17,2026-01-08
+OPP-10728,Summit Dental Group,Kevin Brandt,West,Closed Won,17600.00,2025-11-01,2026-02-12
+OPP-10729,Müller GmbH,Derek Lowe,Central,Qualification,38900.00,2026-02-14,2026-04-09
+OPP-10730,Orion Fitness,Kevin Brandt,West,Negotiation,54200.00,2025-08-31,2025-09-21
+OPP-10731,Blue Harbor Foods,Priya Shah,Central,Proposal,27100.00,2025-10-03,2025-10-27
+OPP-10732,Kestrel Analytics,Megan Ortiz,Central,Proposal,35100.00,2026-02-18,2026-04-04
+OPP-10733,Initech,Derek Lowe,East,Proposal,34800.00,2025-08-01,2025-09-28
+OPP-10734,Redwood Supply Co,Priya Shah,South,Qualification,21800.00,2025-08-05,2025-10-16
+OPP-10735,Pinecrest Health,Gary Novak,South,Closed Won,24700.00,2026-02-06,2026-03-15
+OPP-10736,Redwood Supply Co,Megan Ortiz,West,Closed Won,18900.00,2026-02-14,2026-02-26
+OPP-10737,Pinecrest Health,Gary Novak,South,Closed Won,14400.00,2025-12-16,2026-02-14
+OPP-10738,Müller GmbH,Gary Novak,South,Closed Lost,46000.00,2025-08-05,2025-10-23
+OPP-10739,Redwood Supply Co,Derek Lowe,Central,Closed Won,15900.00,2026-04-17,2026-07-04
+OPP-10740,Café Olé Holdings,Derek Lowe,East,Closed Lost,34200.00,2025-08-16,2025-10-11
+OPP-10741,Café Olé Holdings,Gary Novak,South,Closed Won,14800.00,2025-10-12,2025-11-13
+OPP-10742,Blue Harbor Foods,Derek Lowe,South,Prospecting,40200.00,2025-08-24,2025-11-22
+OPP-10743,Müller GmbH,Gary Novak,West,Closed Won,7000.00,2025-09-10,2025-09-24
+OPP-10744,Café Olé Holdings,Megan Ortiz,East,Prospecting,66700.00,2025-12-05,2026-02-16
+OPP-10745,Orion Fitness,Kevin Brandt,West,Closed Lost,15600.00,2026-02-20,2026-05-27
+OPP-10746,Summit Dental Group,Gary Novak,South,Closed Lost,26600.00,2025-09-11,2025-11-22
+OPP-10747,Société Générale Services,Gary Novak,Central,Closed Lost,6300.00,2025-09-05,2025-09-16
+OPP-10748,Orion Fitness,Gary Novak,East,Closed Won,34900.00,2025-08-02,2025-11-24
+OPP-10749,Globex,Megan Ortiz,Central,Qualification,35800.00,2025-10-12,2025-12-15
+OPP-10750,Kestrel Analytics,Priya Shah,East,Closed Won,17600.00,2025-12-12,2026-04-08
+OPP-10751,Initech,Priya Shah,Central,Closed Won,8200.00,2025-09-11,2025-12-26
+OPP-10752,Brightline Logistics,Kevin Brandt,South,Closed Lost,7100.00,2025-07-21,2025-08-17
+OPP-10753,Société Générale Services,Gary Novak,Central,Negotiation,111700.00,2025-07-04,2025-07-14
+OPP-10754,Société Générale Services,Derek Lowe,South,Negotiation,85000.00,2025-09-03,2025-10-09
+OPP-10755,Société Générale Services,Megan Ortiz,East,Closed Won,37100.00,2025-07-20,2025-10-14
+OPP-10756,Müller GmbH,Priya Shah,East,Closed Lost,22400.00,2025-07-03,2025-09-22
+OPP-10757,Acme Corp,Priya Shah,East,Closed Lost,21200.00,2025-10-15,2025-11-29
+OPP-10758,Summit Dental Group,Derek Lowe,Central,Qualification,10100.00,2025-07-23,2025-08-08
+OPP-10759,Brightline Logistics,Gary Novak,West,Qualification,6900.00,2026-02-18,2026-03-05
+OPP-10760,Blue Harbor Foods,Megan Ortiz,Central,Negotiation,15300.00,2025-08-06,2025-09-15
+OPP-10761,Müller GmbH,Megan Ortiz,West,Negotiation,11700.00,2025-10-25,2025-11-16
+OPP-10762,Redwood Supply Co,Megan Ortiz,West,Qualification,25800.00,2026-03-06,2026-03-22
+OPP-10763,Halvorsen Freight,Priya Shah,Central,Closed Lost,14600.00,2026-01-08,2026-02-04
+OPP-10764,Northwind Traders,Priya Shah,East,Closed Lost,20700.00,2026-04-18,2026-05-05
+OPP-10765,Redwood Supply Co,Derek Lowe,West,Closed Lost,33700.00,2025-12-23,2026-01-30
+OPP-10766,Café Olé Holdings,Priya Shah,East,Negotiation,26600.00,2025-09-26,2025-12-18
+OPP-10767,Halvorsen Freight,Megan Ortiz,Central,Prospecting,11200.00,2025-10-19,2026-01-12
+OPP-10768,Initech,Kevin Brandt,West,Closed Lost,25100.00,2025-11-04,2025-12-25
+OPP-10769,Initech,Gary Novak,East,Closed Lost,38800.00,2026-04-20,2026-04-30
+OPP-10770,Initech,Megan Ortiz,East,Closed Won,10900.00,2026-02-03,2026-04-21
+OPP-10771,Blue Harbor Foods,Megan Ortiz,West,Qualification,11000.00,2025-07-07,2025-10-13
+OPP-10772,Halvorsen Freight,Derek Lowe,West,Closed Won,7700.00,2025-08-16,2025-08-28
+OPP-10773,Initech,Priya Shah,Central,Closed Won,28200.00,2025-09-09,2025-12-18
+OPP-10774,Acme Corp,Derek Lowe,South,Closed Lost,40700.00,2025-12-18,2026-03-05
+OPP-10775,Müller GmbH,Gary Novak,Central,Closed Lost,143200.00,2026-04-21,2026-08-10
+OPP-10776,Globex,Megan Ortiz,East,Negotiation,9100.00,2025-08-26,2025-10-24
+OPP-10777,Blue Harbor Foods,Priya Shah,West,Closed Lost,15500.00,2025-08-04,2025-10-24
+OPP-10778,Kestrel Analytics,Kevin Brandt,West,Closed Lost,34900.00,2026-03-02,2026-06-14
+OPP-10779,Summit Dental Group,Megan Ortiz,Central,Prospecting,16700.00,2025-11-14,2026-01-27
+OPP-10780,Orion Fitness,Gary Novak,South,Closed Won,34800.00,2026-03-14,2026-05-30
+OPP-10781,Pinecrest Health,Derek Lowe,East,Qualification,18800.00,2025-11-27,2026-02-02
+OPP-10782,Société Générale Services,Derek Lowe,East,Closed Won,21300.00,2025-08-09,2025-09-01
+OPP-10783,Acme Corp,Derek Lowe,South,Closed Lost,23300.00,2026-03-24,2026-06-22
+OPP-10784,Halvorsen Freight,Gary Novak,Central,Qualification,50900.00,2025-12-25,2026-02-26
+OPP-10785,Pinecrest Health,Derek Lowe,Central,Closed Won,33700.00,2025-12-19,2026-02-19
+OPP-10786,Halvorsen Freight,Derek Lowe,West,Closed Lost,7300.00,2026-04-07,2026-06-12
+OPP-10787,Globex,Derek Lowe,East,Qualification,26100.00,2025-10-25,2026-01-04
+OPP-10788,Société Générale Services,Priya Shah,West,Qualification,25900.00,2026-04-01,2026-05-17
+OPP-10789,Müller GmbH,Kevin Brandt,East,Closed Won,1800.00,2026-01-06,2026-02-08
+OPP-10790,Brightline Logistics,Gary Novak,South,Closed Lost,76400.00,2026-03-31,2026-05-18
+OPP-10791,Summit Dental Group,Derek Lowe,South,Closed Lost,82900.00,2026-03-17,2026-05-08
+OPP-10792,Blue Harbor Foods,Gary Novak,South,Closed Lost,8400.00,2026-02-12,2026-04-06
+OPP-10793,Initech,Kevin Brandt,West,Closed Won,33100.00,2025-12-05,2025-12-18
+OPP-10794,Redwood Supply Co,Derek Lowe,West,Prospecting,23900.00,2025-10-22,2026-02-09
+OPP-10795,Initech,Priya Shah,South,Proposal,204700.00,2025-08-14,2025-10-28
+OPP-10796,Société Générale Services,Megan Ortiz,Central,Negotiation,9000.00,2026-01-01,2026-03-02
+OPP-10797,Orion Fitness,Kevin Brandt,East,Qualification,18400.00,2025-12-05,2026-02-10
+OPP-10798,Blue Harbor Foods,Megan Ortiz,South,Qualification,24700.00,2025-09-22,2026-01-13
+OPP-10799,Halvorsen Freight,Kevin Brandt,Central,Prospecting,9500.00,2025-10-15,2025-12-02
+OPP-10800,Société Générale Services,Kevin Brandt,South,Closed Won,31400.00,2025-11-17,2026-01-19
+OPP-10801,Initech,Derek Lowe,South,Prospecting,12900.00,2025-10-04,2026-01-28
+OPP-10802,Acme Corp,Gary Novak,West,Proposal,20000.00,2026-02-23,2026-04-02
+OPP-10803,Société Générale Services,Megan Ortiz,West,Prospecting,41200.00,2025-11-25,2026-01-27
+OPP-10804,Blue Harbor Foods,Derek Lowe,South,Closed Won,72300.00,2025-08-04,2025-10-29
+OPP-10805,Orion Fitness,Gary Novak,Central,Closed Won,39500.00,2026-03-01,2026-06-07
+OPP-10806,Acme Corp,Priya Shah,Central,Closed Won,31600.00,2025-09-22,2025-12-15
+OPP-10807,Globex,Megan Ortiz,Central,Prospecting,11000.00,2025-07-28,2025-09-10
+OPP-10808,Müller GmbH,Priya Shah,East,Closed Won,12200.00,2025-08-09,2025-10-23
+OPP-10809,Orion Fitness,Derek Lowe,Central,Closed Won,28300.00,2025-12-09,2026-04-03
+OPP-10810,Orion Fitness,Priya Shah,East,Qualification,6700.00,2026-04-23,2026-06-17
+OPP-10811,Redwood Supply Co,Priya Shah,East,Qualification,22600.00,2026-01-27,2026-03-21
+OPP-10812,Blue Harbor Foods,Kevin Brandt,East,Negotiation,12200.00,2026-04-13,2026-07-10
+OPP-10813,Halvorsen Freight,Kevin Brandt,Central,Qualification,8800.00,2025-09-10,2026-01-02
+OPP-10814,Société Générale Services,Priya Shah,West,Proposal,15000.00,2025-08-30,2025-10-07
+OPP-10815,Acme Corp,Megan Ortiz,South,Prospecting,22400.00,2025-08-27,2025-09-15
+OPP-10816,Acme Corp,Gary Novak,Central,Closed Won,89700.00,2025-08-30,2025-10-11
+OPP-10817,Redwood Supply Co,Priya Shah,West,Closed Won,33200.00,2025-10-14,2026-01-07
+OPP-10818,Globex,Priya Shah,West,Closed Won,43100.00,2026-04-23,2026-06-16
+OPP-10819,Société Générale Services,Kevin Brandt,East,Closed Lost,11900.00,2025-10-07,2025-11-22
+OPP-10820,Blue Harbor Foods,Megan Ortiz,Central,Closed Won,6900.00,2026-03-16,2026-07-12
+OPP-10821,Orion Fitness,Derek Lowe,South,Closed Won,22700.00,2025-08-24,2025-09-26
+OPP-10822,Halvorsen Freight,Gary Novak,West,Closed Won,17400.00,2025-12-08,2026-01-02
+OPP-10823,Globex,Megan Ortiz,East,Negotiation,18100.00,2025-07-21,2025-08-10
+OPP-10824,Café Olé Holdings,Megan Ortiz,Central,Closed Lost,12000.00,2026-02-13,2026-03-23
+OPP-10825,Globex,Priya Shah,East,Closed Lost,21800.00,2026-03-01,2026-06-05
+OPP-10826,Summit Dental Group,Gary Novak,East,Qualification,16500.00,2026-02-10,2026-04-27
+OPP-10827,Redwood Supply Co,Priya Shah,East,Negotiation,14000.00,2025-08-22,2025-12-04
+OPP-10828,Müller GmbH,Megan Ortiz,South,Proposal,40700.00,2026-01-23,2026-02-17
+OPP-10829,Kestrel Analytics,Megan Ortiz,Central,Closed Won,27100.00,2025-11-17,2026-03-03
+OPP-10830,Northwind Traders,Priya Shah,South,Qualification,12100.00,2026-03-06,2026-05-20
+OPP-10831,Brightline Logistics,Gary Novak,East,Closed Won,26500.00,2025-09-07,2025-09-20
+OPP-10832,Pinecrest Health,Gary Novak,East,Closed Won,23100.00,2025-12-03,2026-03-02
+OPP-10833,Northwind Traders,Megan Ortiz,South,Closed Won,28800.00,2026-02-24,2026-03-31
+OPP-10834,Acme Corp,Gary Novak,South,Closed Lost,9600.00,2026-04-03,2026-06-21
+OPP-10835,Halvorsen Freight,Gary Novak,East,Qualification,52500.00,2026-01-09,2026-03-16
+OPP-10836,Initech,Priya Shah,Central,Closed Won,21700.00,2025-09-23,2025-12-04
+OPP-10837,Café Olé Holdings,Kevin Brandt,South,Closed Won,52200.00,2026-03-09,2026-06-11
+OPP-10838,Halvorsen Freight,Kevin Brandt,South,Closed Won,17600.00,2026-01-17,2026-03-01
+OPP-10839,Orion Fitness,Derek Lowe,Central,Closed Lost,33800.00,2025-07-24,2025-08-19
+OPP-10840,Brightline Logistics,Megan Ortiz,Central,Closed Lost,19700.00,2025-12-22,2026-02-18
+OPP-10841,Müller GmbH,Derek Lowe,East,Closed Lost,10400.00,2025-11-03,2025-12-14
+OPP-10842,Acme Corp,Kevin Brandt,Central,Prospecting,30600.00,2025-12-20,2026-01-20
+OPP-10843,Northwind Traders,Gary Novak,South,Closed Won,56200.00,2026-03-21,2026-05-23
+OPP-10844,Pinecrest Health,Gary Novak,South,Qualification,30200.00,2026-01-16,2026-03-08
+OPP-10845,Kestrel Analytics,Derek Lowe,West,Closed Won,16500.00,2026-03-15,2026-07-06
+OPP-10846,Orion Fitness,Gary Novak,West,Proposal,18900.00,2026-03-12,2026-06-11
+OPP-10847,Orion Fitness,Kevin Brandt,East,Closed Won,11800.00,2025-08-17,2025-11-26
+OPP-10848,Initech,Priya Shah,Central,Closed Lost,28600.00,2026-03-29,2026-06-07
+OPP-10849,Summit Dental Group,Kevin Brandt,Central,Qualification,16100.00,2025-12-01,2026-02-04
+OPP-10850,Kestrel Analytics,Kevin Brandt,West,Closed Lost,30300.00,2026-02-18,2026-05-24
+OPP-10851,Halvorsen Freight,Priya Shah,South,Proposal,52400.00,2025-10-04,2025-12-26
+OPP-10852,Blue Harbor Foods,Gary Novak,West,Negotiation,13400.00,2026-02-08,2026-05-01
+OPP-10853,Initech,Megan Ortiz,Central,Closed Lost,84900.00,2025-12-01,2026-03-29
+OPP-10854,Orion Fitness,Derek Lowe,West,Proposal,27000.00,2026-01-28,2026-03-13
+OPP-10855,Müller GmbH,Gary Novak,West,Closed Lost,14200.00,2025-08-28,2025-09-26
+OPP-10856,Summit Dental Group,Gary Novak,West,Qualification,12200.00,2026-02-09,2026-04-14
+OPP-10857,Café Olé Holdings,Priya Shah,East,Closed Lost,21600.00,2025-11-20,2026-02-22
+OPP-10858,Pinecrest Health,Derek Lowe,East,Closed Lost,18500.00,2025-08-12,2025-10-01
+OPP-10859,Orion Fitness,Priya Shah,West,Qualification,25700.00,2025-08-16,2025-10-15
+OPP-10860,Halvorsen Freight,Gary Novak,West,Closed Won,35500.00,2026-03-26,2026-05-07
+OPP-10861,Initech,Priya Shah,South,Qualification,12100.00,2026-04-26,2026-08-08
+OPP-10862,Initech,Derek Lowe,East,Closed Won,15000.00,2025-11-18,2026-01-23
+OPP-10863,Redwood Supply Co,Priya Shah,Central,Closed Won,17500.00,2025-11-04,2025-12-19
+OPP-10864,Blue Harbor Foods,Gary Novak,West,Proposal,15000.00,2025-07-18,2025-11-12
+OPP-10865,Summit Dental Group,Gary Novak,West,Closed Lost,5000.00,2026-01-02,2026-04-25
+OPP-10866,Northwind Traders,Gary Novak,West,Proposal,36800.00,2026-01-18,2026-03-01
+OPP-10867,Globex,Megan Ortiz,East,Proposal,21200.00,2026-02-10,2026-05-11
+OPP-10868,Initech,Gary Novak,West,Closed Won,22300.00,2025-12-18,2026-03-29
+OPP-10869,Globex,Megan Ortiz,East,Closed Lost,27100.00,2026-04-07,2026-07-20
+OPP-10870,Summit Dental Group,Priya Shah,East,Negotiation,27600.00,2026-02-13,2026-06-04
+OPP-10871,Société Générale Services,Priya Shah,West,Closed Lost,64600.00,2025-08-12,2025-09-05
+OPP-10872,Halvorsen Freight,Priya Shah,Central,Qualification,26000.00,2025-12-11,2026-02-16
+OPP-10873,Brightline Logistics,Megan Ortiz,Central,Qualification,39900.00,2025-11-22,2025-12-27
+OPP-10874,Summit Dental Group,Kevin Brandt,West,Closed Lost,29500.00,2025-07-12,2025-10-01
+OPP-10875,Initech,Kevin Brandt,Central,Qualification,23900.00,2026-01-22,2026-04-21
+OPP-10876,Kestrel Analytics,Megan Ortiz,South,Qualification,30200.00,2026-03-27,2026-05-31
+OPP-10877,Blue Harbor Foods,Megan Ortiz,South,Qualification,64200.00,2025-11-14,2025-12-30
+OPP-10878,Summit Dental Group,Priya Shah,South,Qualification,20400.00,2025-11-22,2026-03-05
+OPP-10879,Summit Dental Group,Megan Ortiz,East,Prospecting,11500.00,2026-04-25,2026-07-31
+OPP-10880,Müller GmbH,Megan Ortiz,South,Closed Lost,15900.00,2026-01-20,2026-04-27
+OPP-10881,Globex,Priya Shah,South,Closed Lost,10100.00,2025-07-31,2025-08-16
+OPP-10882,Summit Dental Group,Derek Lowe,West,Closed Lost,26100.00,2025-12-02,2026-01-31
+OPP-10883,Café Olé Holdings,Megan Ortiz,Central,Closed Lost,11500.00,2025-11-11,2025-12-12
+OPP-10884,Société Générale Services,Derek Lowe,East,Proposal,69400.00,2026-03-29,2026-06-02
+OPP-10885,Globex,Megan Ortiz,Central,Closed Lost,4200.00,2025-11-21,2026-03-06
+OPP-10886,Globex,Megan Ortiz,West,Proposal,56200.00,2025-11-13,2026-01-28
+OPP-10887,Société Générale Services,Gary Novak,West,Qualification,21100.00,2025-07-28,2025-08-31
+OPP-10888,Brightline Logistics,Megan Ortiz,East,Closed Won,20800.00,2026-02-25,2026-05-01
+OPP-10889,Globex,Gary Novak,West,Closed Lost,13900.00,2025-09-14,2025-10-09
+OPP-10890,Northwind Traders,Kevin Brandt,West,Closed Won,72800.00,2026-03-18,2026-07-11
+OPP-10891,Initech,Gary Novak,West,Closed Lost,145200.00,2026-04-19,2026-05-22
+OPP-10892,Summit Dental Group,Gary Novak,South,Negotiation,17700.00,2025-07-14,2025-08-29
+OPP-10893,Blue Harbor Foods,Megan Ortiz,South,Closed Won,9800.00,2026-02-21,2026-06-17
+OPP-10894,Summit Dental Group,Kevin Brandt,South,Proposal,62700.00,2025-12-16,2025-12-31
+OPP-10895,Müller GmbH,Gary Novak,Central,Proposal,53000.00,2026-04-18,2026-05-14
+OPP-10896,Société Générale Services,Priya Shah,South,Prospecting,36500.00,2026-01-21,2026-03-04
+OPP-10897,Summit Dental Group,Priya Shah,East,Proposal,86600.00,2026-01-23,2026-03-10
+OPP-10898,Pinecrest Health,Priya Shah,Central,Closed Won,49900.00,2025-12-06,2026-03-13
+OPP-10899,Redwood Supply Co,Megan Ortiz,South,Proposal,25100.00,2026-03-08,2026-05-14
+OPP-10900,Globex,Kevin Brandt,West,Closed Won,20100.00,2026-02-02,2026-05-26
+OPP-10901,Summit Dental Group,Priya Shah,West,Closed Lost,24200.00,2025-12-22,2026-03-01
+OPP-10902,Halvorsen Freight,Megan Ortiz,East,Closed Lost,21300.00,2025-08-12,2025-09-28
+OPP-10903,Redwood Supply Co,Derek Lowe,West,Closed Won,17000.00,2025-09-04,2025-12-10
+OPP-10904,Café Olé Holdings,Gary Novak,South,Negotiation,18900.00,2025-08-09,2025-08-24
+OPP-10905,Northwind Traders,Kevin Brandt,East,Closed Lost,17900.00,2025-11-07,2026-01-01
+OPP-10906,Brightline Logistics,Megan Ortiz,Central,Proposal,66800.00,2026-01-18,2026-02-02
+OPP-10907,Kestrel Analytics,Derek Lowe,Central,Closed Lost,38100.00,2026-02-16,2026-05-16
+OPP-10908,Blue Harbor Foods,Kevin Brandt,Central,Closed Lost,8000.00,2025-10-03,2025-10-23
+OPP-10909,Brightline Logistics,Gary Novak,West,Closed Won,20300.00,2025-07-03,2025-09-01
+OPP-10910,Pinecrest Health,Kevin Brandt,Central,Closed Won,32900.00,2026-03-07,2026-04-24
+OPP-10911,Müller GmbH,Gary Novak,East,Closed Won,21400.00,2025-09-08,2025-09-19
+OPP-10912,Orion Fitness,Kevin Brandt,West,Prospecting,32200.00,2025-11-01,2026-01-05
+OPP-10913,Brightline Logistics,Priya Shah,West,Closed Lost,19400.00,2026-02-02,2026-02-14
+OPP-10914,Halvorsen Freight,Kevin Brandt,West,Qualification,36400.00,2025-07-11,2025-11-08
+OPP-10915,Acme Corp,Gary Novak,South,Closed Lost,108300.00,2025-07-27,2025-09-17
+OPP-10916,Acme Corp,Megan Ortiz,South,Closed Won,29200.00,2026-04-10,2026-05-27
+OPP-10917,Blue Harbor Foods,Gary Novak,East,Closed Won,17400.00,2026-03-07,2026-04-15
+OPP-10918,Brightline Logistics,Megan Ortiz,Central,Closed Won,20100.00,2026-01-30,2026-04-10
+OPP-10919,Globex,Megan Ortiz,West,Closed Won,30800.00,2025-10-07,2025-12-16
+OPP-10920,Redwood Supply Co,Derek Lowe,South,Closed Lost,74900.00,2026-02-25,2026-03-23
+OPP-10921,Halvorsen Freight,Priya Shah,West,Proposal,54100.00,2026-01-01,2026-04-22
+OPP-10922,Müller GmbH,Priya Shah,South,Qualification,16300.00,2025-09-05,2025-10-07
+OPP-10923,Globex,Derek Lowe,Central,Closed Won,22500.00,2025-07-25,2025-08-06
+OPP-10924,Brightline Logistics,Kevin Brandt,West,Qualification,14100.00,2025-12-20,2026-02-23
+OPP-10925,Globex,Gary Novak,Central,Closed Lost,25300.00,2025-12-22,2026-04-11
+OPP-10926,Kestrel Analytics,Megan Ortiz,East,Closed Lost,52400.00,2025-07-26,2025-09-30
+OPP-10927,Café Olé Holdings,Gary Novak,East,Qualification,12400.00,2025-08-22,2025-12-15
+OPP-10928,Blue Harbor Foods,Derek Lowe,South,Closed Lost,21700.00,2026-01-02,2026-02-01
+OPP-10929,Globex,Derek Lowe,West,Qualification,47300.00,2025-09-17,2025-12-18
+OPP-10930,Société Générale Services,Gary Novak,Central,Negotiation,35500.00,2025-11-24,2026-02-06
+OPP-10931,Kestrel Analytics,Kevin Brandt,South,Closed Lost,10300.00,2025-11-03,2025-12-02
+OPP-10932,Orion Fitness,Kevin Brandt,Central,Closed Lost,16300.00,2026-01-26,2026-04-04
+OPP-10933,Brightline Logistics,Derek Lowe,Central,Negotiation,39300.00,2026-03-22,2026-04-09
+OPP-10934,Acme Corp,Priya Shah,East,Closed Lost,9400.00,2026-01-18,2026-05-05
+OPP-10935,Blue Harbor Foods,Derek Lowe,Central,Prospecting,12600.00,2026-04-10,2026-05-28
+OPP-10936,Initech,Megan Ortiz,West,Closed Lost,32600.00,2025-09-14,2025-12-22
+OPP-10937,Globex,Megan Ortiz,West,Closed Lost,7500.00,2026-02-12,2026-05-22
+OPP-10938,Blue Harbor Foods,Priya Shah,Central,Qualification,22500.00,2026-01-16,2026-04-28
+OPP-10939,Summit Dental Group,Priya Shah,East,Prospecting,52800.00,2025-12-22,2026-04-07
+OPP-10940,Kestrel Analytics,Derek Lowe,South,Closed Lost,14600.00,2025-11-01,2026-02-25
+OPP-10941,Acme Corp,Gary Novak,South,Proposal,37100.00,2025-12-29,2026-01-23
+OPP-10942,Blue Harbor Foods,Kevin Brandt,West,Negotiation,6600.00,2025-10-29,2026-02-19
+OPP-10943,Société Générale Services,Megan Ortiz,West,Qualification,22600.00,2026-04-20,2026-07-25
+OPP-10944,Brightline Logistics,Priya Shah,South,Closed Lost,53700.00,2026-01-01,2026-03-10
+OPP-10945,Globex,Kevin Brandt,South,Closed Won,22900.00,2026-02-14,2026-03-05
+OPP-10946,Halvorsen Freight,Megan Ortiz,South,Closed Won,19600.00,2025-11-13,2026-02-05
+OPP-10947,Halvorsen Freight,Megan Ortiz,West,Closed Lost,22800.00,2026-03-16,2026-04-11
+OPP-10948,Halvorsen Freight,Gary Novak,West,Closed Lost,27100.00,2025-10-17,2025-12-24
+OPP-10949,Pinecrest Health,Derek Lowe,East,Closed Won,11400.00,2025-08-31,2025-10-27
+OPP-10950,Northwind Traders,Megan Ortiz,East,Closed Lost,7700.00,2026-01-08,2026-02-25
+OPP-10951,Redwood Supply Co,Derek Lowe,West,Qualification,23400.00,2025-07-25,2025-09-12
+OPP-10952,Halvorsen Freight,Kevin Brandt,Central,Closed Won,19800.00,2025-07-23,2025-09-24
+OPP-10953,Société Générale Services,Kevin Brandt,South,Closed Lost,27900.00,2025-09-06,2025-12-22
+OPP-10954,Kestrel Analytics,Kevin Brandt,South,Negotiation,45600.00,2025-12-14,2026-01-04
+OPP-10955,Redwood Supply Co,Megan Ortiz,Central,Closed Won,98800.00,2025-07-24,2025-10-27
+OPP-10956,Kestrel Analytics,Derek Lowe,East,Closed Won,27100.00,2026-04-19,2026-07-18
+OPP-10957,Müller GmbH,Megan Ortiz,East,Qualification,7800.00,2026-04-18,2026-07-03
+OPP-10958,Brightline Logistics,Kevin Brandt,Central,Negotiation,8000.00,2026-04-23,2026-06-28
+OPP-10959,Orion Fitness,Kevin Brandt,Central,Negotiation,23600.00,2026-01-29,2026-02-11
+OPP-10960,Kestrel Analytics,Gary Novak,West,Proposal,19300.00,2025-10-02,2025-11-13
+OPP-10961,Acme Corp,Gary Novak,Central,Negotiation,15200.00,2025-12-14,2026-01-16
+OPP-10962,Initech,Gary Novak,East,Qualification,45800.00,2025-12-13,2026-01-25
+OPP-10963,Kestrel Analytics,Kevin Brandt,South,Closed Lost,14700.00,2026-03-10,2026-05-24
+OPP-10964,Brightline Logistics,Megan Ortiz,East,Negotiation,29100.00,2026-04-10,2026-06-11
+OPP-10965,Kestrel Analytics,Priya Shah,Central,Closed Won,14400.00,2026-04-11,2026-07-13
+OPP-10966,Kestrel Analytics,Priya Shah,Central,Closed Won,13000.00,2026-03-14,2026-04-19
+OPP-10967,Halvorsen Freight,Gary Novak,East,Closed Lost,27500.00,2026-02-02,2026-04-24
+OPP-10968,Northwind Traders,Kevin Brandt,Central,Closed Lost,17600.00,2025-07-31,2025-10-10
+OPP-10969,Orion Fitness,Kevin Brandt,Central,Prospecting,42500.00,2025-10-17,2026-01-09
+OPP-10970,Initech,Gary Novak,West,Closed Lost,10900.00,2025-12-01,2025-12-22
+OPP-10971,Globex,Derek Lowe,South,Proposal,29400.00,2025-12-10,2026-03-17
+OPP-10972,Pinecrest Health,Derek Lowe,East,Closed Lost,27500.00,2025-10-16,2025-12-23
+OPP-10973,Initech,Kevin Brandt,East,Closed Lost,26700.00,2026-03-08,2026-06-23
+OPP-10974,Orion Fitness,Megan Ortiz,East,Negotiation,17900.00,2025-07-16,2025-11-09
+OPP-10975,Halvorsen Freight,Derek Lowe,West,Closed Won,18300.00,2025-07-05,2025-07-30
+OPP-10976,Blue Harbor Foods,Priya Shah,West,Closed Lost,21400.00,2025-12-03,2026-03-26
+OPP-10977,Müller GmbH,Megan Ortiz,East,Closed Lost,26000.00,2025-10-16,2025-10-26
+OPP-10978,Summit Dental Group,Kevin Brandt,West,Prospecting,11300.00,2026-04-09,2026-05-13
+OPP-10979,Blue Harbor Foods,Derek Lowe,West,Closed Lost,38300.00,2025-10-25,2026-01-09
+OPP-10980,Acme Corp,Megan Ortiz,East,Closed Lost,5600.00,2026-04-13,2026-06-20
+OPP-10981,Brightline Logistics,Kevin Brandt,South,Closed Won,22500.00,2026-01-25,2026-03-11
+OPP-10982,Northwind Traders,Megan Ortiz,South,Proposal,18100.00,2025-10-23,2025-11-08
+OPP-10983,Acme Corp,Priya Shah,South,Closed Lost,41100.00,2026-04-19,2026-08-10
+OPP-10984,Brightline Logistics,Gary Novak,East,Closed Won,54600.00,2025-12-16,2026-02-03
+OPP-10985,Northwind Traders,Priya Shah,East,Closed Won,49200.00,2025-12-19,2026-04-15
+OPP-10986,Kestrel Analytics,Kevin Brandt,South,Closed Lost,31500.00,2025-10-30,2025-11-18
+OPP-10987,Redwood Supply Co,Gary Novak,South,Proposal,19900.00,2025-08-13,2025-08-30
+OPP-10988,Brightline Logistics,Gary Novak,East,Proposal,18800.00,2026-02-07,2026-02-25
+OPP-10989,Orion Fitness,Kevin Brandt,East,Closed Won,20400.00,2026-01-27,2026-03-07
+OPP-10990,Summit Dental Group,Gary Novak,South,Closed Won,24800.00,2025-08-21,2025-10-13
+OPP-10991,Blue Harbor Foods,Gary Novak,West,Closed Lost,8800.00,2025-07-07,2025-10-01
+OPP-10992,Halvorsen Freight,Kevin Brandt,South,Qualification,7500.00,2025-12-29,2026-03-02
+OPP-10993,Kestrel Analytics,Derek Lowe,Central,Closed Won,23300.00,2026-03-20,2026-06-21
+OPP-10994,Pinecrest Health,Derek Lowe,Central,Negotiation,27600.00,2026-02-26,2026-04-16
+OPP-10995,Orion Fitness,Kevin Brandt,East,Closed Won,13900.00,2026-03-17,2026-07-09
+OPP-10996,Brightline Logistics,Derek Lowe,West,Closed Won,26300.00,2025-10-12,2026-01-30
+OPP-10997,Globex,Kevin Brandt,Central,Negotiation,10500.00,2026-04-23,2026-07-14
+OPP-10998,Müller GmbH,Gary Novak,West,Closed Won,20900.00,2025-07-22,2025-10-03
+OPP-10999,Kestrel Analytics,Derek Lowe,South,Qualification,18400.00,2026-03-04,2026-06-16
+OPP-11000,Brightline Logistics,Priya Shah,Central,Closed Won,134200.00,2025-07-16,2025-10-05
+OPP-11001,Acme Corp,Priya Shah,West,Proposal,13900.00,2026-01-01,2026-01-16
+OPP-11002,Orion Fitness,Kevin Brandt,West,Qualification,31000.00,2025-09-28,2025-11-20
+OPP-11003,Redwood Supply Co,Priya Shah,Central,Closed Won,17200.00,2025-08-26,2025-10-18
+OPP-11004,Kestrel Analytics,Kevin Brandt,South,Closed Lost,12100.00,2025-09-26,2025-12-12
+OPP-11005,Pinecrest Health,Megan Ortiz,West,Closed Lost,47400.00,2026-01-08,2026-02-27
+OPP-11006,Kestrel Analytics,Priya Shah,Central,Proposal,27300.00,2026-04-01,2026-05-18
+OPP-11007,Café Olé Holdings,Kevin Brandt,South,Qualification,8500.00,2025-09-03,2025-12-30
+OPP-11008,Café Olé Holdings,Megan Ortiz,Central,Closed Won,20700.00,2025-08-03,2025-09-03
+OPP-11009,Blue Harbor Foods,Megan Ortiz,South,Closed Won,28800.00,2026-01-08,2026-03-26
+OPP-11010,Acme Corp,Priya Shah,West,Closed Lost,20400.00,2026-04-25,2026-07-27
+OPP-11011,Initech,Megan Ortiz,West,Closed Lost,15700.00,2025-10-20,2025-12-08
+OPP-11012,Brightline Logistics,Derek Lowe,South,Closed Won,22500.00,2025-09-07,2025-12-22
+OPP-11013,Initech,Megan Ortiz,Central,Closed Lost,15400.00,2026-02-16,2026-04-26
+OPP-11014,Müller GmbH,Derek Lowe,East,Negotiation,23000.00,2025-09-30,2025-12-05
+OPP-11015,Brightline Logistics,Gary Novak,East,Negotiation,23900.00,2025-11-19,2025-12-28
+OPP-11016,Northwind Traders,Derek Lowe,West,Closed Won,70600.00,2025-12-16,2026-01-27
+OPP-11017,Kestrel Analytics,Derek Lowe,Central,Closed Lost,39000.00,2025-11-11,2025-11-22
+OPP-11018,Pinecrest Health,Gary Novak,South,Closed Won,38900.00,2026-01-24,2026-05-19
+OPP-11019,Müller GmbH,Kevin Brandt,South,Closed Lost,17600.00,2025-10-16,2025-12-25
+OPP-11020,Müller GmbH,Megan Ortiz,South,Qualification,19200.00,2025-12-08,2026-04-05
+OPP-11021,Pinecrest Health,Priya Shah,Central,Closed Lost,40500.00,2026-01-08,2026-02-04
+OPP-11022,Summit Dental Group,Megan Ortiz,Central,Proposal,49600.00,2026-01-31,2026-04-05
+OPP-11023,Initech,Megan Ortiz,West,Closed Lost,9400.00,2026-04-20,2026-08-18
+OPP-11024,Globex,Kevin Brandt,South,Closed Won,16600.00,2026-03-01,2026-03-24
+OPP-11025,Acme Corp,Kevin Brandt,South,Prospecting,18500.00,2026-04-10,2026-05-12
+OPP-11026,Café Olé Holdings,Gary Novak,South,Prospecting,22600.00,2025-11-27,2026-03-01
+OPP-11027,Société Générale Services,Gary Novak,West,Closed Won,21400.00,2026-01-27,2026-03-28
+OPP-11028,Orion Fitness,Priya Shah,Central,Closed Won,35600.00,2025-10-14,2025-11-09
+OPP-11029,Pinecrest Health,Priya Shah,South,Proposal,9200.00,2026-04-21,2026-06-09
+OPP-11030,Globex,Kevin Brandt,South,Closed Won,31200.00,2025-11-04,2026-01-20
+OPP-11031,Redwood Supply Co,Megan Ortiz,Central,Closed Won,31600.00,2025-11-25,2026-02-25
+OPP-11032,Müller GmbH,Priya Shah,South,Closed Won,40300.00,2025-09-28,2025-11-30
+OPP-11033,Initech,Gary Novak,West,Closed Lost,25200.00,2026-04-18,2026-05-10
+OPP-11034,Blue Harbor Foods,Priya Shah,South,Negotiation,31500.00,2025-08-04,2025-11-11
+OPP-11035,Kestrel Analytics,Gary Novak,Central,Negotiation,13300.00,2026-01-05,2026-01-24
+OPP-11036,Acme Corp,Gary Novak,South,Negotiation,19400.00,2025-07-23,2025-09-30
+OPP-11037,Redwood Supply Co,Priya Shah,Central,Closed Won,20300.00,2025-08-28,2025-12-06
+OPP-11038,Summit Dental Group,Priya Shah,South,Qualification,11200.00,2025-08-12,2025-10-31
+OPP-11039,Initech,Priya Shah,East,Closed Won,20200.00,2026-03-31,2026-07-13
+OPP-11040,Café Olé Holdings,Priya Shah,South,Closed Won,40000.00,2025-07-18,2025-10-22
+OPP-11041,Blue Harbor Foods,Derek Lowe,South,Prospecting,18100.00,2025-08-22,2025-10-20
+OPP-11042,Initech,Gary Novak,East,Proposal,7200.00,2025-08-16,2025-08-28
+OPP-11043,Kestrel Analytics,Priya Shah,West,Prospecting,23900.00,2025-10-21,2025-11-12
+OPP-11044,Summit Dental Group,Priya Shah,West,Closed Lost,17700.00,2025-12-13,2026-03-04
+OPP-11045,Brightline Logistics,Derek Lowe,Central,Qualification,18500.00,2025-10-27,2025-12-03
+OPP-11046,Halvorsen Freight,Priya Shah,East,Closed Won,10900.00,2026-01-16,2026-02-22
+OPP-11047,Redwood Supply Co,Priya Shah,South,Proposal,7900.00,2025-07-23,2025-08-10
+OPP-11048,Northwind Traders,Gary Novak,Central,Closed Lost,45800.00,2026-04-18,2026-05-19
+OPP-11049,Société Générale Services,Derek Lowe,South,Prospecting,19400.00,2025-09-07,2025-10-29
+OPP-11050,Pinecrest Health,Gary Novak,West,Prospecting,31400.00,2025-10-28,2026-01-10
+OPP-11051,Initech,Priya Shah,East,Prospecting,17800.00,2025-10-30,2026-02-11
+OPP-11052,Müller GmbH,Gary Novak,West,Closed Lost,194100.00,2025-09-16,2025-11-13
+OPP-11053,Northwind Traders,Derek Lowe,East,Closed Won,41100.00,2025-12-16,2026-01-12
+OPP-11054,Café Olé Holdings,Gary Novak,West,Closed Lost,29800.00,2025-11-02,2025-12-08
+OPP-11055,Globex,Priya Shah,South,Closed Won,7900.00,2026-01-12,2026-03-29
+OPP-11056,Summit Dental Group,Priya Shah,West,Qualification,9200.00,2025-10-07,2025-10-23
+OPP-11057,Café Olé Holdings,Gary Novak,South,Closed Lost,9800.00,2025-10-13,2025-11-22
+OPP-11058,Société Générale Services,Kevin Brandt,West,Proposal,13900.00,2025-11-03,2026-01-06
+OPP-11059,Initech,Priya Shah,South,Closed Won,22600.00,2026-01-01,2026-03-02
+OPP-11060,Kestrel Analytics,Megan Ortiz,East,Closed Lost,20000.00,2025-09-18,2026-01-10
+OPP-11061,Café Olé Holdings,Priya Shah,West,Proposal,20300.00,2025-12-01,2026-02-25
+OPP-11062,Pinecrest Health,Megan Ortiz,East,Proposal,30400.00,2026-01-09,2026-03-31
+OPP-11063,Acme Corp,Kevin Brandt,Central,Closed Won,54200.00,2025-10-06,2025-10-16
+OPP-11064,Summit Dental Group,Kevin Brandt,East,Negotiation,16000.00,2026-03-08,2026-04-26
+OPP-11065,Initech,Derek Lowe,Central,Closed Won,21100.00,2025-10-08,2026-01-23
+OPP-11066,Initech,Megan Ortiz,West,Proposal,35800.00,2025-07-30,2025-10-31
+OPP-11067,Pinecrest Health,Megan Ortiz,West,Proposal,55000.00,2025-09-14,2025-10-27
+OPP-11068,Blue Harbor Foods,Kevin Brandt,East,Closed Won,11500.00,2026-01-13,2026-03-14
+OPP-11069,Blue Harbor Foods,Derek Lowe,South,Closed Won,68500.00,2026-02-04,2026-03-18
+OPP-11070,Summit Dental Group,Kevin Brandt,Central,Closed Lost,15500.00,2025-08-15,2025-09-07
+OPP-11071,Northwind Traders,Gary Novak,West,Closed Lost,36200.00,2026-01-20,2026-04-29
+OPP-11072,Initech,Priya Shah,West,Negotiation,29900.00,2025-11-25,2026-03-08
+OPP-11073,Brightline Logistics,Megan Ortiz,West,Qualification,33500.00,2025-10-02,2025-12-15
+OPP-11074,Summit Dental Group,Kevin Brandt,East,Closed Lost,12500.00,2026-01-26,2026-04-02
+OPP-11075,Northwind Traders,Gary Novak,Central,Prospecting,11900.00,2026-01-10,2026-02-04
+OPP-11076,Acme Corp,Derek Lowe,East,Closed Won,4200.00,2025-08-21,2025-09-01
+OPP-11077,Café Olé Holdings,Derek Lowe,South,Closed Won,15600.00,2026-01-09,2026-04-06
+OPP-11078,Redwood Supply Co,Derek Lowe,Central,Closed Lost,18900.00,2026-01-06,2026-04-13
+OPP-11079,Kestrel Analytics,Gary Novak,East,Closed Won,52400.00,2025-12-30,2026-02-20
+OPP-11080,Pinecrest Health,Gary Novak,Central,Closed Lost,32900.00,2025-09-10,2025-09-23
+OPP-11081,Summit Dental Group,Megan Ortiz,South,Closed Won,48200.00,2026-02-17,2026-05-17
+OPP-11082,Kestrel Analytics,Derek Lowe,South,Proposal,20500.00,2026-01-01,2026-01-16
+OPP-11083,Initech,Megan Ortiz,East,Closed Lost,16200.00,2025-08-11,2025-10-04
+OPP-11084,Redwood Supply Co,Kevin Brandt,East,Qualification,36700.00,2025-09-12,2025-11-27
+OPP-11085,Société Générale Services,Megan Ortiz,East,Closed Won,23500.00,2026-04-07,2026-06-15
+OPP-11086,Summit Dental Group,Gary Novak,East,Closed Won,30000.00,2025-09-26,2026-01-10
+OPP-11087,Kestrel Analytics,Derek Lowe,West,Closed Won,40600.00,2025-12-15,2026-02-12
+OPP-11088,Blue Harbor Foods,Megan Ortiz,East,Closed Lost,17000.00,2026-03-31,2026-06-30
+OPP-11089,Redwood Supply Co,Kevin Brandt,East,Closed Won,13100.00,2026-04-21,2026-08-07
+OPP-11090,Summit Dental Group,Kevin Brandt,South,Closed Lost,15100.00,2026-01-12,2026-04-15
+OPP-11091,Brightline Logistics,Derek Lowe,West,Closed Lost,10600.00,2025-08-14,2025-09-07
+OPP-11092,Pinecrest Health,Gary Novak,Central,Prospecting,29100.00,2025-12-08,2026-02-04
+OPP-11093,Kestrel Analytics,Derek Lowe,West,Closed Won,25800.00,2026-02-02,2026-03-24
+OPP-11094,Café Olé Holdings,Megan Ortiz,Central,Qualification,22000.00,2026-01-19,2026-01-30
+OPP-11095,Blue Harbor Foods,Gary Novak,Central,Proposal,18900.00,2025-11-23,2025-12-21
+OPP-11096,Blue Harbor Foods,Megan Ortiz,East,Closed Lost,6900.00,2026-03-11,2026-04-27
+OPP-11097,Blue Harbor Foods,Priya Shah,East,Closed Lost,32500.00,2025-10-16,2026-02-11
+OPP-11098,Café Olé Holdings,Megan Ortiz,Central,Closed Won,21000.00,2025-09-20,2025-10-02
+OPP-11099,Brightline Logistics,Kevin Brandt,Central,Proposal,23500.00,2026-01-17,2026-03-18
+OPP-11100,Kestrel Analytics,Kevin Brandt,East,Closed Lost,35000.00,2025-12-13,2026-03-29
+OPP-11101,Société Générale Services,Megan Ortiz,South,Proposal,12800.00,2025-09-22,2025-12-14
+OPP-11102,Summit Dental Group,Gary Novak,Central,Closed Lost,29200.00,2025-10-09,2026-01-21
+OPP-11103,Initech,Priya Shah,East,Prospecting,34300.00,2025-09-14,2025-11-11
+OPP-11104,Blue Harbor Foods,Megan Ortiz,West,Prospecting,12000.00,2025-09-15,2025-12-14
+OPP-11105,Blue Harbor Foods,Megan Ortiz,East,Closed Lost,77100.00,2025-09-27,2025-12-29
+OPP-11106,Summit Dental Group,Megan Ortiz,Central,Prospecting,140900.00,2025-11-18,2026-02-16
+OPP-11107,Pinecrest Health,Kevin Brandt,South,Proposal,92300.00,2025-10-24,2025-11-05
+OPP-11108,Halvorsen Freight,Megan Ortiz,Central,Closed Won,27800.00,2025-10-01,2025-11-29
+OPP-11109,Café Olé Holdings,Kevin Brandt,East,Closed Lost,7900.00,2026-03-08,2026-03-26
+OPP-11110,Orion Fitness,Kevin Brandt,West,Prospecting,20100.00,2025-08-30,2025-10-02
+OPP-11111,Pinecrest Health,Priya Shah,West,Prospecting,6700.00,2025-07-21,2025-08-16
+OPP-11112,Café Olé Holdings,Derek Lowe,Central,Closed Lost,28400.00,2025-08-13,2025-09-07
+OPP-11113,Redwood Supply Co,Derek Lowe,South,Qualification,21700.00,2025-07-24,2025-10-08
+OPP-11114,Café Olé Holdings,Kevin Brandt,West,Closed Won,27000.00,2025-12-28,2026-03-25
+OPP-11115,Société Générale Services,Derek Lowe,West,Closed Lost,25800.00,2025-07-19,2025-08-22
+OPP-11116,Société Générale Services,Kevin Brandt,South,Prospecting,13700.00,2025-12-31,2026-02-14
+OPP-11117,Halvorsen Freight,Gary Novak,Central,Closed Won,8400.00,2025-09-22,2025-11-22
+OPP-11118,Blue Harbor Foods,Priya Shah,Central,Closed Won,31700.00,2025-11-15,2026-02-14
+OPP-11119,Orion Fitness,Priya Shah,Central,Closed Lost,20300.00,2025-09-22,2025-11-24
+OPP-11120,Northwind Traders,Gary Novak,East,Closed Won,18600.00,2025-11-04,2025-11-23
+OPP-11121,Redwood Supply Co,Derek Lowe,Central,Qualification,36100.00,2025-08-15,2025-10-10
+OPP-11122,Müller GmbH,Megan Ortiz,East,Closed Lost,8500.00,2025-08-20,2025-10-17
+OPP-11123,Orion Fitness,Megan Ortiz,East,Closed Won,131700.00,2025-12-04,2026-02-27
+OPP-11124,Pinecrest Health,Gary Novak,East,Qualification,53000.00,2026-04-09,2026-05-23
+OPP-11125,Blue Harbor Foods,Kevin Brandt,South,Closed Won,22500.00,2025-12-24,2026-04-16
+OPP-11126,Initech,Kevin Brandt,Central,Prospecting,30700.00,2025-09-03,2025-10-01
+OPP-11127,Halvorsen Freight,Priya Shah,South,Closed Lost,45300.00,2026-01-31,2026-05-11
+OPP-11128,Café Olé Holdings,Priya Shah,Central,Closed Won,10800.00,2025-11-19,2026-01-22
+OPP-11129,Brightline Logistics,Gary Novak,East,Closed Lost,25000.00,2025-12-08,2026-04-05
+OPP-11130,Summit Dental Group,Kevin Brandt,West,Closed Won,16400.00,2025-07-06,2025-09-08
+OPP-11131,Initech,Kevin Brandt,Central,Proposal,24000.00,2025-07-04,2025-10-13
+OPP-11132,Summit Dental Group,Kevin Brandt,West,Qualification,18300.00,2026-02-15,2026-03-18
+OPP-11133,Initech,Megan Ortiz,South,Qualification,51600.00,2025-12-28,2026-01-13
+OPP-11134,Café Olé Holdings,Gary Novak,Central,Proposal,16100.00,2025-11-05,2026-03-01
+OPP-11135,Müller GmbH,Derek Lowe,East,Closed Lost,20600.00,2026-04-18,2026-06-17
+OPP-11136,Globex,Priya Shah,South,Negotiation,8600.00,2025-08-24,2025-09-03
+OPP-11137,Café Olé Holdings,Priya Shah,South,Qualification,21600.00,2025-08-13,2025-10-29
+OPP-11138,Halvorsen Freight,Megan Ortiz,Central,Proposal,19800.00,2025-11-06,2025-12-14
+OPP-11139,Halvorsen Freight,Megan Ortiz,West,Qualification,11500.00,2025-11-15,2025-12-08
+OPP-11140,Initech,Derek Lowe,East,Qualification,11000.00,2025-09-07,2025-11-06
+OPP-11141,Initech,Megan Ortiz,South,Closed Lost,32200.00,2025-11-14,2025-12-09
+OPP-11142,Blue Harbor Foods,Megan Ortiz,West,Qualification,9600.00,2026-01-21,2026-04-05
+OPP-11143,Summit Dental Group,Derek Lowe,South,Closed Lost,36500.00,2025-10-30,2025-11-15
+OPP-11144,Halvorsen Freight,Gary Novak,South,Proposal,9400.00,2025-11-26,2026-01-11
+OPP-11145,Kestrel Analytics,Gary Novak,Central,Closed Lost,4100.00,2025-11-05,2025-12-20
+OPP-11146,Blue Harbor Foods,Gary Novak,West,Qualification,69500.00,2025-10-10,2025-12-19
+OPP-11147,Brightline Logistics,Priya Shah,South,Prospecting,17500.00,2025-09-15,2025-10-24
+OPP-11148,Acme Corp,Megan Ortiz,South,Closed Won,12300.00,2025-08-16,2025-12-14
+OPP-11149,Initech,Gary Novak,Central,Qualification,30900.00,2025-08-01,2025-10-15
+OPP-11150,Acme Corp,Gary Novak,East,Closed Won,16300.00,2025-07-25,2025-08-27
+OPP-11151,Brightline Logistics,Megan Ortiz,West,Proposal,21700.00,2025-11-21,2026-02-16
+OPP-11152,Summit Dental Group,Gary Novak,West,Proposal,34700.00,2025-08-27,2025-09-18
+OPP-11153,Globex,Priya Shah,Central,Qualification,6400.00,2026-03-28,2026-06-23
+OPP-11154,Blue Harbor Foods,Kevin Brandt,East,Prospecting,35300.00,2025-09-05,2025-12-04
+OPP-11155,Brightline Logistics,Kevin Brandt,Central,Proposal,19300.00,2026-02-14,2026-03-08
+OPP-11156,Société Générale Services,Gary Novak,West,Qualification,23900.00,2026-03-31,2026-07-11
+OPP-11157,Redwood Supply Co,Derek Lowe,South,Closed Won,9800.00,2026-04-13,2026-06-06
+OPP-11158,Café Olé Holdings,Kevin Brandt,East,Qualification,21700.00,2026-03-05,2026-05-07
+OPP-11159,Société Générale Services,Megan Ortiz,South,Closed Won,15700.00,2026-03-20,2026-04-08
+OPP-11160,Acme Corp,Priya Shah,West,Closed Won,22700.00,2025-10-14,2025-11-16
+OPP-11161,Northwind Traders,Priya Shah,Central,Closed Won,23800.00,2026-03-26,2026-05-08
+OPP-11162,Müller GmbH,Derek Lowe,East,Closed Won,45900.00,2025-07-24,2025-10-10
+OPP-11163,Orion Fitness,Gary Novak,West,Closed Lost,14900.00,2025-09-07,2025-10-21
+OPP-11164,Pinecrest Health,Derek Lowe,Central,Prospecting,38100.00,2025-12-25,2026-03-25
+OPP-11165,Redwood Supply Co,Kevin Brandt,Central,Proposal,36300.00,2025-09-07,2025-11-08
+OPP-11166,Northwind Traders,Gary Novak,East,Closed Lost,10100.00,2025-11-21,2025-12-23
+OPP-11167,Orion Fitness,Megan Ortiz,West,Proposal,8400.00,2026-04-09,2026-05-15
+OPP-11168,Halvorsen Freight,Priya Shah,South,Negotiation,13800.00,2026-01-19,2026-02-17
+OPP-11169,Pinecrest Health,Megan Ortiz,West,Closed Won,11600.00,2025-09-29,2025-11-02
+OPP-11170,Société Générale Services,Gary Novak,South,Proposal,8000.00,2025-10-05,2025-10-23
+OPP-11171,Brightline Logistics,Megan Ortiz,South,Prospecting,115600.00,2025-07-07,2025-10-02
+OPP-11172,Müller GmbH,Gary Novak,Central,Qualification,25700.00,2025-07-23,2025-08-18
+OPP-11173,Brightline Logistics,Kevin Brandt,Central,Closed Lost,38100.00,2025-07-05,2025-10-24
+OPP-11174,Müller GmbH,Gary Novak,Central,Closed Won,11200.00,2026-03-03,2026-04-01
+OPP-11175,Initech,Priya Shah,East,Closed Lost,8100.00,2026-03-19,2026-07-14
+OPP-11176,Summit Dental Group,Derek Lowe,West,Closed Lost,44700.00,2025-09-14,2025-11-08
+OPP-11177,Société Générale Services,Gary Novak,West,Qualification,51600.00,2025-08-27,2025-11-07
+OPP-11178,Globex,Gary Novak,East,Closed Won,9700.00,2025-12-18,2026-01-12
+OPP-11179,Initech,Priya Shah,Central,Closed Won,12700.00,2025-10-01,2026-01-05
+OPP-11180,Kestrel Analytics,Gary Novak,East,Closed Lost,13400.00,2026-01-05,2026-02-17
+OPP-11181,Kestrel Analytics,Megan Ortiz,East,Qualification,16000.00,2026-02-14,2026-05-27
+OPP-11182,Globex,Priya Shah,West,Closed Lost,15500.00,2025-09-13,2025-10-04
+OPP-11183,Initech,Kevin Brandt,Central,Qualification,16100.00,2026-03-04,2026-06-10
+OPP-11184,Halvorsen Freight,Kevin Brandt,West,Negotiation,26100.00,2026-04-02,2026-06-19
+OPP-11185,Blue Harbor Foods,Priya Shah,East,Proposal,9800.00,2026-04-22,2026-08-09
+OPP-11186,Halvorsen Freight,Priya Shah,South,Proposal,32600.00,2025-09-10,2025-10-27
+OPP-11187,Initech,Derek Lowe,East,Closed Won,27200.00,2025-07-14,2025-10-21
+OPP-11188,Société Générale Services,Derek Lowe,West,Prospecting,6800.00,2025-09-19,2025-10-02
+OPP-11189,Kestrel Analytics,Priya Shah,South,Closed Lost,59200.00,2026-01-30,2026-02-28
+OPP-11190,Initech,Derek Lowe,South,Closed Lost,30600.00,2025-12-01,2026-02-09
+OPP-11191,Redwood Supply Co,Gary Novak,West,Closed Won,125700.00,2025-09-18,2025-10-05
+OPP-11192,Orion Fitness,Derek Lowe,Central,Closed Won,19800.00,2026-04-10,2026-07-20
+OPP-11193,Initech,Priya Shah,West,Negotiation,9200.00,2025-08-17,2025-11-01
+OPP-11194,Orion Fitness,Gary Novak,South,Closed Won,30000.00,2026-04-13,2026-07-09
+OPP-11195,Acme Corp,Derek Lowe,South,Qualification,49400.00,2026-01-11,2026-02-11
+OPP-11196,Northwind Traders,Priya Shah,East,Prospecting,35600.00,2025-07-15,2025-08-24
+OPP-11197,Café Olé Holdings,Priya Shah,East,Proposal,6900.00,2025-12-06,2026-01-09
+OPP-11198,Kestrel Analytics,Megan Ortiz,East,Prospecting,10900.00,2025-07-23,2025-10-13
+OPP-11199,Northwind Traders,Megan Ortiz,West,Proposal,18000.00,2025-12-30,2026-04-15

@@ -1,0 +1,9 @@
+## A 7b +profile t0
+qwen2.5-coder:7b     s6_stage_renamed     blocked by checks              llm  152.9s  unguarded: damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep
+qwen2.5-coder:7b     s8_missing_file      WRONG (failed)                 llm   42.8s  unguarded: n/a
+## B 7b best-of-4
+qwen2.5-coder:7b     s6_stage_renamed     blocked by checks              llm  319.5s  unguarded: damaged: won_count: 0 vs 367; lost_count: 0 vs 319; open_count: 0 vs 514; won_amount_by_quarter; win_rate_by_rep
+qwen2.5-coder:7b     s8_missing_file      WRONG (failed)                 llm  247.9s  unguarded: n/a
+## C 7b +profile best-of-4
+qwen2.5-coder:7b     s6_stage_renamed     blocked by checks              llm  126.7s  unguarded: damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep
+qwen2.5-coder:7b     s8_missing_file      WRONG (failed)                 llm  106.5s  unguarded: n/a

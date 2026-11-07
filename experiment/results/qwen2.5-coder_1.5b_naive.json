@@ -1,0 +1,336 @@
+[
+ {
+  "scenario": "s1_renamed_column",
+  "model": "qwen2.5-coder:1.5b",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "parse_amounts",
+    "error": "KeyError: 'Amount'",
+    "seconds": 6.8,
+    "fix": "import pandas as pd\n\ndef parse_amounts(df):\n    df[\"Amount\"] = [float(a) if a != \"\" else None for a in df[\"Amount\"]]\n    df[\"Amount\"] = df[\"Amount\"].astype(float)\n    return df\n"
+   },
+   {
+    "function": "parse_amounts",
+    "error": "KeyError: 'Amount'",
+    "seconds": 4.2,
+    "fix": "import pandas as pd\n\ndef parse_amounts(df):\n    df[\"Amount\"] = [float(a) if a != \"\" else None for a in df[\"Amount\"]]\n    df[\"Amount\"] = df[\"Amount\"].astype(float)\n    return df\n"
+   },
+   {
+    "function": "parse_amounts",
+    "error": "KeyError: 'Amount'",
+    "seconds": 1.8,
+    "fix": "import pandas as pd\n\ndef parse_amounts(df):\n    df[\"Amount\"] = [float(a) if a != \"\" else None for a in df[\"Amount\"]]\n    df[\"Amount\"] = df[\"Amount\"].astype(float)\n    return df\n"
+   }
+  ],
+  "llm_seconds": 12.8,
+  "status": "failed",
+  "error": "KeyError: 'Amount'",
+  "first_report": null,
+  "score": "failed",
+  "unguarded": "no report",
+  "wall_seconds": 13.4
+ },
+ {
+  "scenario": "s2_date_format",
+  "model": "qwen2.5-coder:1.5b",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "parse_dates",
+    "error": "ValueError: time data \"08/27/2025\" doesn't match format \"%Y-%m-%d\", at position 0. You might want to try:\n    - passing `format` if your strings have a consistent format;\n    - passing `format='ISO860",
+    "seconds": 6.8,
+    "fix": "import pandas as pd\n\ndef parse_dates(df):\n    df[\"Created Date\"] = pd.to_datetime(df[\"Created Date\"], format=\"%Y-%m-%d\", errors='coerce')\n    df[\"Close Date\"] = pd.to_datetime(df[\"Close Date\"], format=\"%Y-%m-%d\", errors='coerce')\n    return df\n",
+    "contract": [
+     "won amount has quarters that aren't real dates: nan-Qnan"
+    ]
+   },
+   {
+    "function": "parse_dates",
+    "error": "contract: won amount has quarters that aren't real dates: nan-Qnan",
+    "seconds": 5.3,
+    "fix": "import pandas as pd\n\ndef parse_dates(df):\n    df[\"Created Date\"] = pd.to_datetime(df[\"Created Date\"], format=\"%Y-%m-%d\", errors='coerce')\n    df[\"Close Date\"] = pd.to_datetime(df[\"Close Date\"], format=\"%Y-%m-%d\", errors='coerce')\n    return df\n",
+    "contract": [
+     "won amount has quarters that aren't real dates: nan-Qnan"
+    ]
+   },
+   {
+    "function": "parse_dates",
+    "error": "contract: won amount has quarters that aren't real dates: nan-Qnan",
+    "seconds": 2.4,
+    "fix": "import pandas as pd\n\ndef parse_dates(df):\n    df[\"Created Date\"] = pd.to_datetime(df[\"Created Date\"], format=\"%Y-%m-%d\", errors='coerce')\n    df[\"Close Date\"] = pd.to_datetime(df[\"Close Date\"], format=\"%Y-%m-%d\", errors='coerce')\n    return df\n",
+    "contract": [
+     "won amount has quarters that aren't real dates: nan-Qnan"
+    ]
+   }
+  ],
+  "llm_seconds": 14.5,
+  "status": "blocked_by_contract",
+  "report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "nan-Qnan": 10545800.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "first_report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "nan-Qnan": 10545800.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "score": "blocked by checks",
+  "unguarded": "damaged: won_amount_by_quarter",
+  "wall_seconds": 15.3
+ },
+ {
+  "scenario": "s3_na_amounts",
+  "model": "qwen2.5-coder:1.5b",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "parse_amounts",
+    "error": "ValueError: could not convert string to float: 'N/A'",
+    "seconds": 5.0,
+    "fix": "import pandas as pd\n\ndef parse_amounts(df):\n    df[\"Amount\"] = [float(a) if a != \"\" else None for a in df[\"Amount\"]]\n    return df\n"
+   },
+   {
+    "function": "parse_amounts",
+    "error": "ValueError: could not convert string to float: 'N/A'",
+    "seconds": 4.1,
+    "fix": "import pandas as pd\n\ndef parse_amounts(df):\n    df[\"Amount\"] = [float(a) if a != \"\" else None for a in df[\"Amount\"]]\n    return df\n"
+   },
+   {
+    "function": "parse_amounts",
+    "error": "ValueError: could not convert string to float: 'N/A'",
+    "seconds": 1.4,
+    "fix": "import pandas as pd\n\ndef parse_amounts(df):\n    df[\"Amount\"] = [float(a) if a != \"\" else None for a in df[\"Amount\"]]\n    return df\n"
+   }
+  ],
+  "llm_seconds": 10.5,
+  "status": "failed",
+  "error": "ValueError: could not convert string to float: 'N/A'",
+  "first_report": null,
+  "score": "failed",
+  "unguarded": "no report",
+  "wall_seconds": 11.2
+ },
+ {
+  "scenario": "s4_currency_text",
+  "model": "qwen2.5-coder:1.5b",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "parse_amounts",
+    "error": "ValueError: could not convert string to float: '$53,000.00'",
+    "seconds": 4.7,
+    "fix": "import pandas as pd\n\ndef parse_amounts(df):\n    df[\"Amount\"] = [float(a) if a != \"\" else None for a in df[\"Amount\"]]\n    return df\n"
+   },
+   {
+    "function": "parse_amounts",
+    "error": "ValueError: could not convert string to float: '$53,000.00'",
+    "seconds": 4.0,
+    "fix": "import pandas as pd\n\ndef parse_amounts(df):\n    df[\"Amount\"] = [float(a) if a != \"\" else None for a in df[\"Amount\"]]\n    return df\n"
+   },
+   {
+    "function": "parse_amounts",
+    "error": "ValueError: could not convert string to float: '$53,000.00'",
+    "seconds": 1.4,
+    "fix": "import pandas as pd\n\ndef parse_amounts(df):\n    df[\"Amount\"] = [float(a) if a != \"\" else None for a in df[\"Amount\"]]\n    return df\n"
+   }
+  ],
+  "llm_seconds": 10.1,
+  "status": "failed",
+  "error": "ValueError: could not convert string to float: '$53,000.00'",
+  "first_report": null,
+  "score": "failed",
+  "unguarded": "no report",
+  "wall_seconds": 10.8
+ },
+ {
+  "scenario": "s5_new_rep",
+  "model": "qwen2.5-coder:1.5b",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "win_rates",
+    "error": "ZeroDivisionError: division by zero",
+    "seconds": 6.7,
+    "fix": "import pandas as pd\n\ndef win_rates(df):\n    rates = {}\n    for rep in sorted(df[\"Owner\"].unique()):\n        mine = df[df[\"Owner\"] == rep]\n        won = int((mine[\"Outcome\"] == \"won\").sum())\n        lost = int((mine[\"Outcome\"] == \"lost\").sum())\n        if lost != 0:\n            rates[rep] = round(won / (won + lost), 4)\n    return rates\n",
+    "contract": "passed"
+   }
+  ],
+  "llm_seconds": 6.7,
+  "status": "healed",
+  "report": {
+   "rows": 1206,
+   "total_amount": 34536200.0,
+   "avg_amount": 28636.98,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 520,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "first_report": {
+   "rows": 1206,
+   "total_amount": 34536200.0,
+   "avg_amount": 28636.98,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 520,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "score": "SILENT DAMAGE (passed checks)",
+  "unguarded": "damaged: win_rate_by_rep",
+  "wall_seconds": 7.4
+ },
+ {
+  "scenario": "s6_stage_renamed",
+  "model": "qwen2.5-coder:1.5b",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "map_stages",
+    "error": "KeyError: 'Closed - Won'",
+    "seconds": 4.3,
+    "fix": "def map_stages(df):\n    df[\"Outcome\"] = [STAGE_OUTCOME[s] for s in df[\"Stage\"]]\n    return df\n"
+   },
+   {
+    "function": "map_stages",
+    "error": "KeyError: 'Closed - Won'",
+    "seconds": 3.9,
+    "fix": "import pandas as pd\n\ndef map_stages(df):\n    df[\"Outcome\"] = [STAGE_OUTCOME[s] for s in df[\"Stage\"]]\n    return df\n"
+   },
+   {
+    "function": "map_stages",
+    "error": "KeyError: 'Closed - Won'",
+    "seconds": 3.9,
+    "fix": "import pandas as pd\n\ndef map_stages(df):\n    df[\"Outcome\"] = [STAGE_OUTCOME[s] for s in df[\"Stage\"]]\n    return df\n"
+   }
+  ],
+  "llm_seconds": 12.1,
+  "status": "failed",
+  "error": "KeyError: 'Closed - Won'",
+  "first_report": null,
+  "score": "failed",
+  "unguarded": "no report",
+  "wall_seconds": 12.8
+ },
+ {
+  "scenario": "s7_encoding",
+  "model": "qwen2.5-coder:1.5b",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "load_export",
+    "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfc in position 1: invalid start byte",
+    "seconds": 4.3,
+    "fix": "import pandas as pd\n\ndef load_export(path):\n    return pd.read_csv(path, encoding=\"utf-8\", dtype=str, keep_default_na=False)\n"
+   },
+   {
+    "function": "load_export",
+    "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfc in position 1: invalid start byte",
+    "seconds": 3.5,
+    "fix": "import pandas as pd\n\ndef load_export(path):\n    return pd.read_csv(path, encoding=\"utf-8\", dtype=str, keep_default_na=False)\n"
+   },
+   {
+    "function": "load_export",
+    "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfc in position 1: invalid start byte",
+    "seconds": 1.2,
+    "fix": "import pandas as pd\n\ndef load_export(path):\n    return pd.read_csv(path, encoding=\"utf-8\", dtype=str, keep_default_na=False)\n"
+   }
+  ],
+  "llm_seconds": 9.0,
+  "status": "failed",
+  "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfc in position 1: invalid start byte",
+  "first_report": null,
+  "score": "failed",
+  "unguarded": "no report",
+  "wall_seconds": 9.7
+ },
+ {
+  "scenario": "s8_missing_file",
+  "model": "qwen2.5-coder:1.5b",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "load_export",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Python310\\\\projects\\\\self_healing_pipeline\\\\data\\\\s8_missing_file.csv'",
+    "seconds": 3.7,
+    "fix": "import pandas as pd\n\ndef load_export(path):\n    try:\n        return pd.read_csv(path, encoding=\"utf-8\", dtype=str, keep_default_na=False)\n    except FileNotFoundError:\n        print(f\"File not found: {path}\")\n        # Optionally, you can handle this error by returning None or raising a custom exception\n        return None\n"
+   },
+   {
+    "function": "parse_dates",
+    "error": "TypeError: 'NoneType' object is not subscriptable",
+    "seconds": 4.0,
+    "fix": "import pandas as pd\n\ndef parse_dates(df):\n    if df is None:  # Check if the DataFrame is None\n        raise ValueError(\"Input DataFrame cannot be None\")\n    \n    df[\"Created Date\"] = pd.to_datetime(df[\"Created Date\"], format=\"%Y-%m-%d\")\n    df[\"Close Date\"] = pd.to_datetime(df[\"Close Date\"], format=\"%Y-%m-%d\")\n    return df\n"
+   },
+   {
+    "function": "parse_dates",
+    "error": "ValueError: Input DataFrame cannot be None",
+    "seconds": 3.8,
+    "fix": "import pandas as pd\n\ndef parse_dates(df):\n    if df is None:  # Check if the DataFrame is None\n        raise ValueError(\"Input DataFrame cannot be None\")\n    \n    df[\"Created Date\"] = pd.to_datetime(df[\"Created Date\"], format=\"%Y-%m-%d\")\n    df[\"Close Date\"] = pd.to_datetime(df[\"Close Date\"], format=\"%Y-%m-%d\")\n    return df\n"
+   }
+  ],
+  "llm_seconds": 11.5,
+  "status": "failed",
+  "error": "ValueError: Input DataFrame cannot be None",
+  "first_report": null,
+  "score": "WRONG (failed)",
+  "unguarded": "n/a",
+  "wall_seconds": 12.2
+ }
+]

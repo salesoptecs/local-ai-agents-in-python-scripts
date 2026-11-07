@@ -1,0 +1,70 @@
+[
+ {
+  "scenario": "s6_stage_renamed",
+  "model": "qwen3:8b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "map_stages",
+    "error": "KeyError: 'Closed - Won'",
+    "seconds": 34.5,
+    "fix": "def map_stages(df):\n    df[\"Outcome\"] = [STAGE_OUTCOME.get(s, None) for s in df[\"Stage\"]]\n    return df\n",
+    "contract": [
+     "won + lost + open != rows",
+     "file has won deals but the report counts 0 won"
+    ]
+   },
+   {
+    "function": "map_stages",
+    "error": "rejected: rewrites STAGE_OUTCOME",
+    "seconds": 199.6,
+    "fix": "def map_stages(df):\n    STAGE_OUTCOME = {\n        \"Proposal\": \"open\",\n        \"Prospecting\": \"open\",\n        \"Negotiation\": \"open\",\n        \"Closed Lost\": \"lost\",\n        \"Closed - Won\": \"won\"\n    }\n    df[\"Outcome\"] = [STAGE_OUTCOME.get(s, None) for s in df[\"Stage\"]]\n    return df\n"
+   },
+   {
+    "function": "map_stages",
+    "error": "contract: won + lost + open != rows; file has won deals but the report counts 0 won",
+    "seconds": 269.7,
+    "fix": "STAGE_OUTCOME = {'Prospecting': 'open', 'Qualification': 'open', 'Proposal': 'open', 'Negotiation': 'open', 'Closed Won': 'won', 'Closed Lost': 'lost', 'Closed - Won': 'won'}\n",
+    "contract": [
+     "won + lost + open != rows",
+     "file has won deals but the report counts 0 won"
+    ]
+   },
+   {
+    "function": "map_stages",
+    "error": "contract: won + lost + open != rows; file has won deals but the report counts 0 won",
+    "seconds": 494.6,
+    "fix": "def map_stages(row):\n    stage = row['Stage']\n    if stage in ['Closed Won', 'Closed - Won']:\n        return 'won'\n    elif stage == 'Closed Lost':\n        return 'lost'\n    elif stage in ['Prospecting', 'Qualification', 'Proposal', 'Negotiation']:\n        return 'open'\n    else:\n        return stage\n"
+   }
+  ],
+  "llm_seconds": 798.8,
+  "status": "failed",
+  "error": "ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().",
+  "first_report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 0,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {},
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.0,
+    "Gary Novak": 0.0,
+    "Kevin Brandt": 0.0,
+    "Megan Ortiz": 0.0,
+    "Priya Shah": 0.0
+   }
+  },
+  "tokens_out": 4822,
+  "thinks": [
+   "thought",
+   "thought",
+   "capped"
+  ],
+  "score": "failed",
+  "unguarded": "damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep",
+  "wall_seconds": 799.8
+ }
+]

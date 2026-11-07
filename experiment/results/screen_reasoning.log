@@ -1,0 +1,7 @@
+## qwen3-coder:30b plain
+qwen3-coder:30b      s6_stage_renamed     harness_error                  llm      0s  unguarded: no report
+qwen3-coder:30b      s8_missing_file      WRONG (harness_error)          llm      0s  unguarded: n/a
+## qwen3-coder:30b +profile
+qwen3-coder:30b      s6_stage_renamed     harness_error                  llm      0s  unguarded: no report
+qwen3-coder:30b      s8_missing_file      WRONG (harness_error)          llm      0s  unguarded: n/a
+## qwen3:8b plain

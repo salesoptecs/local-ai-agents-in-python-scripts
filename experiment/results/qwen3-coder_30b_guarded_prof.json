@@ -1,0 +1,16 @@
+[
+ {
+  "status": "harness_error",
+  "stderr": "\"), default=str))\n  File \"C:\\Python310\\projects\\self_healing_pipeline\\healer.py\", line 216, in run\n    reply, secs = ask(model, prompt)\n  File \"C:\\Python310\\projects\\self_healing_pipeline\\healer.py\", line 122, in ask\n    r.raise_for_status()\n  File \"C:\\Python310\\lib\\site-packages\\requests\\models.py\", line 1024, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http://127.0.0.1:11434/api/generate\n",
+  "score": "harness_error",
+  "unguarded": "no report",
+  "wall_seconds": 123.3
+ },
+ {
+  "status": "harness_error",
+  "stderr": "\"), default=str))\n  File \"C:\\Python310\\projects\\self_healing_pipeline\\healer.py\", line 216, in run\n    reply, secs = ask(model, prompt)\n  File \"C:\\Python310\\projects\\self_healing_pipeline\\healer.py\", line 122, in ask\n    r.raise_for_status()\n  File \"C:\\Python310\\lib\\site-packages\\requests\\models.py\", line 1024, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http://127.0.0.1:11434/api/generate\n",
+  "score": "WRONG (harness_error)",
+  "unguarded": "n/a",
+  "wall_seconds": 65.5
+ }
+]

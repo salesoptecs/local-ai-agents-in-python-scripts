@@ -1,0 +1,497 @@
+[
+ {
+  "scenario": "s1_renamed_column",
+  "model": "claude-haiku-5-5",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "parse_amounts",
+    "error": "KeyError: 'Amount'",
+    "seconds": 7.1,
+    "fix": "import pandas as pd\n\n\ndef parse_amounts(df):\n    df[\"Opportunity Amount\"] = pd.to_numeric(\n        df[\"Opportunity Amount\"].astype(str).str.strip(),\n        errors=\"coerce\",\n    )\n    return df\n"
+   },
+   {
+    "function": "summarize",
+    "error": "KeyError: 'Column not found: Amount'",
+    "seconds": 10.8,
+    "fix": "import pandas as pd\n\ndef summarize(df):\n    df = df.copy()\n    df.columns = df.columns.str.strip()\n\n    # The file's header is \"Opportunity Amount\", not \"Amount\".\n    if \"Amount\" not in df.columns and \"Opportunity Amount\" in df.columns:\n        df = df.rename(columns={\"Opportunity Amount\": \"Amount\"})\n    df[\"Amount\"] = pd.to_numeric(df[\"Amount\"], errors=\"coerce\")\n\n    # The file has no \"Outcome\" column; derive it from \"Stage\" (\"Closed Won\" / \"Closed Lost\").\n    if \"Outcome\" not in df.columns:\n        stage = df[\"Stage\"].astype(str).str.strip().str.lower()\n        df[\"Outcome\"] = stage.map({\"closed won\": \"won\", \"closed lost\": \"lost\"}).fillna(\"open\")\n    df[\"Outcome\"] = df[\"Outcome\"].astype(str).str.strip().str.lower()\n\n    df[\"Close Date\"] = pd.to_datetime(df[\"Close Date\"], errors=\"coerce\")\n\n    won = df[df[\"Outcome\"] == \"won\"]\n    q = won[\"Close Date\"].dt.year.astype(str) + \"-Q\" + won[\"Close Date\"].dt.quarter.astype(str)\n    by_q = {k: round(float(v), 2) for k, v in won.groupby(q)[\"Amount\"].sum().sort_index().items()}\n\n    return {\n        \"rows\": int(len(df)),\n        \"total_amount\": round(float(df[\"Amount\"].sum(skipna=True)), 2),\n        \"avg_amount\": round(float(df[\"Amount\"].mean(skipna=True)), 2),\n        \"missing_amount_rows\": int(df[\"Amount\"].isna().sum()),\n        \"won_count\": int((df[\"Outcome\"] == \"won\").sum()),\n        \"lost_count\": int((df[\"Outcome\"] == \"lost\").sum()),\n        \"open_count\": int((df[\"Outcome\"] == \"open\").sum()),\n        \"won_amount_by_quarter\": by_q,\n        \"win_rate_by_rep\": win_rates(df),\n    }\n",
+    "contract": "passed"
+   }
+  ],
+  "llm_seconds": 17.9,
+  "status": "healed",
+  "report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "first_report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "score": "correct",
+  "unguarded": "correct",
+  "wall_seconds": 18.6
+ },
+ {
+  "scenario": "s2_date_format",
+  "model": "claude-haiku-5-5",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "parse_dates",
+    "error": "ValueError: time data \"08/27/2025\" doesn't match format \"%Y-%m-%d\", at position 0. You might want to try:\n    - passing `format` if your strings have a consistent format;\n    - passing `format='ISO860",
+    "seconds": 6.3,
+    "fix": "def parse_dates(df):\n    df[\"Created Date\"] = pd.to_datetime(df[\"Created Date\"], format=\"%m/%d/%Y\")\n    df[\"Close Date\"] = pd.to_datetime(df[\"Close Date\"], format=\"%m/%d/%Y\")\n    return df\n",
+    "contract": "passed"
+   }
+  ],
+  "llm_seconds": 6.3,
+  "status": "healed",
+  "report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "first_report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "score": "correct",
+  "unguarded": "correct",
+  "wall_seconds": 7.1
+ },
+ {
+  "scenario": "s3_na_amounts",
+  "model": "claude-haiku-5-5",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "parse_amounts",
+    "error": "ValueError: could not convert string to float: 'N/A'",
+    "seconds": 6.7,
+    "fix": "def parse_amounts(df):\n    cleaned = (\n        df[\"Amount\"]\n        .astype(str)\n        .str.strip()\n        .str.replace(\",\", \"\", regex=False)\n        .replace({\"\": None, \"N/A\": None, \"n/a\": None, \"NA\": None, \"nan\": None, \"None\": None})\n    )\n    df[\"Amount\"] = pd.to_numeric(cleaned, errors=\"coerce\").astype(float)\n    return df\n",
+    "contract": "passed"
+   }
+  ],
+  "llm_seconds": 6.7,
+  "status": "healed",
+  "report": {
+   "rows": 1200,
+   "total_amount": 31323700.0,
+   "avg_amount": 28372.92,
+   "missing_amount_rows": 96,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 662400.0,
+    "2025-Q4": 2922500.0,
+    "2026-Q1": 3080600.0,
+    "2026-Q2": 2390000.0,
+    "2026-Q3": 504800.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "first_report": {
+   "rows": 1200,
+   "total_amount": 31323700.0,
+   "avg_amount": 28372.92,
+   "missing_amount_rows": 96,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 662400.0,
+    "2025-Q4": 2922500.0,
+    "2026-Q1": 3080600.0,
+    "2026-Q2": 2390000.0,
+    "2026-Q3": 504800.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "score": "correct",
+  "unguarded": "correct",
+  "wall_seconds": 7.4
+ },
+ {
+  "scenario": "s4_currency_text",
+  "model": "claude-haiku-5-5",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "parse_amounts",
+    "error": "ValueError: could not convert string to float: '$53,000.00'",
+    "seconds": 6.6,
+    "fix": "import pandas as pd\n\n\ndef parse_amounts(df):\n    cleaned = (\n        df[\"Amount\"]\n        .astype(str)\n        .str.strip()\n        .str.replace(r\"[$,\\s]\", \"\", regex=True)\n        .replace({\"\": None, \"nan\": None, \"None\": None})\n    )\n    df[\"Amount\"] = pd.to_numeric(cleaned, errors=\"coerce\")\n    return df\n",
+    "contract": "passed"
+   }
+  ],
+  "llm_seconds": 6.6,
+  "status": "healed",
+  "report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "first_report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "score": "correct",
+  "unguarded": "correct",
+  "wall_seconds": 7.4
+ },
+ {
+  "scenario": "s5_new_rep",
+  "model": "claude-haiku-5-5",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "win_rates",
+    "error": "ZeroDivisionError: division by zero",
+    "seconds": 6.2,
+    "fix": "def win_rates(df):\n    rates = {}\n    for rep in sorted(df[\"Owner\"].unique()):\n        mine = df[df[\"Owner\"] == rep]\n        won = int((mine[\"Outcome\"] == \"won\").sum())\n        lost = int((mine[\"Outcome\"] == \"lost\").sum())\n        total = won + lost\n        # No closed deals for this rep: rate is undefined, so report None instead of dividing by zero\n        rates[rep] = round(won / total, 4) if total else None\n    return rates\n",
+    "contract": "passed"
+   }
+  ],
+  "llm_seconds": 6.2,
+  "status": "healed",
+  "report": {
+   "rows": 1206,
+   "total_amount": 34536200.0,
+   "avg_amount": 28636.98,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 520,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074,
+    "Tasha Reed": null
+   }
+  },
+  "first_report": {
+   "rows": 1206,
+   "total_amount": 34536200.0,
+   "avg_amount": 28636.98,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 520,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074,
+    "Tasha Reed": null
+   }
+  },
+  "score": "correct",
+  "unguarded": "correct",
+  "wall_seconds": 7.0
+ },
+ {
+  "scenario": "s6_stage_renamed",
+  "model": "claude-haiku-5-5",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "map_stages",
+    "error": "KeyError: 'Closed - Won'",
+    "seconds": 8.2,
+    "fix": "import re\n\n\ndef _norm_stage(value):\n    # \"Closed - Won\", \"Closed  Won\", \"closed-won\" -> \"closed won\"\n    return re.sub(r\"[\\s\\-_]+\", \" \", str(value)).strip().lower()\n\n\ndef map_stages(df):\n    lookup = {_norm_stage(k): v for k, v in STAGE_OUTCOME.items()}\n\n    outcomes = []\n    for stage in df[\"Stage\"]:\n        key = _norm_stage(stage)\n        if key not in lookup:\n            raise KeyError(f\"Unmapped stage: {stage!r}\")\n        outcomes.append(lookup[key])\n\n    df[\"Outcome\"] = outcomes\n    return df\n",
+    "contract": "passed"
+   }
+  ],
+  "llm_seconds": 8.2,
+  "status": "healed",
+  "report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "first_report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "score": "correct",
+  "unguarded": "correct",
+  "wall_seconds": 9.0
+ },
+ {
+  "scenario": "s7_encoding",
+  "model": "claude-haiku-5-5",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "load_export",
+    "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfc in position 1: invalid start byte",
+    "seconds": 6.1,
+    "fix": "def load_export(path):\n    try:\n        return pd.read_csv(path, encoding=\"utf-8-sig\", dtype=str, keep_default_na=False)\n    except UnicodeDecodeError:\n        # Byte 0xfc is \"\u00fc\" in cp1252/latin-1, so the file is not UTF-8.\n        return pd.read_csv(path, encoding=\"cp1252\", dtype=str, keep_default_na=False)\n",
+    "contract": "passed"
+   }
+  ],
+  "llm_seconds": 6.1,
+  "status": "healed",
+  "report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "first_report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "score": "correct",
+  "unguarded": "correct",
+  "wall_seconds": 6.9
+ },
+ {
+  "scenario": "s8_missing_file",
+  "model": "claude-haiku-5-5",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "load_export",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Python310\\\\projects\\\\self_healing_pipeline\\\\data\\\\s8_missing_file.csv'",
+    "seconds": 6.1,
+    "fix": "import logging\nimport os\n\nimport pandas as pd\n\n\ndef load_export(path):\n    if not os.path.isfile(path):\n        logging.warning(\"Export file not found, returning empty DataFrame: %s\", path)\n        return pd.DataFrame()\n    return pd.read_csv(path, encoding=\"utf-8\", dtype=str, keep_default_na=False)\n"
+   },
+   {
+    "function": "parse_dates",
+    "error": "KeyError: 'Created Date'",
+    "seconds": 7.2,
+    "fix": "import pandas as pd\n\n\ndef parse_dates(df):\n    # The traceback shows a RangeIndex for the columns, so the header row was\n    # not parsed. Promote the first row to the header if the names are numeric.\n    if isinstance(df.columns, pd.RangeIndex) or all(isinstance(c, int) for c in df.columns):\n        df = df.rename(columns=lambda c: str(df.iloc[0][c]))\n        df = df.iloc[1:].reset_index(drop=True)\n\n    # Normalize header names to remove stray whitespace and BOM characters.\n    df.columns = [str(c).strip().lstrip(\"\\ufeff\") for c in df.columns]\n\n    missing = [col for col in (\"Created Date\", \"Close Date\") if col not in df.columns]\n    if missing:\n        raise KeyError(f\"Missing expected columns: {missing}. Found: {list(df.columns)}\")\n\n    df[\"Created Date\"] = pd.to_datetime(df[\"Created Date\"], format=\"%Y-%m-%d\")\n    df[\"Close Date\"] = pd.to_datetime(df[\"Close Date\"], format=\"%Y-%m-%d\")\n    return df\n"
+   },
+   {
+    "function": "parse_dates",
+    "error": "KeyError: \"Missing expected columns: ['Created Date', 'Close Date']. Found: []\"",
+    "seconds": 13.4,
+    "fix": "import pandas as pd\n\n\nREQUIRED_COLUMNS = (\"Created Date\", \"Close Date\")\n\n\ndef parse_dates(df):\n    # A frame with no columns means the source file was empty or not read.\n    # Fail with a clear message instead of a misleading \"missing columns\" KeyError.\n    if df.shape[1] == 0:\n        raise ValueError(\"No columns to parse: the input file is empty or was not read.\")\n\n    # Promote the first row to the header only when the file was read without one\n    # (default integer column labels) and there is at least one row to promote.\n    if len(df) > 0 and all(isinstance(c, int) for c in df.columns):\n        header = df.iloc[0]\n        df = df.iloc[1:].copy()\n        df.columns = [str(v) for v in header]\n        df = df.reset_index(drop=True)\n\n    # Normalize header names to remove stray whitespace and BOM characters.\n    df.columns = [str(c).strip().lstrip(\"\\ufeff\") for c in df.columns]\n\n    missing = [col for col in REQUIRED_COLUMNS if col not in df.columns]\n    if missing:\n        raise KeyError(f\"Missing expected columns: {missing}. Found: {list(df.columns)}\")\n\n    df[\"Created Date\"] = pd.to_datetime(df[\"Created Date\"], format=\"%Y-%m-%d\")\n    df[\"Close Date\"] = pd.to_datetime(df[\"Close Date\"], format=\"%Y-%m-%d\")\n    return df\n"
+   }
+  ],
+  "llm_seconds": 26.7,
+  "status": "failed",
+  "error": "ValueError: No columns to parse: the input file is empty or was not read.",
+  "first_report": null,
+  "score": "WRONG (failed)",
+  "unguarded": "n/a",
+  "wall_seconds": 27.6
+ }
+]

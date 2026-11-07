@@ -1,0 +1,68 @@
+[
+ {
+  "scenario": "s6_stage_renamed",
+  "model": "deepseek-r1:7b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "map_stages",
+    "error": "KeyError: 'Closed - Won'",
+    "seconds": 96.2,
+    "fix": "def map_stages(df):\n    df[\"Outcome\"] = [STAGE_OUTCOME[s] for s in df[\"Stage\"]]\n    return df\n"
+   },
+   {
+    "function": "map_stages",
+    "error": "KeyError: 'Closed - Won'",
+    "seconds": 111.0,
+    "fix": "def map_stages(df):\n    df[\"Outcome\"] = [STAGE_OUTCOME[' '.join(part.split() if isinstance(part, str) else part)] for s in df[\"Stage\"]]\n    return df\n"
+   },
+   {
+    "function": "map_stages",
+    "error": "NameError: name 'part' is not defined",
+    "seconds": 91.5,
+    "fix": "def map_stages(df):\n    df[\"Outcome\"] = [STAGE_OUTCOME[' '.join(s.split() if isinstance(s, str) else s)] for s in df[\"Stage\"]]\n    return df\n"
+   }
+  ],
+  "llm_seconds": 298.7,
+  "status": "failed",
+  "error": "KeyError: 'Closed - Won'",
+  "first_report": null,
+  "tokens_out": 1780,
+  "score": "failed",
+  "unguarded": "no report",
+  "wall_seconds": 299.5
+ },
+ {
+  "scenario": "s8_missing_file",
+  "model": "deepseek-r1:7b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "load_export",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Python310\\\\projects\\\\self_healing_pipeline\\\\data\\\\s8_missing_file.csv'",
+    "seconds": 136.7,
+    "fix": "import pandas as pd\nimport os\n\ndef load_export(path):\n    # Use os.path.join for cross-platform compatibility\n    full_path = os.path.join(os.path.dirname(__file__), path)\n    \n    try:\n        return pd.read_csv(full_path, encoding=\"utf-8\", dtype=str, keep_default_na=False)\n    except FileNotFoundError as e:\n        print(f\"Error: {e}\")\n        return pd.DataFrame()\n"
+   },
+   {
+    "function": "parse_dates",
+    "error": "KeyError: 'Created Date'",
+    "seconds": 271.4,
+    "fix": "def parse_dates(df):\n    df[['Created Date', 'Close Date']] = pd.to_datetime(\n        df[['Created Date', 'Close Date']], \n        errors='coerce'\n    )\n    return df\n"
+   },
+   {
+    "function": "parse_dates",
+    "error": "KeyError: \"None of [Index(['Created Date', 'Close Date'], dtype='object')] are in the [columns]\"",
+    "seconds": 141.4,
+    "fix": "def parse_dates(df):\n    df = df.reindex(columns=['Created Date', 'Close Date'])\n    df[['Created Date', 'Close Date']] = pd.to_datetime(\n        df[['Created Date', 'Close Date']], \n        errors='coerce'\n    )\n    return df\n"
+   }
+  ],
+  "llm_seconds": 549.5,
+  "status": "failed",
+  "error": "ValueError: to assemble mappings requires at least that [year, month, day] be specified: [day,month,year] is missing",
+  "first_report": null,
+  "tokens_out": 4417,
+  "score": "WRONG (failed)",
+  "unguarded": "n/a",
+  "wall_seconds": 550.2
+ }
+]

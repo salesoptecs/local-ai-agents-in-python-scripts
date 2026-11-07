@@ -1,0 +1,3 @@
+## deepseek-r1:7b guard(v2)+triage, full battery
+subprocess.TimeoutExpired: Command '['C:\\Python310\\python.exe', 'C:\\Python310\\projects\\self_healing_pipeline\\healer.py', 's1_renamed_column', 'deepseek-r1:7b', 'guarded']' timed out after 1800 seconds
+DONE

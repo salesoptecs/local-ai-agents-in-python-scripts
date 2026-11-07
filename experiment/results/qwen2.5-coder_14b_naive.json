@@ -1,0 +1,504 @@
+[
+ {
+  "scenario": "s1_renamed_column",
+  "model": "qwen2.5-coder:14b",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "parse_amounts",
+    "error": "KeyError: 'Amount'",
+    "seconds": 48.2,
+    "fix": "def parse_amounts(df):\n    if \"Amount\" not in df.columns:\n        raise ValueError(\"Column 'Amount' does not exist in the DataFrame.\")\n    \n    df[\"Amount\"] = [float(a) if a != \"\" else None for a in df[\"Amount\"]]\n    df[\"Amount\"] = pd.to_numeric(df[\"Amount\"], errors='coerce')\n    return df\n"
+   },
+   {
+    "function": "parse_amounts",
+    "error": "ValueError: Column 'Amount' does not exist in the DataFrame.",
+    "seconds": 50.7,
+    "fix": "def parse_amounts(df):\n    if \"Opportunity Amount\" not in df.columns:\n        raise ValueError(\"Column 'Opportunity Amount' does not exist in the DataFrame.\")\n    \n    df[\"Amount\"] = [float(a) if a != \"\" else None for a in df[\"Opportunity Amount\"]]\n    df[\"Amount\"] = pd.to_numeric(df[\"Amount\"], errors='coerce')\n    return df\n",
+    "contract": "passed"
+   }
+  ],
+  "llm_seconds": 98.9,
+  "status": "healed",
+  "report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "first_report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "score": "correct",
+  "unguarded": "correct",
+  "wall_seconds": 99.6
+ },
+ {
+  "scenario": "s2_date_format",
+  "model": "qwen2.5-coder:14b",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "parse_dates",
+    "error": "ValueError: time data \"08/27/2025\" doesn't match format \"%Y-%m-%d\", at position 0. You might want to try:\n    - passing `format` if your strings have a consistent format;\n    - passing `format='ISO860",
+    "seconds": 60.3,
+    "fix": "import pandas as pd\n\ndef parse_dates(df):\n    df[\"Created Date\"] = pd.to_datetime(df[\"Created Date\"], format=\"%m/%d/%Y\")\n    df[\"Close Date\"] = pd.to_datetime(df[\"Close Date\"], format=\"%m/%d/%Y\")\n    return df\n",
+    "contract": "passed"
+   }
+  ],
+  "llm_seconds": 60.3,
+  "status": "healed",
+  "report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "first_report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "score": "correct",
+  "unguarded": "correct",
+  "wall_seconds": 61.0
+ },
+ {
+  "scenario": "s3_na_amounts",
+  "model": "qwen2.5-coder:14b",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "parse_amounts",
+    "error": "ValueError: could not convert string to float: 'N/A'",
+    "seconds": 49.6,
+    "fix": "def parse_amounts(df):\n    df[\"Amount\"] = [float(a) if a != \"\" and a != \"N/A\" else None for a in df[\"Amount\"]]\n    df[\"Amount\"] = pd.to_numeric(df[\"Amount\"], errors='coerce')\n    return df\n",
+    "contract": "passed"
+   }
+  ],
+  "llm_seconds": 49.6,
+  "status": "healed",
+  "report": {
+   "rows": 1200,
+   "total_amount": 31323700.0,
+   "avg_amount": 28372.92,
+   "missing_amount_rows": 96,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 662400.0,
+    "2025-Q4": 2922500.0,
+    "2026-Q1": 3080600.0,
+    "2026-Q2": 2390000.0,
+    "2026-Q3": 504800.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "first_report": {
+   "rows": 1200,
+   "total_amount": 31323700.0,
+   "avg_amount": 28372.92,
+   "missing_amount_rows": 96,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 662400.0,
+    "2025-Q4": 2922500.0,
+    "2026-Q1": 3080600.0,
+    "2026-Q2": 2390000.0,
+    "2026-Q3": 504800.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "score": "correct",
+  "unguarded": "correct",
+  "wall_seconds": 50.4
+ },
+ {
+  "scenario": "s4_currency_text",
+  "model": "qwen2.5-coder:14b",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "parse_amounts",
+    "error": "ValueError: could not convert string to float: '$53,000.00'",
+    "seconds": 46.0,
+    "fix": "import pandas as pd\n\ndef parse_amounts(df):\n    df[\"Amount\"] = [float(a.replace('$', '').replace(',', '')) if a != \"\" else None for a in df[\"Amount\"]]\n    return df\n",
+    "contract": "passed"
+   }
+  ],
+  "llm_seconds": 46.0,
+  "status": "healed",
+  "report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "first_report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "score": "correct",
+  "unguarded": "correct",
+  "wall_seconds": 46.8
+ },
+ {
+  "scenario": "s5_new_rep",
+  "model": "qwen2.5-coder:14b",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "win_rates",
+    "error": "ZeroDivisionError: division by zero",
+    "seconds": 64.1,
+    "fix": "def win_rates(df):\n    rates = {}\n    for rep in sorted(df[\"Owner\"].unique()):\n        mine = df[df[\"Owner\"] == rep]\n        won = int((mine[\"Outcome\"] == \"won\").sum())\n        lost = int((mine[\"Outcome\"] == \"lost\").sum())\n        if won + lost == 0:\n            rates[rep] = None\n        else:\n            rates[rep] = round(won / (won + lost), 4)\n    return rates\n",
+    "contract": "passed"
+   }
+  ],
+  "llm_seconds": 64.1,
+  "status": "healed",
+  "report": {
+   "rows": 1206,
+   "total_amount": 34536200.0,
+   "avg_amount": 28636.98,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 520,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074,
+    "Tasha Reed": null
+   }
+  },
+  "first_report": {
+   "rows": 1206,
+   "total_amount": 34536200.0,
+   "avg_amount": 28636.98,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 520,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074,
+    "Tasha Reed": null
+   }
+  },
+  "score": "correct",
+  "unguarded": "correct",
+  "wall_seconds": 64.9
+ },
+ {
+  "scenario": "s6_stage_renamed",
+  "model": "qwen2.5-coder:14b",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "map_stages",
+    "error": "KeyError: 'Closed - Won'",
+    "seconds": 43.1,
+    "fix": "def map_stages(df):\n    # Ensure all stages are mapped correctly by handling missing keys\n    df[\"Outcome\"] = [STAGE_OUTCOME.get(s, \"Unknown\") for s in df[\"Stage\"]]\n    return df\n",
+    "contract": [
+     "won + lost + open != rows",
+     "file has won deals but the report counts 0 won"
+    ]
+   },
+   {
+    "function": "map_stages",
+    "error": "contract: won + lost + open != rows; file has won deals but the report counts 0 won",
+    "seconds": 51.3,
+    "fix": "def map_stages(df):\n    # Ensure all stages are mapped correctly by handling missing keys\n    df[\"Outcome\"] = [STAGE_OUTCOME.get(s, \"Unknown\") for s in df[\"Stage\"]]\n    \n    # Correct the mapping for won deals\n    df.loc[df['Stage'].str.contains('Closed - Won', case=False), 'Outcome'] = 'Won'\n    df.loc[df['Stage'].str.contains('Closed Lost', case=False), 'Outcome'] = 'Lost'\n    \n    return df\n"
+   },
+   {
+    "function": "win_rates",
+    "error": "ZeroDivisionError: division by zero",
+    "seconds": 60.5,
+    "fix": "def win_rates(df):\n    rates = {}\n    for rep in sorted(df[\"Owner\"].unique()):\n        mine = df[df[\"Owner\"] == rep]\n        won = int((mine[\"Outcome\"] == \"won\").sum())\n        lost = int((mine[\"Outcome\"] == \"lost\").sum())\n        if won + lost == 0:\n            rates[rep] = None  # or some other placeholder value indicating no data\n        else:\n            rates[rep] = round(won / (won + lost), 4)\n    return rates\n",
+    "contract": [
+     "won + lost + open != rows",
+     "file has won deals but the report counts 0 won"
+    ]
+   }
+  ],
+  "llm_seconds": 154.9,
+  "status": "blocked_by_contract",
+  "report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 0,
+   "lost_count": 0,
+   "open_count": 514,
+   "won_amount_by_quarter": {},
+   "win_rate_by_rep": {
+    "Derek Lowe": null,
+    "Gary Novak": null,
+    "Kevin Brandt": null,
+    "Megan Ortiz": null,
+    "Priya Shah": null
+   }
+  },
+  "first_report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 0,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {},
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.0,
+    "Gary Novak": 0.0,
+    "Kevin Brandt": 0.0,
+    "Megan Ortiz": 0.0,
+    "Priya Shah": 0.0
+   }
+  },
+  "score": "blocked by checks",
+  "unguarded": "damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep",
+  "wall_seconds": 155.8
+ },
+ {
+  "scenario": "s7_encoding",
+  "model": "qwen2.5-coder:14b",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "load_export",
+    "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfc in position 1: invalid start byte",
+    "seconds": 35.9,
+    "fix": "def load_export(path):\n    return pd.read_csv(path, encoding=\"latin1\", dtype=str, keep_default_na=False)\n",
+    "contract": "passed"
+   }
+  ],
+  "llm_seconds": 35.9,
+  "status": "healed",
+  "report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "first_report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "score": "correct",
+  "unguarded": "correct",
+  "wall_seconds": 36.7
+ },
+ {
+  "scenario": "s8_missing_file",
+  "model": "qwen2.5-coder:14b",
+  "mode": "naive",
+  "rounds": [
+   {
+    "function": "load_export",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Python310\\\\projects\\\\self_healing_pipeline\\\\data\\\\s8_missing_file.csv'",
+    "seconds": 25.1,
+    "fix": "import os\n\ndef load_export(path):\n    if not os.path.exists(path):\n        raise FileNotFoundError(f\"The file {path} does not exist.\")\n    return pd.read_csv(path, encoding=\"utf-8\", dtype=str, keep_default_na=False)\n"
+   },
+   {
+    "function": "load_export",
+    "error": "FileNotFoundError: The file C:\\Python310\\projects\\self_healing_pipeline\\data\\s8_missing_file.csv does not exist.",
+    "seconds": 24.0,
+    "fix": "import os\nimport pandas as pd\n\ndef load_export(path):\n    if not os.path.exists(path):\n        raise FileNotFoundError(f\"The file {path} does not exist.\")\n    return pd.read_csv(path, encoding=\"utf-8\", dtype=str, keep_default_na=False)\n"
+   },
+   {
+    "function": "load_export",
+    "error": "FileNotFoundError: The file C:\\Python310\\projects\\self_healing_pipeline\\data\\s8_missing_file.csv does not exist.",
+    "seconds": 23.0,
+    "fix": "import os\nimport pandas as pd\n\ndef load_export(path):\n    if not os.path.exists(path):\n        print(f\"Warning: The file {path} does not exist. Returning an empty DataFrame.\")\n        return pd.DataFrame()\n    return pd.read_csv(path, encoding=\"utf-8\", dtype=str, keep_default_na=False)\n"
+   }
+  ],
+  "llm_seconds": 72.1,
+  "status": "failed",
+  "error": "KeyError: 'Created Date'",
+  "first_report": null,
+  "score": "WRONG (failed)",
+  "unguarded": "n/a",
+  "wall_seconds": 72.8
+ }
+]

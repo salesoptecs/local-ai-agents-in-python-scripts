@@ -1,0 +1,204 @@
+[
+ {
+  "scenario": "s1_renamed_column",
+  "model": "qwen2.5-coder:1.5b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "parse_amounts",
+    "error": "KeyError: 'Amount'",
+    "seconds": 8.3,
+    "fix": "def parse_amounts(df):\n    df[\"Amount\"] = [float(a) if a != \"\" else None for a in df[\"Amount\"]]\n    try:\n        df[\"Amount\"] = df[\"Amount\"].astype(float)\n    except ValueError as e:\n        print(f\"CANNOT_FIX: Error parsing Amount column: {e}\")\n    return df\n"
+   },
+   {
+    "function": "parse_amounts",
+    "error": "KeyError: 'Amount'",
+    "seconds": 6.2,
+    "fix": "import pandas as pd\n\ndef parse_amounts(df):\n    try:\n        df[\"Amount\"] = [float(a) if a != \"\" else None for a in df[\"Amount\"]]\n        return df\n    except ValueError as e:\n        print(f\"CANNOT_FIX: Error parsing Amount column: {e}\")\n        # Optionally, you can choose to drop rows with missing 'Amount' values here\n        # df.dropna(subset=[\"Amount\"], inplace=True)\n        return df\n"
+   },
+   {
+    "function": "parse_amounts",
+    "error": "KeyError: 'Amount'",
+    "seconds": 7.0,
+    "fix": "import pandas as pd\n\ndef parse_amounts(df):\n    try:\n        df[\"Amount\"] = [float(a) if a != \"\" else None for a in df[\"Amount\"]]\n        return df\n    except ValueError as e:\n        print(f\"CANNOT_FIX: Error parsing Amount column: {e}\")\n        return df  # Optionally, you can choose to drop rows with missing 'Amount' values here\r\n        # df.dropna(subset=[\"Amount\"], inplace=True)\n"
+   }
+  ],
+  "llm_seconds": 21.5,
+  "status": "failed",
+  "error": "KeyError: 'Amount'",
+  "first_report": null,
+  "score": "failed",
+  "unguarded": "no report",
+  "wall_seconds": 22.2
+ },
+ {
+  "scenario": "s2_date_format",
+  "model": "qwen2.5-coder:1.5b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "parse_dates",
+    "error": "ValueError: time data \"08/27/2025\" doesn't match format \"%Y-%m-%d\", at position 0. You might want to try:\n    - passing `format` if your strings have a consistent format;\n    - passing `format='ISO860",
+    "seconds": 6.0,
+    "reply": "CANNOT_FIX: Input data doesn't contain valid date strings according to specified format."
+   }
+  ],
+  "llm_seconds": 6.0,
+  "status": "gave_up",
+  "error": "ValueError: time data \"08/27/2025\" doesn't match format \"%Y-%m-%d\", at position 0. You might want to try:\n    - passing `format` if your strings have a consistent format;\n    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;\n    - passing `f",
+  "first_report": null,
+  "score": "gave_up",
+  "unguarded": "no report",
+  "wall_seconds": 6.7
+ },
+ {
+  "scenario": "s3_na_amounts",
+  "model": "qwen2.5-coder:1.5b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "parse_amounts",
+    "error": "ValueError: could not convert string to float: 'N/A'",
+    "seconds": 9.1,
+    "reply": "CANNOT_FIX: There is an issue with the input data or the way it's being read. The file might contain some rows where the \"Amount\" column contains non-numeric values such as 'N/A'. To fix this, you can add a check to skip these rows before attempting to convert the \"Amount\" column to a float.\n\n```pyt"
+   }
+  ],
+  "llm_seconds": 9.1,
+  "status": "gave_up",
+  "error": "ValueError: could not convert string to float: 'N/A'",
+  "first_report": null,
+  "score": "gave_up",
+  "unguarded": "no report",
+  "wall_seconds": 9.9
+ },
+ {
+  "scenario": "s4_currency_text",
+  "model": "qwen2.5-coder:1.5b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "parse_amounts",
+    "error": "ValueError: could not convert string to float: '$53,000.00'",
+    "seconds": 5.7,
+    "fix": "def parse_amounts(df):\n    df[\"Amount\"] = [float(a) if a != \"\" else None for a in df[\"Amount\"]]\n    df[\"Amount\"] = pd.to_numeric(df[\"Amount\"], errors='coerce')\n    return df\n"
+   },
+   {
+    "function": "parse_amounts",
+    "error": "ValueError: could not convert string to float: '$53,000.00'",
+    "seconds": 4.8,
+    "fix": "CANNOT_FIX: The value '$53,000.00' contains a comma that is not part of a number, which causes the ValueError when converting it to a float.\n"
+   },
+   {
+    "function": "parse_amounts",
+    "error": "ValueError: could not convert string to float: '$53,000.00'",
+    "seconds": 1.4,
+    "reply": "Cannot_fix: The file contains non-numeric characters that could not be converted to float."
+   }
+  ],
+  "llm_seconds": 11.9,
+  "status": "gave_up",
+  "error": "ValueError: could not convert string to float: '$53,000.00'",
+  "first_report": null,
+  "score": "gave_up",
+  "unguarded": "no report",
+  "wall_seconds": 12.7
+ },
+ {
+  "scenario": "s5_new_rep",
+  "model": "qwen2.5-coder:1.5b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "win_rates",
+    "error": "ZeroDivisionError: division by zero",
+    "seconds": 6.1,
+    "fix": "CANNOT_FIX: The problem lies in the calculation of won_amount_by_quarter. It seems that some accounts have no outcome, which leads to a division by zero error. You should add a check to ensure that there is an outcome before performing the division.\n"
+   },
+   {
+    "function": "win_rates",
+    "error": "ZeroDivisionError: division by zero",
+    "seconds": 1.5,
+    "reply": "Cannot_fix: The 'Outcome' column in the DataFrame must contain either \"won\" or \"lost\"."
+   }
+  ],
+  "llm_seconds": 7.6,
+  "status": "gave_up",
+  "error": "ZeroDivisionError: division by zero",
+  "first_report": null,
+  "score": "gave_up",
+  "unguarded": "no report",
+  "wall_seconds": 8.3
+ },
+ {
+  "scenario": "s6_stage_renamed",
+  "model": "qwen2.5-coder:1.5b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "map_stages",
+    "error": "KeyError: 'Closed - Won'",
+    "seconds": 6.5,
+    "reply": "CANNOT_FIX: There is an issue with the 'Close Date' column in your input data. It contains a string value \"Closed - Won\" instead of a datetime object. This causes the KeyError when trying to access it as a date using df[\"Close Date\"]. You need to ensure that all dates are correctly formatted and con"
+   }
+  ],
+  "llm_seconds": 6.5,
+  "status": "gave_up",
+  "error": "KeyError: 'Closed - Won'",
+  "first_report": null,
+  "score": "gave_up",
+  "unguarded": "no report",
+  "wall_seconds": 7.2
+ },
+ {
+  "scenario": "s7_encoding",
+  "model": "qwen2.5-coder:1.5b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "load_export",
+    "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfc in position 1: invalid start byte",
+    "seconds": 6.2,
+    "fix": "import pandas as pd\n\ndef load_export(path):\n    try:\n        df = pd.read_csv(path, encoding=\"utf-8\", dtype=str, keep_default_na=False)\n        return df\n    except UnicodeDecodeError:\n        print(f\"CANNOT_FIX: The file {path} contains non-UTF-8 encoded data. Please check the file for invalid characters.\")\n        return None\n"
+   },
+   {
+    "function": "parse_dates",
+    "error": "TypeError: 'NoneType' object is not subscriptable",
+    "seconds": 6.2,
+    "fix": "def parse_dates(df):\n    df[\"Created Date\"] = pd.to_datetime(df[\"Created Date\"], errors='coerce')\n    df[\"Close Date\"] = pd.to_datetime(df[\"Close Date\"], errors='coerce')\n    return df\n"
+   },
+   {
+    "function": "parse_dates",
+    "error": "TypeError: 'NoneType' object is not subscriptable",
+    "seconds": 4.5,
+    "fix": "def parse_dates(df):\n    df[\"Created Date\"] = pd.to_datetime(df[\"Created Date\"], errors='coerce')\n    return df\n"
+   }
+  ],
+  "llm_seconds": 16.9,
+  "status": "failed",
+  "error": "TypeError: 'NoneType' object is not subscriptable",
+  "first_report": null,
+  "score": "failed",
+  "unguarded": "no report",
+  "wall_seconds": 17.7
+ },
+ {
+  "scenario": "s8_missing_file",
+  "model": "qwen2.5-coder:1.5b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "load_export",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Python310\\\\projects\\\\self_healing_pipeline\\\\data\\\\s8_missing_file.csv'",
+    "seconds": 3.9,
+    "reply": "```\nCANNOT_FIX: The FileNotFoundError indicates that the specified file 's8_missing_file.csv' does not exist in the directory 'C:\\\\Python310\\\\projects\\\\self_healing_pipeline\\\\data'. To resolve this issue, you need to either ensure that the file exists or handle the missing file gracefully."
+   }
+  ],
+  "llm_seconds": 3.9,
+  "status": "gave_up",
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Python310\\\\projects\\\\self_healing_pipeline\\\\data\\\\s8_missing_file.csv'",
+  "first_report": null,
+  "score": "correct (gave up)",
+  "unguarded": "n/a",
+  "wall_seconds": 4.7
+ }
+]

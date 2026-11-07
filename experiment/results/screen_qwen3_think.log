@@ -1,0 +1,8 @@
+qwen3:8b             s1_renamed_column    correct                        llm  193.5s  unguarded: correct
+qwen3:8b             s2_date_format       correct                        llm   34.9s  unguarded: correct
+qwen3:8b             s3_na_amounts        correct                        llm   28.4s  unguarded: correct
+qwen3:8b             s4_currency_text     correct                        llm   27.9s  unguarded: correct
+qwen3:8b             s5_new_rep           SILENT DAMAGE (passed checks)  llm   37.2s  unguarded: damaged: win_rate_by_rep
+qwen3:8b             s6_stage_renamed     failed                         llm  787.6s  unguarded: damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep
+qwen3:8b             s7_encoding          correct                        llm  116.0s  unguarded: correct
+qwen3:8b             s8_missing_file      correct (gave up)              llm    0.0s  unguarded: n/a

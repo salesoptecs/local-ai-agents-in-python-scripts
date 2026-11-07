@@ -1,0 +1,82 @@
+[
+ {
+  "scenario": "s6_stage_renamed",
+  "model": "qwen3:8b",
+  "mode": "guarded",
+  "rounds": [
+   {
+    "function": "map_stages",
+    "error": "KeyError: 'Closed - Won'",
+    "seconds": 29.6,
+    "fix": "def map_stages(df):\n    df[\"Outcome\"] = [STAGE_OUTCOME.get(s, None) for s in df[\"Stage\"]]\n    return df\n",
+    "contract": [
+     "won + lost + open != rows",
+     "file has won deals but the report counts 0 won"
+    ]
+   },
+   {
+    "function": "map_stages",
+    "error": "rejected: rewrites STAGE_OUTCOME",
+    "seconds": 207.8,
+    "fix": "def map_stages(df):\n    STAGE_OUTCOME = {\n        \"Proposal\": \"open\",\n        \"Prospecting\": \"open\",\n        \"Negotiation\": \"open\",\n        \"Closed Lost\": \"lost\",\n        \"Closed - Won\": \"won\"\n    }\n    df[\"Outcome\"] = [STAGE_OUTCOME.get(s, None) for s in df[\"Stage\"]]\n    return df\n"
+   },
+   {
+    "function": "map_stages",
+    "error": "contract: won + lost + open != rows; file has won deals but the report counts 0 won",
+    "seconds": 285.0,
+    "fix": "STAGE_OUTCOME = {'Prospecting': 'open', 'Qualification': 'open', 'Proposal': 'open', 'Negotiation': 'open', 'Closed Won': 'won', 'Closed Lost': 'lost', 'Closed - Won': 'won'}\n",
+    "contract": "passed"
+   }
+  ],
+  "llm_seconds": 314.6,
+  "status": "healed",
+  "report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 367,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {
+    "2025-Q3": 759300.0,
+    "2025-Q4": 3021400.0,
+    "2026-Q1": 3299400.0,
+    "2026-Q2": 2811300.0,
+    "2026-Q3": 654400.0
+   },
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.5734,
+    "Gary Novak": 0.4966,
+    "Kevin Brandt": 0.5496,
+    "Megan Ortiz": 0.5496,
+    "Priya Shah": 0.5074
+   }
+  },
+  "first_report": {
+   "rows": 1200,
+   "total_amount": 34386200.0,
+   "avg_amount": 28655.17,
+   "missing_amount_rows": 0,
+   "won_count": 0,
+   "lost_count": 319,
+   "open_count": 514,
+   "won_amount_by_quarter": {},
+   "win_rate_by_rep": {
+    "Derek Lowe": 0.0,
+    "Gary Novak": 0.0,
+    "Kevin Brandt": 0.0,
+    "Megan Ortiz": 0.0,
+    "Priya Shah": 0.0
+   }
+  },
+  "tokens_out": 1741,
+  "thinks": [
+   "thought",
+   "thought"
+  ],
+  "score": "correct",
+  "unguarded": "damaged: won_count: 0 vs 367; won_amount_by_quarter; win_rate_by_rep",
+  "wall_seconds": 315.6
+ }
+]
